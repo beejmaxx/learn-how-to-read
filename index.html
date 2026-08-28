@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff8e8" />
+    <meta
+      name="description"
+      content="A gentle collection of tiny reading games for brand-new readers."
+    />
+    <title>Little Word Club</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sun sun-one" aria-hidden="true"></div>
+    <div class="sun sun-two" aria-hidden="true"></div>
+
+    <main class="shell">
+      <header class="topbar">
+        <button class="brand" data-action="library" aria-label="Go to the book library">
+          <span class="brand-mark" aria-hidden="true">a</span>
+          <span>Little Word Club</span>
+        </button>
+        <div class="top-actions">
+          <button class="nav-button" data-action="games">Games</button>
+          <button class="grownup-button" data-action="grownups">
+            <span aria-hidden="true">⚙</span> Grown-ups
+          </button>
+        </div>
+      </header>
+
+      <section id="app" aria-live="polite"></section>
+    </main>
+
+    <dialog id="grownup-dialog">
+      <form method="dialog" class="dialog-card">
+        <button class="dialog-close" value="cancel" aria-label="Close">×</button>
+        <p class="eyebrow">Grown-ups</p>
+        <h2>Tonight’s familiar words</h2>
+        <p class="dialog-copy">
+          Add a few words from the story you’re reading together. Short, simple
+          words work best in this prototype.
+        </p>
+        <label for="word-list">Words, separated by commas</label>
+        <textarea id="word-list" rows="3" spellcheck="false"></textarea>
+        <p class="hint">Try: cat, dog, sun, hat, red, map</p>
+        <div class="dialog-actions">
+          <button class="button secondary" value="cancel">Cancel</button>
+          <button class="button primary" id="save-words" value="default">Save words</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
