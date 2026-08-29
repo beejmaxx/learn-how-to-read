@@ -1,4 +1,5 @@
 const DEFAULT_WORDS = ['cat', 'dog', 'sun', 'hat', 'red', 'map'];
+const CONTENT_VERSION = '20260830-2';
 const WORD_INFO = {
   cat: { emoji: '🐈', first: 'c', rhyme: 'hat' },
   dog: { emoji: '🐕', first: 'd', rhyme: 'log' },
@@ -15,12 +16,12 @@ const WORD_INFO = {
 };
 
 const [BOOKS, AUDIO_LIBRARY, WORD_TIMINGS] = await Promise.all([
-  fetch('stories.json').then(response => {
+  fetch(`stories.json?v=${CONTENT_VERSION}`, { cache: 'no-store' }).then(response => {
     if (!response.ok) throw new Error('Could not load the story library');
     return response.json();
   }),
-  fetch('assets/audio/manifest.json').then(response => response.ok ? response.json() : { audio: {} }),
-  fetch('assets/audio/timings.json').then(response => response.ok ? response.json() : { timings: {} }).catch(() => ({ timings: {} }))
+  fetch(`assets/audio/manifest.json?v=${CONTENT_VERSION}`, { cache: 'no-store' }).then(response => response.ok ? response.json() : { audio: {} }),
+  fetch(`assets/audio/timings.json?v=${CONTENT_VERSION}`, { cache: 'no-store' }).then(response => response.ok ? response.json() : { timings: {} }).catch(() => ({ timings: {} }))
 ]);
 
 const PHONICS = {
