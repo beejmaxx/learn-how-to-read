@@ -136,6 +136,7 @@ button { color: inherit; }
   cursor: pointer;
 }
 .word-hit:hover, .word-hit:focus-visible { background: rgb(255 220 66 / 35%); outline: 2px solid rgb(210 139 0 / 75%); }
+.word-hit.selected { background: rgb(255 220 66 / 46%); outline: 3px solid #d78a00; box-shadow: 0 0 0 2px rgb(255 255 255 / 70%); }
 .word-hit.speaking { background: rgb(255 213 41 / 62%); outline: 2px solid rgb(202 116 0 / 85%); box-shadow: 0 0 0 2px rgb(255 255 255 / 55%); }
 
 .control-buttons { display: flex; gap: .55rem; }
@@ -143,24 +144,6 @@ button { color: inherit; }
 .reader-controls #readButton.playing { background: #39465a; }
 .reader-controls #readButton:disabled { opacity: .35; cursor: default; }
 
-.word-coach {
-  position: fixed;
-  z-index: 25;
-  left: 50%;
-  bottom: 82px;
-  transform: translateX(-50%);
-  min-width: min(90vw, 340px);
-  padding: 1rem 2.8rem 1rem 1.2rem;
-  border: 3px solid #e6b85d;
-  border-radius: 18px;
-  background: #fffaf0;
-  box-shadow: 0 12px 32px rgb(38 31 23 / 22%);
-  text-align: center;
-}
-.word-coach button { position: absolute; top: .35rem; right: .45rem; border: 0; background: transparent; font-size: 1.6rem; cursor: pointer; }
-.word-coach strong { display: block; font: 700 1.75rem/1.1 Georgia, serif; }
-.word-coach span { display: block; margin: .45rem 0 .25rem; color: var(--accent); font-weight: 900; letter-spacing: .05em; }
-.word-coach small { color: #6f685f; }
 
 .page-turn {
   width: 58px;
@@ -261,7 +244,6 @@ button { color: inherit; }
   .reader-controls button { padding: .58rem .65rem; font-size: .82rem; }
   .control-buttons { gap: .25rem; }
   .page-count { min-width: 4.8rem; font-size: .88rem; }
-  .word-coach { bottom: 70px; }
 }
 
 @media (max-width: 430px) {

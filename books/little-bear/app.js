@@ -25,10 +25,6 @@ const stage = document.querySelector('#pageStage');
 const leftPage = document.querySelector('#leftPage');
 const rightPage = document.querySelector('#rightPage');
 const readButton = document.querySelector('#readButton');
-const wordCoach = document.querySelector('#wordCoach');
-const coachWord = document.querySelector('#coachWord');
-const coachChunks = document.querySelector('#coachChunks');
-const closeWordCoach = document.querySelector('#closeWordCoach');
 const phoneLayout = matchMedia('(max-width: 650px)');
 
 const pagePath = (page) => `pages/page-${String(page).padStart(3, '0')}.jpg`;
@@ -40,7 +36,7 @@ let wordData = { pages: {} };
 let reading = false;
 let readingRun = 0;
 
-fetch('words.json?v=20260830-5', { cache: 'no-store' })
+fetch('words.json?v=20260830-6', { cache: 'no-store' })
   .then((response) => response.ok ? response.json() : Promise.reject(new Error('OCR data unavailable')))
   .then((data) => {
     wordData = data;
@@ -66,19 +62,6 @@ function cleanWord(text) {
   return text.replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9'’-]+$/g, '');
 }
 
-function chunksFor(text) {
-  const word = cleanWord(text).toLowerCase();
-  if (!word) return [];
-  const known = {
-    bear: ['b', 'ear'], little: ['lit', 'tle'], mother: ['moth', 'er'], birthday: ['birth', 'day'],
-    soup: ['s', 'oup'], moon: ['m', 'oon'], snow: ['sn', 'ow'], something: ['some', 'thing'],
-    went: ['w', 'ent'], cold: ['c', 'old'], chair: ['ch', 'air'], wish: ['w', 'ish'],
-  };
-  if (known[word]) return known[word];
-  const parts = word.match(/(?:tch|dge|igh|air|ear|tion|sh|ch|th|wh|ph|ck|ng|ee|ea|oo|ou|ow|ai|ay|oi|oy|[aeiouy]+|[^aeiouy]+)/g) || [word];
-  return parts.length > 1 ? parts : [word];
-}
-
 function bestVoice() {
   const voices = speechSynthesis.getVoices();
   return voices.find((voice) => /Samantha|Ava|Serena|Karen|Moira|Google US English/i.test(voice.name))
@@ -100,9 +83,6 @@ function speakWord(text) {
   utterance.pitch = 1.08;
   utterance.voice = bestVoice();
   speechSynthesis.speak(utterance);
-  coachWord.textContent = word;
-  coachChunks.textContent = chunksFor(word).join(' · ');
-  wordCoach.hidden = false;
 }
 
 function wordButton(word, page) {
@@ -116,7 +96,10 @@ function wordButton(word, page) {
   button.style.top = `${(word.y / SOURCE_HEIGHT) * 100}%`;
   button.style.width = `${Math.max((word.w / SOURCE_WIDTH) * 100, 1.2)}%`;
   button.style.height = `${Math.max((word.h / SOURCE_HEIGHT) * 100, 1.4)}%`;
-  button.addEventListener('click', () => speakWord(word.text));
+  button.addEventListener('click', () => {
+    selectWord(button);
+    speakWord(word.text);
+  });
   return button;
 }
 
@@ -148,6 +131,40 @@ function renderPages() {
     preload(page - 2);
     preload(page + 2);
   });
+}
+
+function visibleWordButtons() {
+  return [...document.querySelectorAll('.page-frame:not([hidden]) .word-hit')]
+    .filter((button) => cleanWord(button.dataset.word));
+}
+
+function selectWord(button) {
+  document.querySelectorAll('.word-hit.selected').forEach((word) => word.classList.remove('selected'));
+  if (!button) return;
+  button.classList.add('selected');
+  button.focus({ preventScroll: true });
+}
+
+function moveWord(direction) {
+  let words = visibleWordButtons();
+  const selected = document.querySelector('.word-hit.selected');
+  const selectedIndex = words.indexOf(selected);
+  const targetIndex = selectedIndex < 0 ? (direction > 0 ? 0 : words.length - 1) : selectedIndex + direction;
+
+  if (words[targetIndex]) {
+    selectWord(words[targetIndex]);
+    return;
+  }
+
+  for (let attempt = 0; attempt < TOTAL_PAGES; attempt += 1) {
+    if ((direction > 0 && next.disabled) || (direction < 0 && previous.disabled)) return;
+    turn(direction);
+    words = visibleWordButtons();
+    if (words.length) {
+      selectWord(direction > 0 ? words[0] : words[words.length - 1]);
+      return;
+    }
+  }
 }
 
 function stopReading() {
@@ -226,7 +243,6 @@ function toggleReading() {
   if (!pages.length) return;
   speechSynthesis.cancel();
   clearHighlights();
-  wordCoach.hidden = true;
   reading = true;
   readingRun += 1;
   const runId = readingRun;
@@ -239,7 +255,6 @@ previous.addEventListener('click', () => turn(-1));
 next.addEventListener('click', () => turn(1));
 slider.addEventListener('input', () => showPage(Number(slider.value)));
 readButton.addEventListener('click', toggleReading);
-closeWordCoach.addEventListener('click', () => { wordCoach.hidden = true; });
 
 function setChaptersOpen(isOpen) {
   chapterPanel.hidden = !isOpen;
@@ -276,8 +291,20 @@ document.addEventListener('fullscreenchange', () => {
 });
 
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'ArrowRight' || event.key === 'PageDown') turn(1);
-  else if (event.key === 'ArrowLeft' || event.key === 'PageUp') turn(-1);
+  if (event.target.matches('input')) return;
+  if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+    event.preventDefault();
+    moveWord(1);
+  } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+    event.preventDefault();
+    moveWord(-1);
+  } else if (event.key === ' ') {
+    const selected = document.querySelector('.word-hit.selected');
+    if (!selected) return;
+    event.preventDefault();
+    speakWord(selected.dataset.word);
+  } else if (event.key === 'PageDown') turn(1);
+  else if (event.key === 'PageUp') turn(-1);
   else if (event.key === 'Home') showPage(1);
   else if (event.key === 'End') showPage(TOTAL_PAGES);
   else if (event.key === 'Escape' && !chapterPanel.hidden) setChaptersOpen(false);
