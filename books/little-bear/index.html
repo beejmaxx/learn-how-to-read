@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f0df" />
+    <title>Little Bear — Read Along</title>
+    <link rel="stylesheet" href="styles.css?v=20260830-5" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="home-link" href="../../" aria-label="Back to the story shelf">← Shelf</a>
+      <div class="book-heading">
+        <h1>Little Bear</h1>
+        <p>Else Holmelund Minarik · pictures by Maurice Sendak</p>
+      </div>
+      <button class="icon-button" id="fullscreenButton" type="button" aria-label="Enter full screen" title="Full screen">⛶</button>
+    </header>
+
+    <main>
+      <section class="reader" aria-label="Book reader">
+        <button class="page-turn previous" id="previousButton" type="button" aria-label="Previous page">‹</button>
+        <div class="spread" id="pageStage" aria-live="polite">
+          <article class="page-frame left-page" id="leftPage" hidden>
+            <img alt="" draggable="false" />
+            <div class="word-layer" aria-label="Words on the left page"></div>
+          </article>
+          <article class="page-frame right-page" id="rightPage">
+            <img alt="" draggable="false" />
+            <div class="word-layer" aria-label="Words on the right page"></div>
+          </article>
+        </div>
+        <button class="page-turn next" id="nextButton" type="button" aria-label="Next page">›</button>
+      </section>
+
+      <nav class="reader-controls" aria-label="Reader controls">
+        <div class="control-buttons">
+          <button id="chaptersButton" type="button" aria-expanded="false" aria-controls="chapterPanel">☰ Chapters</button>
+          <button id="readButton" type="button">▶ Read pages</button>
+        </div>
+        <label class="page-scrubber">
+          <span class="sr-only">Choose a page</span>
+          <input id="pageSlider" type="range" min="1" max="67" value="1" />
+        </label>
+        <span class="page-count" id="pageCount" aria-live="polite">1 of 67</span>
+      </nav>
+
+      <aside class="chapter-panel" id="chapterPanel" aria-label="Chapters" hidden>
+        <div class="panel-heading">
+          <h2>Jump to a story</h2>
+          <button id="closeChaptersButton" class="icon-button" type="button" aria-label="Close chapters">×</button>
+        </div>
+        <div class="chapter-list" id="chapterList"></div>
+      </aside>
+      <button class="panel-backdrop" id="panelBackdrop" type="button" aria-label="Close chapters" hidden></button>
+
+      <aside class="word-coach" id="wordCoach" hidden aria-live="polite">
+        <button id="closeWordCoach" type="button" aria-label="Close word helper">×</button>
+        <strong id="coachWord"></strong>
+        <span id="coachChunks"></span>
+        <small>Tap a word to hear it.</small>
+      </aside>
+    </main>
+
+    <script src="app.js?v=20260830-5"></script>
+  </body>
+</html>
