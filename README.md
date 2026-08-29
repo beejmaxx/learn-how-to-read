@@ -1,6 +1,6 @@
 # Little Word Club
 
-A gentle story and phonics app for brand-new readers. The library currently includes **The Red Hat** and the comic early-reader story **The Duck in the Cup**.
+A gentle story and phonics app for brand-new readers. The library currently includes **The Red Hat**, **The Duck in the Cup**, and **The Tiny Door Behind the Bed**.
 
 Features include:
 

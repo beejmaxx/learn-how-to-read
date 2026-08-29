@@ -35,10 +35,11 @@ const PHONICS = {
   duck: ['d', 'uck'], pond: ['p', 'ond'], tree: ['tr', 'ee'],
   much: ['mu', 'ch'], six: ['s', 'ix'], last: ['l', 'ast'],
   moon: ['m', 'oo', 'n'], net: ['n', 'et'], boot: ['b', 'oot'],
-  cup: ['c', 'up'], sock: ['s', 'ock'], milk: ['m', 'ilk'], peep: ['p', 'eep']
+  cup: ['c', 'up'], sock: ['s', 'ock'], milk: ['m', 'ilk'], peep: ['p', 'eep'],
+  door: ['d', 'oor'], tap: ['t', 'ap'], spoon: ['sp', 'oon'], frog: ['fr', 'og'], soup: ['s', 'oup']
 };
 
-const LIBRARY_BOOKS = BOOKS.slice(0, 2);
+const LIBRARY_BOOKS = BOOKS.slice(0, 3);
 const FIND_SETS = {
   cat: ['cat', 'can', 'cap', 'hat'], dog: ['dog', 'dig', 'log', 'dot'],
   hat: ['hat', 'cat', 'hot', 'hit'], red: ['red', 'bed', 'run', 'rid'],
@@ -46,7 +47,10 @@ const FIND_SETS = {
   pond: ['pond', 'sand', 'pod', 'dog'], cap: ['cap', 'cat', 'map', 'cup'],
   cup: ['cup', 'cap', 'cat', 'up'], milk: ['milk', 'silk', 'mill', 'mink'],
   sock: ['sock', 'rock', 'sack', 'so'], run: ['run', 'sun', 'ran', 'rug'],
-  peep: ['peep', 'deep', 'keep', 'pee']
+  peep: ['peep', 'deep', 'keep', 'pee'], tap: ['tap', 'top', 'tip', 'hat'],
+  door: ['door', 'dog', 'floor', 'do'], spoon: ['spoon', 'moon', 'soon', 'spin'],
+  frog: ['frog', 'fog', 'from', 'dog'], soup: ['soup', 'soap', 'soon', 'cup'],
+  mia: ['mia', 'mama', 'map', 'mop']
 };
 
 const GAMES = [
@@ -180,13 +184,13 @@ function library() {
     <section class="library-hero">
       <div>
         <p class="eyebrow">Our first read-along</p>
-        <h1>Two little books.<br>Lots to explore.</h1>
+        <h1>Three little books.<br>Lots to explore.</h1>
         <p class="hero-copy">Read together, tap words to sound them out, then play with words from the story.</p>
         <span class="tiny-note"><span aria-hidden="true">☝️</span> Tap a book to begin</span>
       </div>
       <div class="hero-stack" aria-hidden="true">
-        <img class="stack-cover" src="assets/pages/duck-cup/page-9.webp" alt="">
-        <img class="stack-cover" src="assets/covers/duck-cup.webp" alt="">
+        <img class="stack-cover" src="assets/pages/tiny-door/page-13.webp" alt="">
+        <img class="stack-cover" src="assets/covers/tiny-door.webp" alt="">
         <img class="stack-cover" src="assets/covers/red-hat.webp" alt="">
       </div>
     </section>
