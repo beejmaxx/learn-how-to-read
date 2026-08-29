@@ -29,6 +29,44 @@
     ]
   },
   {
+    "id": "duck-cup",
+    "title": "The Duck in the Cup",
+    "cover": "assets/covers/duck-cup.webp",
+    "level": "Read together",
+    "focus": "c · u · p",
+    "words": ["duck", "cup", "sock"],
+    "findWords": ["duck", "cup", "milk", "sock", "cat", "hat", "run", "peep"],
+    "narrated": false,
+    "pictures": [
+      "assets/pages/duck-cup/page-1.webp",
+      "assets/pages/duck-cup/page-2.webp",
+      "assets/pages/duck-cup/page-3.webp",
+      "assets/pages/duck-cup/page-4.webp",
+      "assets/pages/duck-cup/page-5.webp",
+      "assets/pages/duck-cup/page-6.webp",
+      "assets/pages/duck-cup/page-7.webp",
+      "assets/pages/duck-cup/page-8.webp",
+      "assets/pages/duck-cup/page-9.webp",
+      "assets/pages/duck-cup/page-10.webp",
+      "assets/pages/duck-cup/page-11.webp",
+      "assets/pages/duck-cup/page-12.webp"
+    ],
+    "pages": [
+      "Mia had a big blue cup. It was a cup for milk. But today… there was a duck in it.",
+      "‘You are in my cup,’ said Mia. ‘That is not a pond. That is not a tub. That is my cup!’ ‘Quack,’ said the duck.",
+      "The duck put one foot out. Then one foot in. Then both feet out… and fell on his chin. BUMP!",
+      "He shook his tail. He shook his head. He shook one wing, then the other. SPLAT! A drop of milk hit Mia on the nose.",
+      "The duck ran past the bed and past the chair. TAP TAP TAP went his feet, down the hall with milk in his hair.",
+      "Mia looked left. No duck. She looked right. No duck. She looked down. There he was—with a red sock on his head.",
+      "‘You cannot wear a sock as a hat,’ said Mia. The duck stood tall. He looked very proud. ‘Quack.’",
+      "The duck ran to the kitchen. He ran past Dad. He ran past the cat. And all this time, he still wore the hat.",
+      "The cat went MEOW! The duck spun around. The duck went left. The cat went—ACHOO! Everyone stopped.",
+      "The duck walked back to the cat. He put down the sock. Then the duck, the cat, and Mia sat together. It was nice.",
+      "Then Mia heard a very small sound from her cup. PEEP. PEEP. Mia looked inside. A tiny chick sat in the big blue cup.",
+      "Mia looked at the duck. ‘Oh no,’ she said. The duck smiled. ‘Quack.’ And then… the chick found the other sock."
+    ]
+  },
+  {
     "id": "cat-map",
     "title": "Cat on a Map",
     "cover": "assets/covers/cat-map.webp",

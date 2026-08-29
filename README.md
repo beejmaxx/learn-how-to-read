@@ -1,6 +1,8 @@
 # Little Word Club
 
-A gentle read-along app for brand-new readers. The first book, **The Red Hat**, includes:
+A gentle story and phonics app for brand-new readers. The library currently includes **The Red Hat** and the comic early-reader story **The Duck in the Cup**.
+
+Features include:
 
 - word-by-word highlighting synchronized with narration;
 - consistent local Kokoro speech for story pages and tappable words;

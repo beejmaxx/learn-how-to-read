@@ -85,6 +85,7 @@ button { color: inherit; }
 .reader-picture::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,35,42,.12), transparent 28%); pointer-events: none; }
 .reader-page { padding: clamp(30px, 5vw, 58px); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .reader-sentence { font-family: Fredoka, sans-serif; font-size: clamp(36px, 5vw, 58px); line-height: 1.32; margin-bottom: 30px; }
+.reader-page-dense .reader-sentence { font-size: clamp(28px, 3.6vw, 43px); }
 .read-word { appearance: none; border: 0; background: transparent; padding: 0 3px; font: inherit; cursor: pointer; border-radius: 8px; transition: background .12s ease, color .12s ease, box-shadow .12s ease, transform .12s ease; }
 .read-word:hover, .read-word:focus-visible { background: #ffe69c; outline: none; }
 .read-word.is-speaking { color: #172d3c; background: #ffd45c; box-shadow: 0 .1em 0 #e6a934; transform: translateY(-.04em); }
@@ -97,6 +98,7 @@ button { color: inherit; }
 .sound-chunks span:nth-of-type(even) { background: #dff3ec; border-color: #b9ddcf; }
 .sound-chunks b, .coach-arrow { color: var(--muted); font-size: 17px; }
 .coach-whole { border: 0; padding: 9px 13px; color: white; background: var(--orange); border-radius: 999px; font: 700 19px Fredoka, sans-serif; cursor: pointer; }
+.coach-whole-muted { cursor: default; background: #506b79; }
 .reader-controls { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: auto; gap: 10px; }
 .page-button { border: 0; background: #eee8db; border-radius: 999px; min-width: 48px; min-height: 48px; padding: 10px 15px; cursor: pointer; font-weight: 700; }
 .page-button.next { background: var(--orange); color: white; }

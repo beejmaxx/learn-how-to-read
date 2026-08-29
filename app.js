@@ -33,15 +33,20 @@ const PHONICS = {
   log: ['l', 'og'], fun: ['f', 'un'], cap: ['c', 'ap'], rug: ['r', 'ug'],
   sad: ['s', 'ad'], box: ['b', 'ox'], hop: ['h', 'op'], bench: ['ben', 'ch'],
   duck: ['d', 'uck'], pond: ['p', 'ond'], tree: ['tr', 'ee'],
-  much: ['mu', 'ch'], six: ['s', 'ix'], last: ['l', 'ast']
+  much: ['mu', 'ch'], six: ['s', 'ix'], last: ['l', 'ast'],
+  moon: ['m', 'oo', 'n'], net: ['n', 'et'], boot: ['b', 'oot'],
+  cup: ['c', 'up'], sock: ['s', 'ock'], milk: ['m', 'ilk'], peep: ['p', 'eep']
 };
 
-const LIBRARY_BOOKS = BOOKS.slice(0, 1);
+const LIBRARY_BOOKS = BOOKS.slice(0, 2);
 const FIND_SETS = {
   cat: ['cat', 'can', 'cap', 'hat'], dog: ['dog', 'dig', 'log', 'dot'],
   hat: ['hat', 'cat', 'hot', 'hit'], red: ['red', 'bed', 'run', 'rid'],
   duck: ['duck', 'luck', 'dock', 'dig'], tree: ['tree', 'three', 'free', 'see'],
-  pond: ['pond', 'sand', 'pod', 'dog'], cap: ['cap', 'cat', 'map', 'cup']
+  pond: ['pond', 'sand', 'pod', 'dog'], cap: ['cap', 'cat', 'map', 'cup'],
+  cup: ['cup', 'cap', 'cat', 'up'], milk: ['milk', 'silk', 'mill', 'mink'],
+  sock: ['sock', 'rock', 'sack', 'so'], run: ['run', 'sun', 'ran', 'rug'],
+  peep: ['peep', 'deep', 'keep', 'pee']
 };
 
 const GAMES = [
@@ -89,6 +94,7 @@ function playableWords() {
 }
 
 function speak(text) {
+  if (state.book?.narrated === false) return;
   const recorded = AUDIO_LIBRARY.audio[text.trim().toLowerCase()];
   if (recorded) {
     playRecorded(recorded);
@@ -141,6 +147,7 @@ function playRecorded(source, onFrame = null) {
 }
 
 function readCurrentPage() {
+  if (state.book?.narrated === false) return;
   const key = `story:${state.book.id}:${state.page}`;
   const recorded = AUDIO_LIBRARY.audio[key];
   const timings = WORD_TIMINGS.timings[key];
@@ -173,20 +180,20 @@ function library() {
     <section class="library-hero">
       <div>
         <p class="eyebrow">Our first read-along</p>
-        <h1>One little book.<br>Lots to explore.</h1>
-        <p class="hero-copy">Read together, follow the highlighted words, then play with words from the story.</p>
-        <span class="tiny-note"><span aria-hidden="true">☝️</span> Tap the book to begin</span>
+        <h1>Two little books.<br>Lots to explore.</h1>
+        <p class="hero-copy">Read together, tap words to sound them out, then play with words from the story.</p>
+        <span class="tiny-note"><span aria-hidden="true">☝️</span> Tap a book to begin</span>
       </div>
       <div class="hero-stack" aria-hidden="true">
-        <img class="stack-cover" src="assets/pages/red-hat/page-3.webp" alt="">
-        <img class="stack-cover" src="assets/pages/red-hat/page-5.webp" alt="">
+        <img class="stack-cover" src="assets/pages/duck-cup/page-9.webp" alt="">
+        <img class="stack-cover" src="assets/covers/duck-cup.webp" alt="">
         <img class="stack-cover" src="assets/covers/red-hat.webp" alt="">
       </div>
     </section>
     <section aria-labelledby="shelf-title">
       <div class="shelf-heading">
-        <div><p class="eyebrow">Prototype book</p><h2 id="shelf-title">Read The Red Hat</h2></div>
-        <p>${state.completed.includes('red-hat') ? 'Read together ✓' : 'Ready to read'}</p>
+        <div><p class="eyebrow">Our little shelf</p><h2 id="shelf-title">Choose a story</h2></div>
+        <p>${state.completed.filter(id => LIBRARY_BOOKS.some(book => book.id === id)).length} of ${LIBRARY_BOOKS.length} explored</p>
       </div>
       <div class="book-grid">
         ${LIBRARY_BOOKS.map(book => `
@@ -228,14 +235,17 @@ function showWordCoach(word) {
   if (!coach) return;
   const clean = word.toLowerCase().replace(/’/g, "'").replace(/[^a-z']/g, '');
   const chunks = PHONICS[clean];
+  const wholeWord = state.book?.narrated === false
+    ? `<span class="coach-whole coach-whole-muted">${word}</span>`
+    : `<button class="coach-whole" data-coach-speak="${word}">🔊 ${word}</button>`;
   if (!chunks) {
-    coach.innerHTML = `<span class="coach-label">Hear the whole word</span><button class="coach-whole" data-coach-speak="${word}">🔊 ${word}</button>`;
+    coach.innerHTML = `<span class="coach-label">Look at the whole word</span>${wholeWord}`;
   } else {
     coach.innerHTML = `
       <span class="coach-label">Sound it out</span>
       <span class="sound-chunks" aria-label="${chunks.join(', ')}">${chunks.map(chunk => `<span>${chunk}</span>`).join('<b aria-hidden="true">+</b>')}</span>
       <span class="coach-arrow" aria-hidden="true">→</span>
-      <button class="coach-whole" data-coach-speak="${word}">🔊 ${word}</button>`;
+      ${wholeWord}`;
   }
   coach.hidden = false;
 }
@@ -243,17 +253,18 @@ function showWordCoach(word) {
 function renderReader() {
   const book = state.book;
   const isFinish = state.page === book.pages.length;
+  const hasNarration = book.narrated !== false;
   const progress = isFinish ? 'Finished!' : `Page ${state.page + 1} of ${book.pages.length}`;
   app.innerHTML = `
     <section class="reader-wrap">
       <div class="reader-top">
         <button class="back-button" data-action="library" aria-label="Back to books">←</button>
         <div class="reader-title"><strong>${book.title}</strong><span>${progress}</span></div>
-        ${isFinish ? '<span></span>' : '<button class="sound-button" data-action="read-page" aria-label="Read this page aloud">🔊</button>'}
+        ${isFinish || !hasNarration ? '<span></span>' : '<button class="sound-button" data-action="read-page" aria-label="Read this page aloud">🔊</button>'}
       </div>
       <div class="reader-card">
         <div class="reader-picture"><img src="${book.pictures?.[state.page] || book.cover}" alt="Illustration for page ${Math.min(state.page + 1, book.pages.length)} of ${book.title}"></div>
-        <div class="reader-page ${isFinish ? 'reader-finish' : ''}">
+        <div class="reader-page ${isFinish ? 'reader-finish' : ''} ${!isFinish && book.pages[state.page].length > 115 ? 'reader-page-dense' : ''}">
           ${isFinish ? `
             <div class="finish-star" aria-hidden="true">⭐</div>
             <h2>You read a book!</h2>
@@ -263,11 +274,11 @@ function renderReader() {
               <button class="button primary" data-action="book-games">Play with these words</button>
             </div>` : `
             <p class="reader-sentence">${wordButtons(book.pages[state.page])}</p>
-            <p class="reader-help">Tap any word to hear it and sound it out</p>
+            <p class="reader-help">${hasNarration ? 'Tap any word to hear it and sound it out' : 'Tap any word to break it into sounds'}</p>
             <div class="word-coach" id="word-coach" hidden></div>
             <div class="reader-controls">
               <button class="page-button" data-action="prev-page" ${state.page === 0 ? 'disabled' : ''}>← Back</button>
-              <button class="read-aloud" data-action="read-page">🔊 Read it</button>
+              ${hasNarration ? '<button class="read-aloud" data-action="read-page">🔊 Read it</button>' : ''}
               <button class="page-button next" data-action="next-page">${state.page === book.pages.length - 1 ? 'Finish' : 'Next →'}</button>
             </div>`}
         </div>
@@ -484,7 +495,7 @@ document.addEventListener('click', event => {
   if (target.dataset.book) openBook(target.dataset.book);
   if (target.dataset.speak) {
     showWordCoach(target.dataset.speak);
-    speak(target.dataset.speak);
+    if (state.book?.narrated !== false) speak(target.dataset.speak);
   }
   if (target.dataset.coachSpeak) speak(target.dataset.coachSpeak);
   if (target.dataset.action === 'library') library();
