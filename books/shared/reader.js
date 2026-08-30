@@ -23,7 +23,13 @@ const leftPage = document.querySelector('#leftPage');
 const rightPage = document.querySelector('#rightPage');
 const readButton = document.querySelector('#readButton');
 const autoSpeakToggle = document.querySelector('#autoSpeakToggle');
+const wordCoach = document.querySelector('#wordCoach');
 const phoneLayout = matchMedia('(max-width: 650px)');
+const phonicsCoach = window.PhonicsCoach?.create({
+  root: '../../',
+  speakWord,
+  onVisibility: (isVisible) => document.body.classList.toggle('coach-open', isVisible)
+});
 
 const pagePath = (page) => `pages/page-${String(page).padStart(3, '0')}.jpg`;
 const requestedPage = Number(new URLSearchParams(location.search).get('page'));
@@ -140,9 +146,13 @@ function visibleWordButtons() {
 
 function selectWord(button, pronounce = false) {
   document.querySelectorAll('.word-hit.selected').forEach((word) => word.classList.remove('selected'));
-  if (!button) return;
+  if (!button) {
+    if (wordCoach) phonicsCoach?.hide(wordCoach);
+    return;
+  }
   button.classList.add('selected');
   button.focus({ preventScroll: true });
+  if (wordCoach) phonicsCoach?.show(wordCoach, button.dataset.word);
   if (pronounce) speakWord(button.dataset.word);
 }
 
@@ -179,6 +189,7 @@ function stopReading() {
 
 function showPage(page, updateHistory = true) {
   stopReading();
+  if (wordCoach) phonicsCoach?.hide(wordCoach);
   currentPage = Math.max(1, Math.min(TOTAL_PAGES, page));
   localStorage.setItem(storageKey('page'), String(currentPage));
   renderPages();
@@ -295,7 +306,7 @@ document.addEventListener('fullscreenchange', () => {
 });
 
 document.addEventListener('keydown', (event) => {
-  if (event.target.matches('input[type="range"]')) return;
+  if (event.target.matches('select, input[type="range"]')) return;
   if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
     event.preventDefault();
     moveWord(1);
@@ -303,6 +314,7 @@ document.addEventListener('keydown', (event) => {
     event.preventDefault();
     moveWord(-1);
   } else if (event.key === ' ') {
+    if (event.target.closest('.phonics-coach-host')) return;
     if (event.target === autoSpeakToggle) return;
     const selected = document.querySelector('.word-hit.selected');
     if (!selected) return;

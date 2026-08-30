@@ -18,10 +18,35 @@ const SOUNDS = [
   { id: 'h', label: 'h', sound: 'hhh', ipa: '/h/', word: 'hat', emoji: '🎩', cue: 'Breathe warm air onto your hand.', group: 'more' },
   { id: 'r', label: 'r', sound: 'rrr', ipa: '/ɹ/', word: 'red', emoji: '🔴', cue: 'Curl your tongue back without touching.', group: 'more' },
   { id: 'l', label: 'l', sound: 'lll', ipa: '/l/', word: 'log', emoji: '🪵', cue: 'Touch your tongue just behind your teeth.', group: 'more' },
+  { id: 'j', label: 'j', sound: 'j', ipa: '/dʒ/', word: 'jam', emoji: '🍓', cue: 'Stop the air, then let it buzz out.', group: 'more' },
+  { id: 'v', label: 'v', sound: 'vvv', ipa: '/v/', word: 'van', emoji: '🚐', cue: 'Top teeth touch your bottom lip. Turn your voice on.', group: 'more' },
+  { id: 'w', label: 'w', sound: 'w', ipa: '/w/', word: 'web', emoji: '🕸️', cue: 'Round your lips, then open them quickly.', group: 'more' },
+  { id: 'y', label: 'y', sound: 'y', ipa: '/j/', word: 'yes', emoji: '👍', cue: 'Lift the middle of your tongue and use your voice.', group: 'more' },
+  { id: 'z', label: 'z', sound: 'zzz', ipa: '/z/', word: 'zip', emoji: '🤐', cue: 'Make the s sound and turn your voice on.', group: 'more' },
   { id: 'sh', label: 'sh', sound: 'shhh', ipa: '/ʃ/', word: 'ship', emoji: '🚢', cue: 'Two letters make one quiet sound.', group: 'pairs' },
   { id: 'ch', label: 'ch', sound: 'ch', ipa: '/tʃ/', word: 'chick', emoji: '🐥', cue: 'Two letters make one quick sound.', group: 'pairs' },
-  { id: 'th', label: 'th', sound: 'thhh', ipa: '/θ/', word: 'thumb', emoji: '👍', cue: 'Tongue peeks between your teeth. Blow.', group: 'pairs' },
-  { id: 'ng', label: 'ng', sound: 'nggg', ipa: '/ŋ/', word: 'ring', emoji: '💍', cue: 'Hum the sound at the back of your mouth.', group: 'pairs' }
+  { id: 'th', label: 'th', tileNote: 'thin', sound: 'quiet th', ipa: '/θ/', word: 'thumb', emoji: '👍', cue: 'Tongue peeks between your teeth. Blow.', group: 'pairs' },
+  { id: 'thv', label: 'th', tileNote: 'this', sound: 'buzzy th', ipa: '/ð/', word: 'this', emoji: '☝️', cue: 'Tongue peeks between your teeth. Turn your voice on.', group: 'pairs' },
+  { id: 'ng', label: 'ng', sound: 'nggg', ipa: '/ŋ/', word: 'ring', emoji: '💍', cue: 'Hum the sound at the back of your mouth.', group: 'pairs' },
+  { id: 'zh', label: 'zh', sound: 'zhhh', ipa: '/ʒ/', word: 'treasure', emoji: '💎', cue: 'Make a soft buzzing sh sound.', group: 'pairs' },
+  { id: 'ai', label: 'ai', sound: 'ai', ipa: '/eɪ/', word: 'rain', emoji: '🌧️', cue: 'Start open, then lift your tongue a little.', group: 'long' },
+  { id: 'ee', label: 'ee', sound: 'ee', ipa: '/iː/', word: 'feet', emoji: '🦶', cue: 'Smile gently and hold the sound.', group: 'long' },
+  { id: 'igh', label: 'igh', sound: 'igh', ipa: '/aɪ/', word: 'night', emoji: '🌙', cue: 'Open your mouth, then glide into a smile.', group: 'long' },
+  { id: 'oa', label: 'oa', sound: 'oa', ipa: '/oʊ/', word: 'boat', emoji: '⛵', cue: 'Round your lips and let the sound glide.', group: 'long' },
+  { id: 'oo', label: 'oo', tileNote: 'moon', sound: 'long oo', ipa: '/uː/', word: 'moon', emoji: '🌙', cue: 'Round your lips and hold the sound.', group: 'long' },
+  { id: 'yoo', label: 'u', tileNote: 'cube', sound: 'yoo', ipa: '/juː/', word: 'cube', emoji: '🧊', cue: 'Say y, then glide into long oo.', group: 'long' },
+  { id: 'oo_short', label: 'oo', tileNote: 'book', sound: 'short oo', ipa: '/ʊ/', word: 'book', emoji: '📖', cue: 'Round your lips loosely for a quick sound.', group: 'vowels' },
+  { id: 'ar', label: 'ar', sound: 'ar', ipa: '/ɑr/', word: 'car', emoji: '🚗', cue: 'Open wide, then curl into r.', group: 'vowels' },
+  { id: 'or', label: 'or', sound: 'or', ipa: '/ɔr/', word: 'fork', emoji: '🍴', cue: 'Round your mouth, then curl into r.', group: 'vowels' },
+  { id: 'ur', label: 'ur', sound: 'ur', ipa: '/ɝ/', word: 'bird', emoji: '🐦', cue: 'Keep your mouth relaxed and curl into r.', group: 'vowels' },
+  { id: 'ow', label: 'ow', sound: 'ow', ipa: '/aʊ/', word: 'cow', emoji: '🐄', cue: 'Open wide, then round your lips.', group: 'vowels' },
+  { id: 'oi', label: 'oi', sound: 'oi', ipa: '/ɔɪ/', word: 'coin', emoji: '🪙', cue: 'Start rounded, then glide into a smile.', group: 'vowels' },
+  { id: 'air', label: 'air', sound: 'air', ipa: '/ɛr/', word: 'chair', emoji: '🪑', cue: 'Start with e, then curl into r.', group: 'vowels' },
+  { id: 'ear', label: 'ear', sound: 'ear', ipa: '/ɪr/', word: 'ear', emoji: '👂', cue: 'Start with i, then curl into r.', group: 'vowels' },
+  { id: 'ure', label: 'ure', sound: 'ure', ipa: '/ʊr/', word: 'pure', emoji: '✨', cue: 'Start with short oo, then curl into r.', group: 'vowels' },
+  { id: 'schwa', label: 'ə', tileNote: 'about', sound: 'schwa', ipa: '/ə/', word: 'about', emoji: '💭', cue: 'A tiny relaxed vowel in an unstressed syllable.', group: 'vowels' },
+  { id: 'qu', label: 'qu', sound: 'kw', ipa: '/kw/', word: 'queen', emoji: '👑', cue: 'A quick k sound followed by w.', group: 'extras' },
+  { id: 'x', label: 'x', sound: 'ks', ipa: '/ks/', word: 'fox', emoji: '🦊', cue: 'Two quick sounds together: k, then s.', group: 'extras' }
 ];
 
 const BLENDS = [
@@ -57,7 +82,10 @@ const QUESTIONS = [
 const GROUPS = {
   start: { label: 'Start here', note: 'Six sounds that can make lots of little words.' },
   more: { label: 'More sounds', note: 'Add new sounds when the first set feels familiar.' },
-  pairs: { label: 'Letter pairs', note: 'Sometimes two letters work together as one sound.' }
+  pairs: { label: 'Letter pairs', note: 'Sometimes two letters work together as one sound.' },
+  long: { label: 'Long vowels', note: 'Vowel sounds that often use two or more letters.' },
+  vowels: { label: 'More vowels', note: 'The rest of the common English vowel sounds.' },
+  extras: { label: 'Sound teams', note: 'Useful letter teams that make two quick sounds.' }
 };
 
 const app = document.querySelector('#app');
@@ -69,6 +97,7 @@ let publicSounds = {};
 let localSoundSources = {};
 let currentAudio = null;
 let playToken = 0;
+let phonicsCoach = null;
 let state = {
   screen: 'home',
   group: 'start',
@@ -139,6 +168,8 @@ function wait(milliseconds) { return new Promise(resolve => setTimeout(resolve, 
 
 function stopAudio() {
   playToken += 1;
+  window.speechSynthesis?.cancel();
+  phonicsCoach?.stop();
   if (!currentAudio) return;
   currentAudio.pause();
   currentAudio.currentTime = 0;
@@ -174,8 +205,22 @@ async function playSound(id, element = null) {
 
 function playWord(word) {
   stopAudio();
-  return playFile(audioManifest.words[word], playToken);
+  const clean = String(word).trim().toLowerCase();
+  const recording = audioManifest.words[clean];
+  if (recording) return playFile(recording, playToken);
+  if ('speechSynthesis' in window && clean) {
+    const utterance = new SpeechSynthesisUtterance(clean === 'i' ? 'eye' : clean);
+    const voices = speechSynthesis.getVoices();
+    utterance.voice = voices.find(voice => /Samantha|Ava|Serena|Karen|Daniel|Moira|Tessa/i.test(voice.name))
+      || voices.find(voice => /^en[-_]/i.test(voice.lang))
+      || null;
+    utterance.rate = .76;
+    speechSynthesis.speak(utterance);
+  }
+  return Promise.resolve(false);
 }
+
+phonicsCoach = window.PhonicsCoach?.create({ root: '../', speakWord: playWord });
 
 async function playBlend() {
   stopAudio();
@@ -212,6 +257,21 @@ function home() {
       <div class="sound-flower" aria-hidden="true">
         <span class="flower-center">s</span><span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span>
       </div>
+    </section>
+    <section class="word-lookup-panel" aria-labelledby="word-lookup-title">
+      <div class="word-lookup-copy">
+        <p class="eyebrow">While you read</p>
+        <h2 id="word-lookup-title">Look up any word</h2>
+        <p>Type a word from the book. Hear it, then tap each sound that builds it.</p>
+      </div>
+      <form class="word-lookup-form" data-word-lookup-form>
+        <label for="wordLookupInput">Word from your book</label>
+        <div>
+          <input id="wordLookupInput" name="word" type="text" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="40" placeholder="Try bench" required>
+          <button class="primary-button" type="submit">Show sounds</button>
+        </div>
+      </form>
+      <div class="phonics-coach-host lookup-coach" id="lookupCoach" aria-live="polite" hidden></div>
     </section>
     <section class="activity-grid" aria-label="Phonics activities">
       <button class="activity-card explore" data-screen="explore">
@@ -254,7 +314,7 @@ function renderExplore() {
       </div>
       <div class="explore-layout">
         <div class="sound-grid" aria-label="${GROUPS[state.group].label}">
-          ${soundsForGroup(state.group).map(sound => `<button class="sound-tile ${sound.id === selected.id ? 'selected' : ''}" data-sound-select="${sound.id}" aria-label="Sound ${sound.label}">${sound.label}</button>`).join('')}
+          ${soundsForGroup(state.group).map(sound => `<button class="sound-tile ${sound.id === selected.id ? 'selected' : ''}" data-sound-select="${sound.id}" aria-label="Sound ${sound.sound}"><span>${sound.label}</span>${sound.tileNote ? `<small>${sound.tileNote}</small>` : ''}</button>`).join('')}
         </div>
         <article class="sound-detail">
           <div class="big-sound">${selected.label}</div>
@@ -385,6 +445,15 @@ document.addEventListener('click', event => {
     localStorage.setItem('phonics-question-index', state.questionIndex);
     renderFirstSound();
   }
+});
+
+document.addEventListener('submit', event => {
+  if (!event.target.matches('[data-word-lookup-form]')) return;
+  event.preventDefault();
+  const input = event.target.elements.word;
+  const host = document.querySelector('#lookupCoach');
+  if (!input.value.trim() || !host) return;
+  phonicsCoach?.show(host, input.value.trim());
 });
 
 audioSourceSelect?.addEventListener('change', event => {

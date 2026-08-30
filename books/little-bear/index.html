@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f7f0df" />
     <title>Little Bear — Read Along</title>
-    <link rel="stylesheet" href="../shared/reader.css?v=20260830-8" />
+    <link rel="stylesheet" href="../shared/reader.css?v=20260830-9" />
+    <link rel="stylesheet" href="../../assets/phonics/coach.css?v=20260830-2" />
   </head>
   <body>
     <header class="topbar">
@@ -32,6 +33,8 @@
         </div>
         <button class="page-turn next" id="nextButton" type="button" aria-label="Next page">›</button>
       </section>
+
+      <aside class="phonics-coach-host reader-phonics-coach" id="wordCoach" aria-live="polite" hidden></aside>
 
       <nav class="reader-controls" aria-label="Reader controls">
         <div class="control-buttons">
@@ -60,7 +63,8 @@
 
     </main>
 
-    <script src="config.js?v=20260830-8"></script>
-    <script src="../shared/reader.js?v=20260830-8"></script>
+    <script src="config.js?v=20260830-9"></script>
+    <script src="../../assets/phonics/coach.js?v=20260830-2"></script>
+    <script src="../shared/reader.js?v=20260830-10"></script>
   </body>
 </html>

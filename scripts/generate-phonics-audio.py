@@ -26,13 +26,26 @@ SOUNDS = {
     "f": ("f", "continuous"), "h": ("h", "continuous"), "r": ("ɹ", "continuous"),
     "l": ("l", "continuous"), "sh": ("ʃ", "continuous"),
     "ch": ("tʃ", "stop"), "th": ("θ", "continuous"), "ng": ("ŋ", "continuous"),
+    "j": ("dʒ", "stop"), "v": ("v", "continuous"), "w": ("w", "continuous"),
+    "y": ("j", "continuous"), "z": ("z", "continuous"),
+    "thv": ("ð", "continuous"), "zh": ("ʒ", "continuous"),
+    "ai": ("eɪ", "vowel"), "ee": ("i", "vowel"), "igh": ("aɪ", "vowel"),
+    "oa": ("oʊ", "vowel"), "oo": ("u", "vowel"), "yoo": ("ju", "vowel"),
+    "oo_short": ("ʊ", "vowel"), "ar": ("ɑɹ", "vowel"),
+    "or": ("ɔɹ", "vowel"), "ur": ("ɝ", "vowel"), "ow": ("aʊ", "vowel"),
+    "oi": ("ɔɪ", "vowel"), "air": ("ɛɹ", "vowel"),
+    "ear": ("ɪɹ", "vowel"), "ure": ("ʊɹ", "vowel"),
+    "schwa": ("ə", "vowel"), "qu": ("kw", "stop"), "x": ("ks", "stop"),
 }
 
 WORDS = [
     "sun", "apple", "top", "pig", "igloo", "nest", "moon", "dog", "goat",
     "octopus", "cat", "kite", "egg", "up", "bed", "fish", "hat", "red",
     "log", "ship", "chick", "thumb", "ring", "sat", "pin", "tap", "nap",
-    "mat", "map", "chat",
+    "mat", "map", "chat", "jam", "van", "web", "yes", "zip", "this",
+    "treasure", "rain", "feet", "night", "boat", "book", "car", "fork",
+    "bird", "cow", "coin", "chair", "ear", "pure", "about", "queen",
+    "fox", "cube",
 ]
 
 
@@ -68,14 +81,19 @@ def main() -> None:
         voice = tts._voices.load_voice("af_heart")
 
         for sound_id, (phoneme, kind) in SOUNDS.items():
+            filename = f"sound-{sound_id}.mp3"
+            destination = output / filename
+            if destination.exists():
+                manifest["sounds"][sound_id] = f"audio/{filename}"
+                print(f"sound {sound_id} (cached)", flush=True)
+                continue
             repeats = 3 if kind == "continuous" else 1
             phonemes = phoneme * repeats
             token_count = sum(character in tts._config.vocab for character in phonemes)
             style = tts._voices.get_style(voice, token_count)
             clip = np.array(tts._model.forward(phonemes, style, 0.78).tolist(), dtype=np.float32)
             clip = np.concatenate([clip, silence_end])
-            filename = f"sound-{sound_id}.mp3"
-            encode_mp3(clip, output / filename)
+            encode_mp3(clip, destination)
             manifest["sounds"][sound_id] = f"audio/{filename}"
             print(f"sound {sound_id}", flush=True)
 

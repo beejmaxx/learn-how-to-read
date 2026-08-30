@@ -1,0 +1,9306 @@
+{
+  "source": "CMU Pronouncing Dictionary 0.7b subset",
+  "sounds": {
+    "a": {
+      "label": "a",
+      "ipa": "/æ/"
+    },
+    "ai": {
+      "label": "ai",
+      "ipa": "/eɪ/"
+    },
+    "air": {
+      "label": "air",
+      "ipa": "/ɛr/"
+    },
+    "ar": {
+      "label": "ar",
+      "ipa": "/ɑr/"
+    },
+    "b": {
+      "label": "b",
+      "ipa": "/b/"
+    },
+    "c": {
+      "label": "c",
+      "ipa": "/k/"
+    },
+    "ch": {
+      "label": "ch",
+      "ipa": "/tʃ/"
+    },
+    "d": {
+      "label": "d",
+      "ipa": "/d/"
+    },
+    "e": {
+      "label": "e",
+      "ipa": "/ɛ/"
+    },
+    "ear": {
+      "label": "ear",
+      "ipa": "/ɪr/"
+    },
+    "ee": {
+      "label": "ee",
+      "ipa": "/iː/"
+    },
+    "f": {
+      "label": "f",
+      "ipa": "/f/"
+    },
+    "g": {
+      "label": "g",
+      "ipa": "/ɡ/"
+    },
+    "h": {
+      "label": "h",
+      "ipa": "/h/"
+    },
+    "i": {
+      "label": "i",
+      "ipa": "/ɪ/"
+    },
+    "igh": {
+      "label": "igh",
+      "ipa": "/aɪ/"
+    },
+    "j": {
+      "label": "j",
+      "ipa": "/dʒ/"
+    },
+    "k": {
+      "label": "k",
+      "ipa": "/k/"
+    },
+    "l": {
+      "label": "l",
+      "ipa": "/l/"
+    },
+    "m": {
+      "label": "m",
+      "ipa": "/m/"
+    },
+    "n": {
+      "label": "n",
+      "ipa": "/n/"
+    },
+    "ng": {
+      "label": "ng",
+      "ipa": "/ŋ/"
+    },
+    "o": {
+      "label": "o",
+      "ipa": "/ɑ/"
+    },
+    "oa": {
+      "label": "oa",
+      "ipa": "/oʊ/"
+    },
+    "oi": {
+      "label": "oi",
+      "ipa": "/ɔɪ/"
+    },
+    "oo": {
+      "label": "oo",
+      "ipa": "/uː/"
+    },
+    "oo_short": {
+      "label": "oo",
+      "ipa": "/ʊ/"
+    },
+    "or": {
+      "label": "or",
+      "ipa": "/ɔr/"
+    },
+    "ow": {
+      "label": "ow",
+      "ipa": "/aʊ/"
+    },
+    "p": {
+      "label": "p",
+      "ipa": "/p/"
+    },
+    "qu": {
+      "label": "qu",
+      "ipa": "/kw/"
+    },
+    "r": {
+      "label": "r",
+      "ipa": "/ɹ/"
+    },
+    "s": {
+      "label": "s",
+      "ipa": "/s/"
+    },
+    "schwa": {
+      "label": "ə",
+      "ipa": "/ə/"
+    },
+    "sh": {
+      "label": "sh",
+      "ipa": "/ʃ/"
+    },
+    "t": {
+      "label": "t",
+      "ipa": "/t/"
+    },
+    "th": {
+      "label": "th",
+      "ipa": "/θ/"
+    },
+    "thv": {
+      "label": "th",
+      "ipa": "/ð/"
+    },
+    "u": {
+      "label": "u",
+      "ipa": "/ʌ/"
+    },
+    "ur": {
+      "label": "ur",
+      "ipa": "/ɝ/"
+    },
+    "ure": {
+      "label": "ure",
+      "ipa": "/ʊr/"
+    },
+    "v": {
+      "label": "v",
+      "ipa": "/v/"
+    },
+    "w": {
+      "label": "w",
+      "ipa": "/w/"
+    },
+    "x": {
+      "label": "x",
+      "ipa": "/ks/"
+    },
+    "y": {
+      "label": "y",
+      "ipa": "/j/"
+    },
+    "yoo": {
+      "label": "yoo",
+      "ipa": "/juː/"
+    },
+    "z": {
+      "label": "z",
+      "ipa": "/z/"
+    },
+    "zh": {
+      "label": "zh",
+      "ipa": "/ʒ/"
+    }
+  },
+  "words": {
+    "a": {
+      "sounds": [
+        "schwa"
+      ],
+      "chunks": [
+        "a"
+      ]
+    },
+    "abilities": {
+      "sounds": [
+        "schwa",
+        "b",
+        "i",
+        "l",
+        "schwa",
+        "t",
+        "ee",
+        "z"
+      ]
+    },
+    "about": {
+      "sounds": [
+        "schwa",
+        "b",
+        "ow",
+        "t"
+      ],
+      "chunks": [
+        "ab",
+        "ou",
+        "t"
+      ]
+    },
+    "above": {
+      "sounds": [
+        "schwa",
+        "b",
+        "u",
+        "v"
+      ]
+    },
+    "access": {
+      "sounds": [
+        "a",
+        "k",
+        "s",
+        "e",
+        "s"
+      ]
+    },
+    "achoo": {
+      "sounds": [
+        "o",
+        "ch",
+        "oo"
+      ],
+      "chunks": [
+        "a",
+        "ch",
+        "oo"
+      ]
+    },
+    "acrobat": {
+      "sounds": [
+        "a",
+        "k",
+        "r",
+        "schwa",
+        "b",
+        "a",
+        "t"
+      ]
+    },
+    "across": {
+      "sounds": [
+        "schwa",
+        "k",
+        "r",
+        "o",
+        "s"
+      ]
+    },
+    "add": {
+      "sounds": [
+        "a",
+        "d"
+      ]
+    },
+    "adobe": {
+      "sounds": [
+        "schwa",
+        "d",
+        "oa",
+        "b",
+        "ee"
+      ]
+    },
+    "advanced": {
+      "sounds": [
+        "schwa",
+        "d",
+        "v",
+        "a",
+        "n",
+        "s",
+        "t"
+      ]
+    },
+    "after": {
+      "sounds": [
+        "a",
+        "f",
+        "t",
+        "ur"
+      ],
+      "chunks": [
+        "aft",
+        "er"
+      ]
+    },
+    "afternoon": {
+      "sounds": [
+        "a",
+        "f",
+        "t",
+        "ur",
+        "n",
+        "oo",
+        "n"
+      ],
+      "chunks": [
+        "aft",
+        "er",
+        "n",
+        "oo",
+        "n"
+      ]
+    },
+    "again": {
+      "sounds": [
+        "schwa",
+        "g",
+        "e",
+        "n"
+      ],
+      "chunks": [
+        "ag",
+        "ai",
+        "n"
+      ]
+    },
+    "against": {
+      "sounds": [
+        "schwa",
+        "g",
+        "e",
+        "n",
+        "s",
+        "t"
+      ],
+      "chunks": [
+        "ag",
+        "ai",
+        "nst"
+      ]
+    },
+    "all": {
+      "sounds": [
+        "or",
+        "l"
+      ]
+    },
+    "alone": {
+      "sounds": [
+        "schwa",
+        "l",
+        "oa",
+        "n"
+      ]
+    },
+    "along": {
+      "sounds": [
+        "schwa",
+        "l",
+        "o",
+        "ng"
+      ],
+      "chunks": [
+        "alo",
+        "ng"
+      ]
+    },
+    "always": {
+      "sounds": [
+        "o",
+        "l",
+        "w",
+        "ai",
+        "z"
+      ],
+      "chunks": [
+        "alw",
+        "ay",
+        "s"
+      ]
+    },
+    "am": {
+      "sounds": [
+        "a",
+        "m"
+      ]
+    },
+    "an": {
+      "sounds": [
+        "a",
+        "n"
+      ],
+      "chunks": [
+        "a",
+        "n"
+      ]
+    },
+    "and": {
+      "sounds": [
+        "schwa",
+        "n",
+        "d"
+      ],
+      "chunks": [
+        "a",
+        "n",
+        "d"
+      ]
+    },
+    "angry": {
+      "sounds": [
+        "a",
+        "ng",
+        "g",
+        "r",
+        "ee"
+      ],
+      "chunks": [
+        "a",
+        "ng",
+        "ry"
+      ]
+    },
+    "answer": {
+      "sounds": [
+        "a",
+        "n",
+        "s",
+        "ur"
+      ],
+      "chunks": [
+        "answ",
+        "er"
+      ]
+    },
+    "any": {
+      "sounds": [
+        "e",
+        "n",
+        "ee"
+      ]
+    },
+    "anymore": {
+      "sounds": [
+        "e",
+        "n",
+        "ee",
+        "m",
+        "or"
+      ],
+      "chunks": [
+        "anym",
+        "or",
+        "e"
+      ]
+    },
+    "anyone": {
+      "sounds": [
+        "e",
+        "n",
+        "ee",
+        "w",
+        "u",
+        "n"
+      ]
+    },
+    "anything": {
+      "sounds": [
+        "e",
+        "n",
+        "ee",
+        "th",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "any",
+        "th",
+        "i",
+        "ng"
+      ]
+    },
+    "anyway": {
+      "sounds": [
+        "e",
+        "n",
+        "ee",
+        "w",
+        "ai"
+      ],
+      "chunks": [
+        "anyw",
+        "ay"
+      ]
+    },
+    "april": {
+      "sounds": [
+        "ai",
+        "p",
+        "r",
+        "schwa",
+        "l"
+      ]
+    },
+    "are": {
+      "sounds": [
+        "ar"
+      ],
+      "chunks": [
+        "ar",
+        "e"
+      ]
+    },
+    "arms": {
+      "sounds": [
+        "ar",
+        "m",
+        "z"
+      ],
+      "chunks": [
+        "ar",
+        "ms"
+      ]
+    },
+    "arnold": {
+      "sounds": [
+        "ar",
+        "n",
+        "schwa",
+        "l",
+        "d"
+      ],
+      "chunks": [
+        "ar",
+        "nold"
+      ]
+    },
+    "around": {
+      "sounds": [
+        "ur",
+        "ow",
+        "n",
+        "d"
+      ],
+      "chunks": [
+        "ar",
+        "ou",
+        "nd"
+      ]
+    },
+    "art": {
+      "sounds": [
+        "ar",
+        "t"
+      ],
+      "chunks": [
+        "ar",
+        "t"
+      ]
+    },
+    "as": {
+      "sounds": [
+        "a",
+        "z"
+      ]
+    },
+    "asked": {
+      "sounds": [
+        "a",
+        "s",
+        "k",
+        "t"
+      ]
+    },
+    "asleep": {
+      "sounds": [
+        "schwa",
+        "s",
+        "l",
+        "ee",
+        "p"
+      ],
+      "chunks": [
+        "asl",
+        "ee",
+        "p"
+      ]
+    },
+    "at": {
+      "sounds": [
+        "a",
+        "t"
+      ]
+    },
+    "auckland": {
+      "sounds": [
+        "o",
+        "k",
+        "l",
+        "schwa",
+        "n",
+        "d"
+      ],
+      "chunks": [
+        "au",
+        "ck",
+        "land"
+      ]
+    },
+    "australia": {
+      "sounds": [
+        "or",
+        "s",
+        "t",
+        "r",
+        "ai",
+        "l",
+        "y",
+        "schwa"
+      ]
+    },
+    "authors": {
+      "sounds": [
+        "or",
+        "th",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "au",
+        "th",
+        "or",
+        "s"
+      ]
+    },
+    "avenue": {
+      "sounds": [
+        "a",
+        "v",
+        "schwa",
+        "n",
+        "oo"
+      ]
+    },
+    "away": {
+      "sounds": [
+        "schwa",
+        "w",
+        "ai"
+      ],
+      "chunks": [
+        "aw",
+        "ay"
+      ]
+    },
+    "back": {
+      "sounds": [
+        "b",
+        "a",
+        "k"
+      ],
+      "chunks": [
+        "ba",
+        "ck"
+      ]
+    },
+    "bang": {
+      "sounds": [
+        "b",
+        "a",
+        "ng"
+      ],
+      "chunks": [
+        "ba",
+        "ng"
+      ]
+    },
+    "banged": {
+      "sounds": [
+        "b",
+        "a",
+        "ng",
+        "d"
+      ],
+      "chunks": [
+        "ba",
+        "ng",
+        "ed"
+      ]
+    },
+    "banging": {
+      "sounds": [
+        "b",
+        "a",
+        "ng",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "ba",
+        "ng",
+        "i",
+        "ng"
+      ]
+    },
+    "barbara": {
+      "sounds": [
+        "b",
+        "ar",
+        "b",
+        "ur",
+        "schwa"
+      ],
+      "chunks": [
+        "b",
+        "ar",
+        "b",
+        "ar",
+        "a"
+      ]
+    },
+    "basic": {
+      "sounds": [
+        "b",
+        "ai",
+        "s",
+        "i",
+        "k"
+      ]
+    },
+    "basket": {
+      "sounds": [
+        "b",
+        "a",
+        "s",
+        "k",
+        "schwa",
+        "t"
+      ]
+    },
+    "bathing": {
+      "sounds": [
+        "b",
+        "ai",
+        "thv",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "ba",
+        "th",
+        "i",
+        "ng"
+      ]
+    },
+    "be": {
+      "sounds": [
+        "b",
+        "ee"
+      ]
+    },
+    "bear": {
+      "sounds": [
+        "b",
+        "air"
+      ],
+      "chunks": [
+        "b",
+        "ear"
+      ]
+    },
+    "bear's": {
+      "sounds": [
+        "b",
+        "air",
+        "z"
+      ],
+      "chunks": [
+        "b",
+        "ear",
+        "s"
+      ]
+    },
+    "bears": {
+      "sounds": [
+        "b",
+        "air",
+        "z"
+      ],
+      "chunks": [
+        "b",
+        "ear",
+        "s"
+      ]
+    },
+    "beautiful": {
+      "sounds": [
+        "b",
+        "yoo",
+        "t",
+        "schwa",
+        "f",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "b",
+        "ea",
+        "utiful"
+      ]
+    },
+    "became": {
+      "sounds": [
+        "b",
+        "i",
+        "k",
+        "ai",
+        "m"
+      ]
+    },
+    "because": {
+      "sounds": [
+        "b",
+        "i",
+        "k",
+        "or",
+        "z"
+      ]
+    },
+    "become": {
+      "sounds": [
+        "b",
+        "i",
+        "k",
+        "u",
+        "m"
+      ]
+    },
+    "bed": {
+      "sounds": [
+        "b",
+        "e",
+        "d"
+      ]
+    },
+    "bee": {
+      "sounds": [
+        "b",
+        "ee"
+      ],
+      "chunks": [
+        "b",
+        "ee"
+      ]
+    },
+    "been": {
+      "sounds": [
+        "b",
+        "i",
+        "n"
+      ],
+      "chunks": [
+        "b",
+        "ee",
+        "n"
+      ]
+    },
+    "beetle": {
+      "sounds": [
+        "b",
+        "ee",
+        "t",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "b",
+        "ee",
+        "tle"
+      ]
+    },
+    "before": {
+      "sounds": [
+        "b",
+        "i",
+        "f",
+        "or"
+      ],
+      "chunks": [
+        "bef",
+        "or",
+        "e"
+      ]
+    },
+    "began": {
+      "sounds": [
+        "b",
+        "i",
+        "g",
+        "a",
+        "n"
+      ]
+    },
+    "begin": {
+      "sounds": [
+        "b",
+        "i",
+        "g",
+        "i",
+        "n"
+      ]
+    },
+    "beginning": {
+      "sounds": [
+        "b",
+        "i",
+        "g",
+        "i",
+        "n",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "beginni",
+        "ng"
+      ]
+    },
+    "begins": {
+      "sounds": [
+        "b",
+        "i",
+        "g",
+        "i",
+        "n",
+        "z"
+      ]
+    },
+    "behind": {
+      "sounds": [
+        "b",
+        "i",
+        "h",
+        "igh",
+        "n",
+        "d"
+      ]
+    },
+    "beloved": {
+      "sounds": [
+        "b",
+        "i",
+        "l",
+        "u",
+        "v",
+        "d"
+      ]
+    },
+    "bench": {
+      "sounds": [
+        "b",
+        "e",
+        "n",
+        "ch"
+      ],
+      "chunks": [
+        "ben",
+        "ch"
+      ]
+    },
+    "beneath": {
+      "sounds": [
+        "b",
+        "i",
+        "n",
+        "ee",
+        "th"
+      ],
+      "chunks": [
+        "ben",
+        "ea",
+        "th"
+      ]
+    },
+    "bent": {
+      "sounds": [
+        "b",
+        "e",
+        "n",
+        "t"
+      ]
+    },
+    "berry": {
+      "sounds": [
+        "b",
+        "air",
+        "ee"
+      ],
+      "chunks": [
+        "b",
+        "er",
+        "ry"
+      ]
+    },
+    "beside": {
+      "sounds": [
+        "b",
+        "i",
+        "s",
+        "igh",
+        "d"
+      ]
+    },
+    "best": {
+      "sounds": [
+        "b",
+        "e",
+        "s",
+        "t"
+      ]
+    },
+    "better": {
+      "sounds": [
+        "b",
+        "e",
+        "t",
+        "ur"
+      ],
+      "chunks": [
+        "bett",
+        "er"
+      ]
+    },
+    "between": {
+      "sounds": [
+        "b",
+        "i",
+        "t",
+        "w",
+        "ee",
+        "n"
+      ],
+      "chunks": [
+        "betw",
+        "ee",
+        "n"
+      ]
+    },
+    "big": {
+      "sounds": [
+        "b",
+        "i",
+        "g"
+      ]
+    },
+    "bird": {
+      "sounds": [
+        "b",
+        "ur",
+        "d"
+      ],
+      "chunks": [
+        "b",
+        "ir",
+        "d"
+      ]
+    },
+    "birdbath": {
+      "sounds": [
+        "b",
+        "ur",
+        "d",
+        "b",
+        "a",
+        "th"
+      ],
+      "chunks": [
+        "b",
+        "ir",
+        "dba",
+        "th"
+      ]
+    },
+    "birds": {
+      "sounds": [
+        "b",
+        "ur",
+        "d",
+        "z"
+      ],
+      "chunks": [
+        "b",
+        "ir",
+        "ds"
+      ]
+    },
+    "birthday": {
+      "sounds": [
+        "b",
+        "ur",
+        "th",
+        "d",
+        "ai"
+      ],
+      "chunks": [
+        "b",
+        "ir",
+        "th",
+        "d",
+        "ay"
+      ]
+    },
+    "black": {
+      "sounds": [
+        "b",
+        "l",
+        "a",
+        "k"
+      ],
+      "chunks": [
+        "bla",
+        "ck"
+      ]
+    },
+    "blah": {
+      "sounds": [
+        "b",
+        "l",
+        "o"
+      ]
+    },
+    "blankets": {
+      "sounds": [
+        "b",
+        "l",
+        "a",
+        "ng",
+        "k",
+        "schwa",
+        "t",
+        "s"
+      ]
+    },
+    "blinked": {
+      "sounds": [
+        "b",
+        "l",
+        "i",
+        "ng",
+        "k",
+        "t"
+      ]
+    },
+    "blue": {
+      "sounds": [
+        "b",
+        "l",
+        "oo"
+      ]
+    },
+    "boat": {
+      "sounds": [
+        "b",
+        "oa",
+        "t"
+      ],
+      "chunks": [
+        "b",
+        "oa",
+        "t"
+      ]
+    },
+    "book": {
+      "sounds": [
+        "b",
+        "oo_short",
+        "k"
+      ],
+      "chunks": [
+        "b",
+        "oo",
+        "k"
+      ]
+    },
+    "books": {
+      "sounds": [
+        "b",
+        "oo_short",
+        "k",
+        "s"
+      ],
+      "chunks": [
+        "b",
+        "oo",
+        "ks"
+      ]
+    },
+    "both": {
+      "sounds": [
+        "b",
+        "oa",
+        "th"
+      ],
+      "chunks": [
+        "bo",
+        "th"
+      ]
+    },
+    "bowl": {
+      "sounds": [
+        "b",
+        "oa",
+        "l"
+      ],
+      "chunks": [
+        "b",
+        "ow",
+        "l"
+      ]
+    },
+    "box": {
+      "sounds": [
+        "b",
+        "o",
+        "x"
+      ]
+    },
+    "breakfast": {
+      "sounds": [
+        "b",
+        "r",
+        "e",
+        "k",
+        "f",
+        "schwa",
+        "s",
+        "t"
+      ],
+      "chunks": [
+        "br",
+        "ea",
+        "kfast"
+      ]
+    },
+    "bridge": {
+      "sounds": [
+        "b",
+        "r",
+        "i",
+        "j"
+      ],
+      "chunks": [
+        "bri",
+        "dge"
+      ]
+    },
+    "bright": {
+      "sounds": [
+        "b",
+        "r",
+        "igh",
+        "t"
+      ],
+      "chunks": [
+        "br",
+        "igh",
+        "t"
+      ]
+    },
+    "broad": {
+      "sounds": [
+        "b",
+        "r",
+        "o",
+        "d"
+      ],
+      "chunks": [
+        "br",
+        "oa",
+        "d"
+      ]
+    },
+    "brought": {
+      "sounds": [
+        "b",
+        "r",
+        "or",
+        "t"
+      ],
+      "chunks": [
+        "br",
+        "ough",
+        "t"
+      ]
+    },
+    "brown": {
+      "sounds": [
+        "b",
+        "r",
+        "ow",
+        "n"
+      ],
+      "chunks": [
+        "br",
+        "ow",
+        "n"
+      ]
+    },
+    "bug": {
+      "sounds": [
+        "b",
+        "u",
+        "g"
+      ]
+    },
+    "bump": {
+      "sounds": [
+        "b",
+        "u",
+        "m",
+        "p"
+      ]
+    },
+    "but": {
+      "sounds": [
+        "b",
+        "u",
+        "t"
+      ]
+    },
+    "button": {
+      "sounds": [
+        "b",
+        "u",
+        "t",
+        "schwa",
+        "n"
+      ]
+    },
+    "buttons": {
+      "sounds": [
+        "b",
+        "u",
+        "t",
+        "schwa",
+        "n",
+        "z"
+      ]
+    },
+    "by": {
+      "sounds": [
+        "b",
+        "igh"
+      ]
+    },
+    "cake": {
+      "sounds": [
+        "k",
+        "ai",
+        "k"
+      ]
+    },
+    "calendar": {
+      "sounds": [
+        "k",
+        "a",
+        "l",
+        "schwa",
+        "n",
+        "d",
+        "ur"
+      ],
+      "chunks": [
+        "calend",
+        "ar"
+      ]
+    },
+    "called": {
+      "sounds": [
+        "k",
+        "or",
+        "l",
+        "d"
+      ]
+    },
+    "calls": {
+      "sounds": [
+        "k",
+        "or",
+        "l",
+        "z"
+      ]
+    },
+    "came": {
+      "sounds": [
+        "k",
+        "ai",
+        "m"
+      ]
+    },
+    "can": {
+      "sounds": [
+        "k",
+        "a",
+        "n"
+      ]
+    },
+    "can't": {
+      "sounds": [
+        "k",
+        "a",
+        "n",
+        "t"
+      ]
+    },
+    "canada": {
+      "sounds": [
+        "k",
+        "a",
+        "n",
+        "schwa",
+        "d",
+        "schwa"
+      ]
+    },
+    "cannot": {
+      "sounds": [
+        "k",
+        "a",
+        "n",
+        "o",
+        "t"
+      ]
+    },
+    "cap": {
+      "sounds": [
+        "k",
+        "a",
+        "p"
+      ]
+    },
+    "car": {
+      "sounds": [
+        "k",
+        "ar"
+      ],
+      "chunks": [
+        "c",
+        "ar"
+      ]
+    },
+    "careful": {
+      "sounds": [
+        "k",
+        "air",
+        "f",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "c",
+        "ar",
+        "eful"
+      ]
+    },
+    "carried": {
+      "sounds": [
+        "k",
+        "a",
+        "r",
+        "ee",
+        "d"
+      ],
+      "chunks": [
+        "c",
+        "ar",
+        "ried"
+      ]
+    },
+    "carrots": {
+      "sounds": [
+        "k",
+        "a",
+        "r",
+        "schwa",
+        "t",
+        "s"
+      ],
+      "chunks": [
+        "c",
+        "ar",
+        "rots"
+      ]
+    },
+    "cast": {
+      "sounds": [
+        "k",
+        "a",
+        "s",
+        "t"
+      ]
+    },
+    "castle": {
+      "sounds": [
+        "k",
+        "a",
+        "s",
+        "schwa",
+        "l"
+      ]
+    },
+    "cat": {
+      "sounds": [
+        "k",
+        "a",
+        "t"
+      ]
+    },
+    "cat's": {
+      "sounds": [
+        "k",
+        "a",
+        "t",
+        "s"
+      ]
+    },
+    "catching": {
+      "sounds": [
+        "k",
+        "a",
+        "ch",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "ca",
+        "tch",
+        "i",
+        "ng"
+      ]
+    },
+    "chair": {
+      "sounds": [
+        "ch",
+        "air"
+      ],
+      "chunks": [
+        "ch",
+        "air"
+      ]
+    },
+    "challenging": {
+      "sounds": [
+        "ch",
+        "a",
+        "l",
+        "schwa",
+        "n",
+        "j",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "ch",
+        "alle",
+        "ng",
+        "i",
+        "ng"
+      ]
+    },
+    "chapter": {
+      "sounds": [
+        "ch",
+        "a",
+        "p",
+        "t",
+        "ur"
+      ],
+      "chunks": [
+        "ch",
+        "apt",
+        "er"
+      ]
+    },
+    "chapters": {
+      "sounds": [
+        "ch",
+        "a",
+        "p",
+        "t",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "ch",
+        "apt",
+        "er",
+        "s"
+      ]
+    },
+    "characters": {
+      "sounds": [
+        "k",
+        "a",
+        "r",
+        "schwa",
+        "k",
+        "t",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "ch",
+        "ar",
+        "act",
+        "er",
+        "s"
+      ]
+    },
+    "chased": {
+      "sounds": [
+        "ch",
+        "ai",
+        "s",
+        "t"
+      ],
+      "chunks": [
+        "ch",
+        "ased"
+      ]
+    },
+    "cheers": {
+      "sounds": [
+        "ch",
+        "ear",
+        "z"
+      ],
+      "chunks": [
+        "ch",
+        "ee",
+        "rs"
+      ]
+    },
+    "chick": {
+      "sounds": [
+        "ch",
+        "i",
+        "k"
+      ],
+      "chunks": [
+        "ch",
+        "i",
+        "ck"
+      ]
+    },
+    "child": {
+      "sounds": [
+        "ch",
+        "igh",
+        "l",
+        "d"
+      ],
+      "chunks": [
+        "ch",
+        "ild"
+      ]
+    },
+    "child's": {
+      "sounds": [
+        "ch",
+        "igh",
+        "l",
+        "d",
+        "z"
+      ],
+      "chunks": [
+        "ch",
+        "ilds"
+      ]
+    },
+    "children": {
+      "sounds": [
+        "ch",
+        "i",
+        "l",
+        "d",
+        "r",
+        "schwa",
+        "n"
+      ],
+      "chunks": [
+        "ch",
+        "ildren"
+      ]
+    },
+    "chin": {
+      "sounds": [
+        "ch",
+        "i",
+        "n"
+      ],
+      "chunks": [
+        "ch",
+        "in"
+      ]
+    },
+    "china": {
+      "sounds": [
+        "ch",
+        "igh",
+        "n",
+        "schwa"
+      ],
+      "chunks": [
+        "ch",
+        "ina"
+      ]
+    },
+    "chirped": {
+      "sounds": [
+        "ch",
+        "ur",
+        "p",
+        "t"
+      ],
+      "chunks": [
+        "ch",
+        "ir",
+        "ped"
+      ]
+    },
+    "chopsticks": {
+      "sounds": [
+        "ch",
+        "o",
+        "p",
+        "s",
+        "t",
+        "i",
+        "k",
+        "s"
+      ],
+      "chunks": [
+        "ch",
+        "opsti",
+        "ck",
+        "s"
+      ]
+    },
+    "clay": {
+      "sounds": [
+        "k",
+        "l",
+        "ai"
+      ],
+      "chunks": [
+        "cl",
+        "ay"
+      ]
+    },
+    "clean": {
+      "sounds": [
+        "k",
+        "l",
+        "ee",
+        "n"
+      ],
+      "chunks": [
+        "cl",
+        "ea",
+        "n"
+      ]
+    },
+    "clear": {
+      "sounds": [
+        "k",
+        "l",
+        "ear"
+      ],
+      "chunks": [
+        "cl",
+        "ear"
+      ]
+    },
+    "climbed": {
+      "sounds": [
+        "k",
+        "l",
+        "igh",
+        "m",
+        "d"
+      ]
+    },
+    "closed": {
+      "sounds": [
+        "k",
+        "l",
+        "oa",
+        "z",
+        "d"
+      ]
+    },
+    "clothes": {
+      "sounds": [
+        "k",
+        "l",
+        "oa",
+        "thv",
+        "z"
+      ],
+      "chunks": [
+        "clo",
+        "th",
+        "es"
+      ]
+    },
+    "cloud": {
+      "sounds": [
+        "k",
+        "l",
+        "ow",
+        "d"
+      ],
+      "chunks": [
+        "cl",
+        "ou",
+        "d"
+      ]
+    },
+    "coat": {
+      "sounds": [
+        "k",
+        "oa",
+        "t"
+      ],
+      "chunks": [
+        "c",
+        "oa",
+        "t"
+      ]
+    },
+    "coin": {
+      "sounds": [
+        "k",
+        "oi",
+        "n"
+      ],
+      "chunks": [
+        "c",
+        "oi",
+        "n"
+      ]
+    },
+    "cold": {
+      "sounds": [
+        "k",
+        "oa",
+        "l",
+        "d"
+      ]
+    },
+    "colder": {
+      "sounds": [
+        "k",
+        "oa",
+        "l",
+        "d",
+        "ur"
+      ],
+      "chunks": [
+        "cold",
+        "er"
+      ]
+    },
+    "come": {
+      "sounds": [
+        "k",
+        "u",
+        "m"
+      ]
+    },
+    "comes": {
+      "sounds": [
+        "k",
+        "u",
+        "m",
+        "z"
+      ]
+    },
+    "complex": {
+      "sounds": [
+        "k",
+        "o",
+        "m",
+        "p",
+        "l",
+        "e",
+        "x"
+      ]
+    },
+    "concepts": {
+      "sounds": [
+        "k",
+        "o",
+        "n",
+        "s",
+        "e",
+        "p",
+        "t",
+        "s"
+      ]
+    },
+    "confident": {
+      "sounds": [
+        "k",
+        "o",
+        "n",
+        "f",
+        "schwa",
+        "d",
+        "schwa",
+        "n",
+        "t"
+      ]
+    },
+    "contents": {
+      "sounds": [
+        "k",
+        "o",
+        "n",
+        "t",
+        "e",
+        "n",
+        "t",
+        "s"
+      ]
+    },
+    "conventions": {
+      "sounds": [
+        "k",
+        "schwa",
+        "n",
+        "v",
+        "e",
+        "n",
+        "sh",
+        "schwa",
+        "n",
+        "z"
+      ],
+      "chunks": [
+        "conven",
+        "tion",
+        "s"
+      ]
+    },
+    "cook": {
+      "sounds": [
+        "k",
+        "oo_short",
+        "k"
+      ],
+      "chunks": [
+        "c",
+        "oo",
+        "k"
+      ]
+    },
+    "cool": {
+      "sounds": [
+        "k",
+        "oo",
+        "l"
+      ],
+      "chunks": [
+        "c",
+        "oo",
+        "l"
+      ]
+    },
+    "copyright": {
+      "sounds": [
+        "k",
+        "o",
+        "p",
+        "ear",
+        "igh",
+        "t"
+      ],
+      "chunks": [
+        "copyr",
+        "igh",
+        "t"
+      ]
+    },
+    "corner": {
+      "sounds": [
+        "k",
+        "or",
+        "n",
+        "ur"
+      ],
+      "chunks": [
+        "c",
+        "or",
+        "n",
+        "er"
+      ]
+    },
+    "could": {
+      "sounds": [
+        "k",
+        "oo_short",
+        "d"
+      ],
+      "chunks": [
+        "c",
+        "ou",
+        "ld"
+      ]
+    },
+    "count": {
+      "sounds": [
+        "k",
+        "ow",
+        "n",
+        "t"
+      ],
+      "chunks": [
+        "c",
+        "ou",
+        "nt"
+      ]
+    },
+    "course": {
+      "sounds": [
+        "k",
+        "or",
+        "s"
+      ],
+      "chunks": [
+        "c",
+        "ou",
+        "rse"
+      ]
+    },
+    "cover": {
+      "sounds": [
+        "k",
+        "u",
+        "v",
+        "ur"
+      ],
+      "chunks": [
+        "cov",
+        "er"
+      ]
+    },
+    "covered": {
+      "sounds": [
+        "k",
+        "u",
+        "v",
+        "ur",
+        "d"
+      ],
+      "chunks": [
+        "cov",
+        "er",
+        "ed"
+      ]
+    },
+    "covers": {
+      "sounds": [
+        "k",
+        "u",
+        "v",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "cov",
+        "er",
+        "s"
+      ]
+    },
+    "crawled": {
+      "sounds": [
+        "k",
+        "r",
+        "or",
+        "l",
+        "d"
+      ]
+    },
+    "credits": {
+      "sounds": [
+        "k",
+        "r",
+        "e",
+        "d",
+        "i",
+        "t",
+        "s"
+      ]
+    },
+    "crept": {
+      "sounds": [
+        "k",
+        "r",
+        "e",
+        "p",
+        "t"
+      ]
+    },
+    "cried": {
+      "sounds": [
+        "k",
+        "r",
+        "igh",
+        "d"
+      ]
+    },
+    "cub": {
+      "sounds": [
+        "k",
+        "u",
+        "b"
+      ]
+    },
+    "cube": {
+      "sounds": [
+        "k",
+        "yoo",
+        "b"
+      ]
+    },
+    "cup": {
+      "sounds": [
+        "k",
+        "u",
+        "p"
+      ]
+    },
+    "curled": {
+      "sounds": [
+        "k",
+        "ur",
+        "l",
+        "d"
+      ],
+      "chunks": [
+        "c",
+        "ur",
+        "led"
+      ]
+    },
+    "dad": {
+      "sounds": [
+        "d",
+        "a",
+        "d"
+      ]
+    },
+    "dark": {
+      "sounds": [
+        "d",
+        "ar",
+        "k"
+      ],
+      "chunks": [
+        "d",
+        "ar",
+        "k"
+      ]
+    },
+    "day": {
+      "sounds": [
+        "d",
+        "ai"
+      ],
+      "chunks": [
+        "d",
+        "ay"
+      ]
+    },
+    "days": {
+      "sounds": [
+        "d",
+        "ai",
+        "z"
+      ],
+      "chunks": [
+        "d",
+        "ay",
+        "s"
+      ]
+    },
+    "dear": {
+      "sounds": [
+        "d",
+        "ear"
+      ],
+      "chunks": [
+        "d",
+        "ear"
+      ]
+    },
+    "december": {
+      "sounds": [
+        "d",
+        "i",
+        "s",
+        "e",
+        "m",
+        "b",
+        "ur"
+      ],
+      "chunks": [
+        "decemb",
+        "er"
+      ]
+    },
+    "developing": {
+      "sounds": [
+        "d",
+        "i",
+        "v",
+        "e",
+        "l",
+        "schwa",
+        "p",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "developi",
+        "ng"
+      ]
+    },
+    "did": {
+      "sounds": [
+        "d",
+        "i",
+        "d"
+      ]
+    },
+    "different": {
+      "sounds": [
+        "d",
+        "i",
+        "f",
+        "ur",
+        "schwa",
+        "n",
+        "t"
+      ],
+      "chunks": [
+        "diff",
+        "er",
+        "ent"
+      ]
+    },
+    "dig": {
+      "sounds": [
+        "d",
+        "i",
+        "g"
+      ]
+    },
+    "dirt": {
+      "sounds": [
+        "d",
+        "ur",
+        "t"
+      ],
+      "chunks": [
+        "d",
+        "ir",
+        "t"
+      ]
+    },
+    "discovery": {
+      "sounds": [
+        "d",
+        "i",
+        "s",
+        "k",
+        "u",
+        "v",
+        "ur",
+        "ee"
+      ],
+      "chunks": [
+        "discov",
+        "er",
+        "y"
+      ]
+    },
+    "do": {
+      "sounds": [
+        "d",
+        "oo"
+      ]
+    },
+    "does": {
+      "sounds": [
+        "d",
+        "u",
+        "z"
+      ]
+    },
+    "dog": {
+      "sounds": [
+        "d",
+        "o",
+        "g"
+      ]
+    },
+    "dogs": {
+      "sounds": [
+        "d",
+        "o",
+        "g",
+        "z"
+      ]
+    },
+    "don't": {
+      "sounds": [
+        "d",
+        "oa",
+        "n",
+        "t"
+      ]
+    },
+    "door": {
+      "sounds": [
+        "d",
+        "or"
+      ],
+      "chunks": [
+        "d",
+        "oo",
+        "r"
+      ]
+    },
+    "dots": {
+      "sounds": [
+        "d",
+        "o",
+        "t",
+        "s"
+      ]
+    },
+    "dotted": {
+      "sounds": [
+        "d",
+        "o",
+        "t",
+        "schwa",
+        "d"
+      ]
+    },
+    "dow": {
+      "sounds": [
+        "d",
+        "ow"
+      ],
+      "chunks": [
+        "d",
+        "ow"
+      ]
+    },
+    "down": {
+      "sounds": [
+        "d",
+        "ow",
+        "n"
+      ],
+      "chunks": [
+        "d",
+        "ow",
+        "n"
+      ]
+    },
+    "dragon": {
+      "sounds": [
+        "d",
+        "r",
+        "a",
+        "g",
+        "schwa",
+        "n"
+      ]
+    },
+    "dragonflies": {
+      "sounds": [
+        "d",
+        "r",
+        "a",
+        "g",
+        "schwa",
+        "n",
+        "f",
+        "l",
+        "igh",
+        "z"
+      ]
+    },
+    "drank": {
+      "sounds": [
+        "d",
+        "r",
+        "a",
+        "ng",
+        "k"
+      ]
+    },
+    "drat": {
+      "sounds": [
+        "d",
+        "r",
+        "a",
+        "t"
+      ]
+    },
+    "dried": {
+      "sounds": [
+        "d",
+        "r",
+        "igh",
+        "d"
+      ]
+    },
+    "dripped": {
+      "sounds": [
+        "d",
+        "r",
+        "i",
+        "p",
+        "t"
+      ]
+    },
+    "drop": {
+      "sounds": [
+        "d",
+        "r",
+        "o",
+        "p"
+      ]
+    },
+    "duck": {
+      "sounds": [
+        "d",
+        "u",
+        "k"
+      ],
+      "chunks": [
+        "d",
+        "uck"
+      ]
+    },
+    "ducks": {
+      "sounds": [
+        "d",
+        "u",
+        "k",
+        "s"
+      ],
+      "chunks": [
+        "du",
+        "ck",
+        "s"
+      ]
+    },
+    "dug": {
+      "sounds": [
+        "d",
+        "u",
+        "g"
+      ]
+    },
+    "each": {
+      "sounds": [
+        "ee",
+        "ch"
+      ],
+      "chunks": [
+        "ea",
+        "ch"
+      ]
+    },
+    "eager": {
+      "sounds": [
+        "ee",
+        "g",
+        "ur"
+      ],
+      "chunks": [
+        "ea",
+        "g",
+        "er"
+      ]
+    },
+    "ear": {
+      "sounds": [
+        "ear"
+      ]
+    },
+    "ears": {
+      "sounds": [
+        "ear",
+        "z"
+      ],
+      "chunks": [
+        "ear",
+        "s"
+      ]
+    },
+    "earth": {
+      "sounds": [
+        "ur",
+        "th"
+      ],
+      "chunks": [
+        "ear",
+        "th"
+      ]
+    },
+    "east": {
+      "sounds": [
+        "ee",
+        "s",
+        "t"
+      ],
+      "chunks": [
+        "ea",
+        "st"
+      ]
+    },
+    "eat": {
+      "sounds": [
+        "ee",
+        "t"
+      ],
+      "chunks": [
+        "ea",
+        "t"
+      ]
+    },
+    "electronic": {
+      "sounds": [
+        "i",
+        "l",
+        "e",
+        "k",
+        "t",
+        "r",
+        "o",
+        "n",
+        "i",
+        "k"
+      ]
+    },
+    "emergent": {
+      "sounds": [
+        "i",
+        "m",
+        "ur",
+        "j",
+        "schwa",
+        "n",
+        "t"
+      ],
+      "chunks": [
+        "em",
+        "er",
+        "gent"
+      ]
+    },
+    "empty": {
+      "sounds": [
+        "e",
+        "m",
+        "p",
+        "t",
+        "ee"
+      ]
+    },
+    "encouraging": {
+      "sounds": [
+        "e",
+        "n",
+        "k",
+        "ur",
+        "i",
+        "j",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "enc",
+        "ou",
+        "ragi",
+        "ng"
+      ]
+    },
+    "end": {
+      "sounds": [
+        "e",
+        "n",
+        "d"
+      ]
+    },
+    "engaging": {
+      "sounds": [
+        "e",
+        "n",
+        "g",
+        "ai",
+        "j",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "e",
+        "ng",
+        "agi",
+        "ng"
+      ]
+    },
+    "engineered": {
+      "sounds": [
+        "e",
+        "n",
+        "j",
+        "schwa",
+        "n",
+        "ear",
+        "d"
+      ],
+      "chunks": [
+        "e",
+        "ng",
+        "in",
+        "ee",
+        "red"
+      ]
+    },
+    "enough": {
+      "sounds": [
+        "i",
+        "n",
+        "u",
+        "f"
+      ],
+      "chunks": [
+        "en",
+        "ough"
+      ]
+    },
+    "enriching": {
+      "sounds": [
+        "e",
+        "n",
+        "r",
+        "i",
+        "ch",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "enri",
+        "ch",
+        "i",
+        "ng"
+      ]
+    },
+    "envelope": {
+      "sounds": [
+        "e",
+        "n",
+        "v",
+        "schwa",
+        "l",
+        "oa",
+        "p"
+      ]
+    },
+    "er": {
+      "sounds": [
+        "ur"
+      ]
+    },
+    "even": {
+      "sounds": [
+        "ee",
+        "v",
+        "i",
+        "n"
+      ]
+    },
+    "evenings": {
+      "sounds": [
+        "ee",
+        "v",
+        "n",
+        "i",
+        "ng",
+        "z"
+      ],
+      "chunks": [
+        "eveni",
+        "ng",
+        "s"
+      ]
+    },
+    "ever": {
+      "sounds": [
+        "e",
+        "v",
+        "ur"
+      ],
+      "chunks": [
+        "ev",
+        "er"
+      ]
+    },
+    "every": {
+      "sounds": [
+        "e",
+        "v",
+        "ur",
+        "ee"
+      ],
+      "chunks": [
+        "ev",
+        "er",
+        "y"
+      ]
+    },
+    "everyone": {
+      "sounds": [
+        "e",
+        "v",
+        "r",
+        "ee",
+        "w",
+        "u",
+        "n"
+      ],
+      "chunks": [
+        "ev",
+        "er",
+        "yone"
+      ]
+    },
+    "exciting": {
+      "sounds": [
+        "i",
+        "x",
+        "igh",
+        "t",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "exciti",
+        "ng"
+      ]
+    },
+    "excuse": {
+      "sounds": [
+        "i",
+        "x",
+        "k",
+        "yoo",
+        "s"
+      ]
+    },
+    "experience": {
+      "sounds": [
+        "i",
+        "x",
+        "p",
+        "ear",
+        "ee",
+        "schwa",
+        "n",
+        "s"
+      ],
+      "chunks": [
+        "exp",
+        "er",
+        "ience"
+      ]
+    },
+    "express": {
+      "sounds": [
+        "i",
+        "x",
+        "p",
+        "r",
+        "e",
+        "s"
+      ]
+    },
+    "eye": {
+      "sounds": [
+        "igh"
+      ]
+    },
+    "eyes": {
+      "sounds": [
+        "igh",
+        "z"
+      ]
+    },
+    "fabulous": {
+      "sounds": [
+        "f",
+        "a",
+        "b",
+        "y",
+        "schwa",
+        "l",
+        "schwa",
+        "s"
+      ],
+      "chunks": [
+        "fabul",
+        "ou",
+        "s"
+      ]
+    },
+    "fallen": {
+      "sounds": [
+        "f",
+        "o",
+        "l",
+        "schwa",
+        "n"
+      ]
+    },
+    "familiar": {
+      "sounds": [
+        "f",
+        "schwa",
+        "m",
+        "i",
+        "l",
+        "y",
+        "ur"
+      ],
+      "chunks": [
+        "famili",
+        "ar"
+      ]
+    },
+    "far": {
+      "sounds": [
+        "f",
+        "ar"
+      ],
+      "chunks": [
+        "f",
+        "ar"
+      ]
+    },
+    "fast": {
+      "sounds": [
+        "f",
+        "a",
+        "s",
+        "t"
+      ]
+    },
+    "fat": {
+      "sounds": [
+        "f",
+        "a",
+        "t"
+      ]
+    },
+    "favorite": {
+      "sounds": [
+        "f",
+        "ai",
+        "v",
+        "ur",
+        "i",
+        "t"
+      ],
+      "chunks": [
+        "fav",
+        "or",
+        "ite"
+      ]
+    },
+    "feathers": {
+      "sounds": [
+        "f",
+        "e",
+        "thv",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "f",
+        "ea",
+        "th",
+        "er",
+        "s"
+      ]
+    },
+    "featuring": {
+      "sounds": [
+        "f",
+        "ee",
+        "ch",
+        "ur",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "f",
+        "ea",
+        "t",
+        "ur",
+        "i",
+        "ng"
+      ]
+    },
+    "february": {
+      "sounds": [
+        "f",
+        "e",
+        "b",
+        "y",
+        "schwa",
+        "w",
+        "air",
+        "ee"
+      ],
+      "chunks": [
+        "febru",
+        "ar",
+        "y"
+      ]
+    },
+    "feel": {
+      "sounds": [
+        "f",
+        "ee",
+        "l"
+      ],
+      "chunks": [
+        "f",
+        "ee",
+        "l"
+      ]
+    },
+    "feeling": {
+      "sounds": [
+        "f",
+        "ee",
+        "l",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "f",
+        "ee",
+        "li",
+        "ng"
+      ]
+    },
+    "fees": {
+      "sounds": [
+        "f",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "f",
+        "ee",
+        "s"
+      ]
+    },
+    "feet": {
+      "sounds": [
+        "f",
+        "ee",
+        "t"
+      ],
+      "chunks": [
+        "f",
+        "ee",
+        "t"
+      ]
+    },
+    "fell": {
+      "sounds": [
+        "f",
+        "e",
+        "l"
+      ]
+    },
+    "field": {
+      "sounds": [
+        "f",
+        "ee",
+        "l",
+        "d"
+      ]
+    },
+    "filled": {
+      "sounds": [
+        "f",
+        "i",
+        "l",
+        "d"
+      ]
+    },
+    "finally": {
+      "sounds": [
+        "f",
+        "igh",
+        "n",
+        "schwa",
+        "l",
+        "ee"
+      ]
+    },
+    "find": {
+      "sounds": [
+        "f",
+        "igh",
+        "n",
+        "d"
+      ]
+    },
+    "fire": {
+      "sounds": [
+        "f",
+        "igh",
+        "ur"
+      ],
+      "chunks": [
+        "f",
+        "ir",
+        "e"
+      ]
+    },
+    "first": {
+      "sounds": [
+        "f",
+        "ur",
+        "s",
+        "t"
+      ],
+      "chunks": [
+        "f",
+        "ir",
+        "st"
+      ]
+    },
+    "fit": {
+      "sounds": [
+        "f",
+        "i",
+        "t"
+      ]
+    },
+    "flew": {
+      "sounds": [
+        "f",
+        "l",
+        "oo"
+      ]
+    },
+    "floated": {
+      "sounds": [
+        "f",
+        "l",
+        "oa",
+        "t",
+        "schwa",
+        "d"
+      ],
+      "chunks": [
+        "fl",
+        "oa",
+        "ted"
+      ]
+    },
+    "floor": {
+      "sounds": [
+        "f",
+        "l",
+        "or"
+      ],
+      "chunks": [
+        "fl",
+        "oo",
+        "r"
+      ]
+    },
+    "flower": {
+      "sounds": [
+        "f",
+        "l",
+        "ow",
+        "ur"
+      ],
+      "chunks": [
+        "fl",
+        "ow",
+        "er"
+      ]
+    },
+    "fly": {
+      "sounds": [
+        "f",
+        "l",
+        "igh"
+      ]
+    },
+    "fooling": {
+      "sounds": [
+        "f",
+        "oo",
+        "l",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "f",
+        "oo",
+        "li",
+        "ng"
+      ]
+    },
+    "foot": {
+      "sounds": [
+        "f",
+        "oo_short",
+        "t"
+      ],
+      "chunks": [
+        "f",
+        "oo",
+        "t"
+      ]
+    },
+    "for": {
+      "sounds": [
+        "f",
+        "or"
+      ],
+      "chunks": [
+        "f",
+        "or"
+      ]
+    },
+    "forget": {
+      "sounds": [
+        "f",
+        "ur",
+        "g",
+        "e",
+        "t"
+      ],
+      "chunks": [
+        "f",
+        "or",
+        "get"
+      ]
+    },
+    "fork": {
+      "sounds": [
+        "f",
+        "or",
+        "k"
+      ],
+      "chunks": [
+        "f",
+        "or",
+        "k"
+      ]
+    },
+    "form": {
+      "sounds": [
+        "f",
+        "or",
+        "m"
+      ],
+      "chunks": [
+        "f",
+        "or",
+        "m"
+      ]
+    },
+    "forth": {
+      "sounds": [
+        "f",
+        "or",
+        "th"
+      ],
+      "chunks": [
+        "f",
+        "or",
+        "th"
+      ]
+    },
+    "found": {
+      "sounds": [
+        "f",
+        "ow",
+        "n",
+        "d"
+      ],
+      "chunks": [
+        "f",
+        "ou",
+        "nd"
+      ]
+    },
+    "four": {
+      "sounds": [
+        "f",
+        "or"
+      ],
+      "chunks": [
+        "f",
+        "ou",
+        "r"
+      ]
+    },
+    "fox": {
+      "sounds": [
+        "f",
+        "o",
+        "x"
+      ]
+    },
+    "friend": {
+      "sounds": [
+        "f",
+        "r",
+        "e",
+        "n",
+        "d"
+      ]
+    },
+    "friends": {
+      "sounds": [
+        "f",
+        "r",
+        "e",
+        "n",
+        "d",
+        "z"
+      ]
+    },
+    "frog": {
+      "sounds": [
+        "f",
+        "r",
+        "o",
+        "g"
+      ]
+    },
+    "from": {
+      "sounds": [
+        "f",
+        "r",
+        "u",
+        "m"
+      ]
+    },
+    "front": {
+      "sounds": [
+        "f",
+        "r",
+        "u",
+        "n",
+        "t"
+      ]
+    },
+    "full": {
+      "sounds": [
+        "f",
+        "oo_short",
+        "l"
+      ]
+    },
+    "fun": {
+      "sounds": [
+        "f",
+        "u",
+        "n"
+      ]
+    },
+    "funny": {
+      "sounds": [
+        "f",
+        "u",
+        "n",
+        "ee"
+      ]
+    },
+    "fur": {
+      "sounds": [
+        "f",
+        "ur"
+      ],
+      "chunks": [
+        "f",
+        "ur"
+      ]
+    },
+    "g": {
+      "sounds": [
+        "j",
+        "ee"
+      ]
+    },
+    "garden": {
+      "sounds": [
+        "g",
+        "ar",
+        "d",
+        "schwa",
+        "n"
+      ],
+      "chunks": [
+        "g",
+        "ar",
+        "den"
+      ]
+    },
+    "gate": {
+      "sounds": [
+        "g",
+        "ai",
+        "t"
+      ]
+    },
+    "gave": {
+      "sounds": [
+        "g",
+        "ai",
+        "v"
+      ]
+    },
+    "gentle": {
+      "sounds": [
+        "j",
+        "e",
+        "n",
+        "t",
+        "schwa",
+        "l"
+      ]
+    },
+    "get": {
+      "sounds": [
+        "g",
+        "e",
+        "t"
+      ]
+    },
+    "getting": {
+      "sounds": [
+        "g",
+        "e",
+        "t",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "getti",
+        "ng"
+      ]
+    },
+    "glad": {
+      "sounds": [
+        "g",
+        "l",
+        "a",
+        "d"
+      ]
+    },
+    "glass": {
+      "sounds": [
+        "g",
+        "l",
+        "a",
+        "s"
+      ]
+    },
+    "glasses": {
+      "sounds": [
+        "g",
+        "l",
+        "a",
+        "s",
+        "schwa",
+        "z"
+      ]
+    },
+    "go": {
+      "sounds": [
+        "g",
+        "oa"
+      ]
+    },
+    "goes": {
+      "sounds": [
+        "g",
+        "oa",
+        "z"
+      ]
+    },
+    "going": {
+      "sounds": [
+        "g",
+        "oa",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "g",
+        "oi",
+        "ng"
+      ]
+    },
+    "good": {
+      "sounds": [
+        "g",
+        "oo_short",
+        "d"
+      ],
+      "chunks": [
+        "g",
+        "oo",
+        "d"
+      ]
+    },
+    "goodness": {
+      "sounds": [
+        "g",
+        "oo_short",
+        "d",
+        "n",
+        "schwa",
+        "s"
+      ],
+      "chunks": [
+        "g",
+        "oo",
+        "dness"
+      ]
+    },
+    "got": {
+      "sounds": [
+        "g",
+        "o",
+        "t"
+      ]
+    },
+    "granted": {
+      "sounds": [
+        "g",
+        "r",
+        "a",
+        "n",
+        "t",
+        "schwa",
+        "d"
+      ]
+    },
+    "grass": {
+      "sounds": [
+        "g",
+        "r",
+        "a",
+        "s"
+      ]
+    },
+    "green": {
+      "sounds": [
+        "g",
+        "r",
+        "ee",
+        "n"
+      ],
+      "chunks": [
+        "gr",
+        "ee",
+        "n"
+      ]
+    },
+    "guarded": {
+      "sounds": [
+        "g",
+        "ar",
+        "d",
+        "schwa",
+        "d"
+      ],
+      "chunks": [
+        "gu",
+        "ar",
+        "ded"
+      ]
+    },
+    "gust": {
+      "sounds": [
+        "g",
+        "u",
+        "s",
+        "t"
+      ]
+    },
+    "had": {
+      "sounds": [
+        "h",
+        "a",
+        "d"
+      ]
+    },
+    "hair": {
+      "sounds": [
+        "h",
+        "air"
+      ],
+      "chunks": [
+        "h",
+        "air"
+      ]
+    },
+    "half": {
+      "sounds": [
+        "h",
+        "a",
+        "f"
+      ]
+    },
+    "hall": {
+      "sounds": [
+        "h",
+        "or",
+        "l"
+      ]
+    },
+    "happy": {
+      "sounds": [
+        "h",
+        "a",
+        "p",
+        "ee"
+      ]
+    },
+    "hard": {
+      "sounds": [
+        "h",
+        "ar",
+        "d"
+      ],
+      "chunks": [
+        "h",
+        "ar",
+        "d"
+      ]
+    },
+    "harpercollins": {
+      "sounds": [
+        "h",
+        "ar",
+        "p",
+        "ur",
+        "k",
+        "o",
+        "l",
+        "i",
+        "n",
+        "z"
+      ],
+      "chunks": [
+        "h",
+        "ar",
+        "p",
+        "er",
+        "collins"
+      ]
+    },
+    "has": {
+      "sounds": [
+        "h",
+        "a",
+        "z"
+      ]
+    },
+    "hat": {
+      "sounds": [
+        "h",
+        "a",
+        "t"
+      ]
+    },
+    "have": {
+      "sounds": [
+        "h",
+        "a",
+        "v"
+      ]
+    },
+    "he": {
+      "sounds": [
+        "h",
+        "ee"
+      ]
+    },
+    "head": {
+      "sounds": [
+        "h",
+        "e",
+        "d"
+      ],
+      "chunks": [
+        "h",
+        "ea",
+        "d"
+      ]
+    },
+    "hear": {
+      "sounds": [
+        "h",
+        "ear"
+      ],
+      "chunks": [
+        "h",
+        "ear"
+      ]
+    },
+    "heard": {
+      "sounds": [
+        "h",
+        "ur",
+        "d"
+      ],
+      "chunks": [
+        "h",
+        "ear",
+        "d"
+      ]
+    },
+    "hedge": {
+      "sounds": [
+        "h",
+        "e",
+        "j"
+      ],
+      "chunks": [
+        "he",
+        "dge"
+      ]
+    },
+    "helmet": {
+      "sounds": [
+        "h",
+        "e",
+        "l",
+        "m",
+        "schwa",
+        "t"
+      ]
+    },
+    "help": {
+      "sounds": [
+        "h",
+        "e",
+        "l",
+        "p"
+      ]
+    },
+    "hen": {
+      "sounds": [
+        "h",
+        "e",
+        "n"
+      ]
+    },
+    "her": {
+      "sounds": [
+        "h",
+        "ur"
+      ],
+      "chunks": [
+        "h",
+        "er"
+      ]
+    },
+    "here": {
+      "sounds": [
+        "h",
+        "ear"
+      ],
+      "chunks": [
+        "h",
+        "er",
+        "e"
+      ]
+    },
+    "high": {
+      "sounds": [
+        "h",
+        "igh"
+      ],
+      "chunks": [
+        "h",
+        "igh"
+      ]
+    },
+    "hill": {
+      "sounds": [
+        "h",
+        "i",
+        "l"
+      ]
+    },
+    "him": {
+      "sounds": [
+        "h",
+        "i",
+        "m"
+      ]
+    },
+    "his": {
+      "sounds": [
+        "h",
+        "i",
+        "z"
+      ]
+    },
+    "hit": {
+      "sounds": [
+        "h",
+        "i",
+        "t"
+      ]
+    },
+    "hole": {
+      "sounds": [
+        "h",
+        "oa",
+        "l"
+      ]
+    },
+    "holes": {
+      "sounds": [
+        "h",
+        "oa",
+        "l",
+        "z"
+      ]
+    },
+    "home": {
+      "sounds": [
+        "h",
+        "oa",
+        "m"
+      ]
+    },
+    "hope": {
+      "sounds": [
+        "h",
+        "oa",
+        "p"
+      ]
+    },
+    "hopped": {
+      "sounds": [
+        "h",
+        "o",
+        "p",
+        "t"
+      ]
+    },
+    "hot": {
+      "sounds": [
+        "h",
+        "o",
+        "t"
+      ]
+    },
+    "house": {
+      "sounds": [
+        "h",
+        "ow",
+        "s"
+      ],
+      "chunks": [
+        "h",
+        "ou",
+        "se"
+      ]
+    },
+    "how": {
+      "sounds": [
+        "h",
+        "ow"
+      ],
+      "chunks": [
+        "h",
+        "ow"
+      ]
+    },
+    "hundred": {
+      "sounds": [
+        "h",
+        "u",
+        "n",
+        "d",
+        "r",
+        "schwa",
+        "d"
+      ]
+    },
+    "hurray": {
+      "sounds": [
+        "h",
+        "schwa",
+        "r",
+        "ai"
+      ],
+      "chunks": [
+        "h",
+        "ur",
+        "r",
+        "ay"
+      ]
+    },
+    "hurried": {
+      "sounds": [
+        "h",
+        "ur",
+        "ee",
+        "d"
+      ],
+      "chunks": [
+        "h",
+        "ur",
+        "ried"
+      ]
+    },
+    "hurt": {
+      "sounds": [
+        "h",
+        "ur",
+        "t"
+      ],
+      "chunks": [
+        "h",
+        "ur",
+        "t"
+      ]
+    },
+    "i": {
+      "sounds": [
+        "igh"
+      ]
+    },
+    "i'll": {
+      "sounds": [
+        "igh",
+        "l"
+      ]
+    },
+    "i'm": {
+      "sounds": [
+        "igh",
+        "m"
+      ]
+    },
+    "ideal": {
+      "sounds": [
+        "igh",
+        "d",
+        "ee",
+        "l"
+      ],
+      "chunks": [
+        "id",
+        "ea",
+        "l"
+      ]
+    },
+    "if": {
+      "sounds": [
+        "i",
+        "f"
+      ]
+    },
+    "illustrations": {
+      "sounds": [
+        "i",
+        "l",
+        "schwa",
+        "s",
+        "t",
+        "r",
+        "ai",
+        "sh",
+        "schwa",
+        "n",
+        "z"
+      ],
+      "chunks": [
+        "illustra",
+        "tion",
+        "s"
+      ]
+    },
+    "illustrators": {
+      "sounds": [
+        "i",
+        "l",
+        "schwa",
+        "s",
+        "t",
+        "r",
+        "ai",
+        "t",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "illustrat",
+        "or",
+        "s"
+      ]
+    },
+    "improve": {
+      "sounds": [
+        "i",
+        "m",
+        "p",
+        "r",
+        "oo",
+        "v"
+      ]
+    },
+    "in": {
+      "sounds": [
+        "i",
+        "n"
+      ]
+    },
+    "inc": {
+      "sounds": [
+        "i",
+        "ng",
+        "k"
+      ]
+    },
+    "independent": {
+      "sounds": [
+        "i",
+        "n",
+        "d",
+        "i",
+        "p",
+        "e",
+        "n",
+        "d",
+        "schwa",
+        "n",
+        "t"
+      ]
+    },
+    "information": {
+      "sounds": [
+        "i",
+        "n",
+        "f",
+        "ur",
+        "m",
+        "ai",
+        "sh",
+        "schwa",
+        "n"
+      ],
+      "chunks": [
+        "inf",
+        "or",
+        "ma",
+        "tion"
+      ]
+    },
+    "inside": {
+      "sounds": [
+        "i",
+        "n",
+        "s",
+        "igh",
+        "d"
+      ]
+    },
+    "interests": {
+      "sounds": [
+        "i",
+        "n",
+        "t",
+        "r",
+        "schwa",
+        "s",
+        "t",
+        "s"
+      ],
+      "chunks": [
+        "int",
+        "er",
+        "ests"
+      ]
+    },
+    "international": {
+      "sounds": [
+        "i",
+        "n",
+        "t",
+        "ur",
+        "n",
+        "a",
+        "sh",
+        "schwa",
+        "n",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "int",
+        "er",
+        "na",
+        "tion",
+        "al"
+      ]
+    },
+    "into": {
+      "sounds": [
+        "i",
+        "n",
+        "t",
+        "oo"
+      ]
+    },
+    "introduced": {
+      "sounds": [
+        "i",
+        "n",
+        "t",
+        "r",
+        "schwa",
+        "d",
+        "oo",
+        "s",
+        "t"
+      ]
+    },
+    "invented": {
+      "sounds": [
+        "i",
+        "n",
+        "v",
+        "e",
+        "n",
+        "t",
+        "schwa",
+        "d"
+      ]
+    },
+    "is": {
+      "sounds": [
+        "i",
+        "z"
+      ]
+    },
+    "isbn": {
+      "sounds": [
+        "igh",
+        "e",
+        "s",
+        "b",
+        "ee",
+        "e",
+        "n"
+      ]
+    },
+    "it": {
+      "sounds": [
+        "i",
+        "t"
+      ]
+    },
+    "jacket": {
+      "sounds": [
+        "j",
+        "a",
+        "k",
+        "schwa",
+        "t"
+      ],
+      "chunks": [
+        "ja",
+        "ck",
+        "et"
+      ]
+    },
+    "jam": {
+      "sounds": [
+        "j",
+        "a",
+        "m"
+      ]
+    },
+    "january": {
+      "sounds": [
+        "j",
+        "a",
+        "n",
+        "yoo",
+        "air",
+        "ee"
+      ],
+      "chunks": [
+        "janu",
+        "ar",
+        "y"
+      ]
+    },
+    "joy": {
+      "sounds": [
+        "j",
+        "oi"
+      ],
+      "chunks": [
+        "j",
+        "oy"
+      ]
+    },
+    "jump": {
+      "sounds": [
+        "j",
+        "u",
+        "m",
+        "p"
+      ]
+    },
+    "jumped": {
+      "sounds": [
+        "j",
+        "u",
+        "m",
+        "p",
+        "t"
+      ]
+    },
+    "just": {
+      "sounds": [
+        "j",
+        "u",
+        "s",
+        "t"
+      ]
+    },
+    "keep": {
+      "sounds": [
+        "k",
+        "ee",
+        "p"
+      ],
+      "chunks": [
+        "k",
+        "ee",
+        "p"
+      ]
+    },
+    "kind": {
+      "sounds": [
+        "k",
+        "igh",
+        "n",
+        "d"
+      ]
+    },
+    "kingdom": {
+      "sounds": [
+        "k",
+        "i",
+        "ng",
+        "d",
+        "schwa",
+        "m"
+      ],
+      "chunks": [
+        "ki",
+        "ng",
+        "dom"
+      ]
+    },
+    "kitchen": {
+      "sounds": [
+        "k",
+        "i",
+        "ch",
+        "schwa",
+        "n"
+      ],
+      "chunks": [
+        "ki",
+        "tch",
+        "en"
+      ]
+    },
+    "knew": {
+      "sounds": [
+        "n",
+        "oo"
+      ]
+    },
+    "knocked": {
+      "sounds": [
+        "n",
+        "o",
+        "k",
+        "t"
+      ],
+      "chunks": [
+        "kno",
+        "ck",
+        "ed"
+      ]
+    },
+    "know": {
+      "sounds": [
+        "n",
+        "oa"
+      ],
+      "chunks": [
+        "kn",
+        "ow"
+      ]
+    },
+    "known": {
+      "sounds": [
+        "n",
+        "oa",
+        "n"
+      ],
+      "chunks": [
+        "kn",
+        "ow",
+        "n"
+      ]
+    },
+    "l": {
+      "sounds": [
+        "e",
+        "l"
+      ]
+    },
+    "landed": {
+      "sounds": [
+        "l",
+        "a",
+        "n",
+        "d",
+        "schwa",
+        "d"
+      ]
+    },
+    "language": {
+      "sounds": [
+        "l",
+        "a",
+        "ng",
+        "g",
+        "w",
+        "schwa",
+        "j"
+      ],
+      "chunks": [
+        "la",
+        "ng",
+        "uage"
+      ]
+    },
+    "large": {
+      "sounds": [
+        "l",
+        "ar",
+        "j"
+      ],
+      "chunks": [
+        "l",
+        "ar",
+        "ge"
+      ]
+    },
+    "last": {
+      "sounds": [
+        "l",
+        "a",
+        "s",
+        "t"
+      ]
+    },
+    "later": {
+      "sounds": [
+        "l",
+        "ai",
+        "t",
+        "ur"
+      ],
+      "chunks": [
+        "lat",
+        "er"
+      ]
+    },
+    "laughed": {
+      "sounds": [
+        "l",
+        "a",
+        "f",
+        "t"
+      ]
+    },
+    "laughing": {
+      "sounds": [
+        "l",
+        "a",
+        "f",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "laughi",
+        "ng"
+      ]
+    },
+    "learns": {
+      "sounds": [
+        "l",
+        "ur",
+        "n",
+        "z"
+      ],
+      "chunks": [
+        "l",
+        "ear",
+        "ns"
+      ]
+    },
+    "leaves": {
+      "sounds": [
+        "l",
+        "ee",
+        "v",
+        "z"
+      ],
+      "chunks": [
+        "l",
+        "ea",
+        "ves"
+      ]
+    },
+    "left": {
+      "sounds": [
+        "l",
+        "e",
+        "f",
+        "t"
+      ]
+    },
+    "let": {
+      "sounds": [
+        "l",
+        "e",
+        "t"
+      ]
+    },
+    "letter": {
+      "sounds": [
+        "l",
+        "e",
+        "t",
+        "ur"
+      ],
+      "chunks": [
+        "lett",
+        "er"
+      ]
+    },
+    "level": {
+      "sounds": [
+        "l",
+        "e",
+        "v",
+        "schwa",
+        "l"
+      ]
+    },
+    "levels": {
+      "sounds": [
+        "l",
+        "e",
+        "v",
+        "schwa",
+        "l",
+        "z"
+      ]
+    },
+    "lifetime": {
+      "sounds": [
+        "l",
+        "igh",
+        "f",
+        "t",
+        "igh",
+        "m"
+      ]
+    },
+    "lifted": {
+      "sounds": [
+        "l",
+        "i",
+        "f",
+        "t",
+        "schwa",
+        "d"
+      ]
+    },
+    "light": {
+      "sounds": [
+        "l",
+        "igh",
+        "t"
+      ],
+      "chunks": [
+        "l",
+        "igh",
+        "t"
+      ]
+    },
+    "like": {
+      "sounds": [
+        "l",
+        "igh",
+        "k"
+      ]
+    },
+    "limited": {
+      "sounds": [
+        "l",
+        "i",
+        "m",
+        "schwa",
+        "t",
+        "schwa",
+        "d"
+      ]
+    },
+    "listen": {
+      "sounds": [
+        "l",
+        "i",
+        "s",
+        "schwa",
+        "n"
+      ]
+    },
+    "listened": {
+      "sounds": [
+        "l",
+        "i",
+        "s",
+        "schwa",
+        "n",
+        "d"
+      ]
+    },
+    "little": {
+      "sounds": [
+        "l",
+        "i",
+        "t",
+        "schwa",
+        "l"
+      ]
+    },
+    "live": {
+      "sounds": [
+        "l",
+        "igh",
+        "v"
+      ]
+    },
+    "lizards": {
+      "sounds": [
+        "l",
+        "i",
+        "z",
+        "ur",
+        "d",
+        "z"
+      ],
+      "chunks": [
+        "liz",
+        "ar",
+        "ds"
+      ]
+    },
+    "lobel": {
+      "sounds": [
+        "l",
+        "oa",
+        "b",
+        "schwa",
+        "l"
+      ]
+    },
+    "london": {
+      "sounds": [
+        "l",
+        "u",
+        "n",
+        "d",
+        "schwa",
+        "n"
+      ]
+    },
+    "lonely": {
+      "sounds": [
+        "l",
+        "oa",
+        "n",
+        "l",
+        "ee"
+      ]
+    },
+    "long": {
+      "sounds": [
+        "l",
+        "o",
+        "ng"
+      ],
+      "chunks": [
+        "lo",
+        "ng"
+      ]
+    },
+    "longer": {
+      "sounds": [
+        "l",
+        "o",
+        "ng",
+        "g",
+        "ur"
+      ],
+      "chunks": [
+        "lo",
+        "ng",
+        "er"
+      ]
+    },
+    "look": {
+      "sounds": [
+        "l",
+        "oo_short",
+        "k"
+      ],
+      "chunks": [
+        "l",
+        "oo",
+        "k"
+      ]
+    },
+    "looked": {
+      "sounds": [
+        "l",
+        "oo_short",
+        "k",
+        "t"
+      ],
+      "chunks": [
+        "l",
+        "oo",
+        "ked"
+      ]
+    },
+    "looking": {
+      "sounds": [
+        "l",
+        "oo_short",
+        "k",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "l",
+        "oo",
+        "ki",
+        "ng"
+      ]
+    },
+    "looks": {
+      "sounds": [
+        "l",
+        "oo_short",
+        "k",
+        "s"
+      ],
+      "chunks": [
+        "l",
+        "oo",
+        "ks"
+      ]
+    },
+    "lose": {
+      "sounds": [
+        "l",
+        "oo",
+        "z"
+      ]
+    },
+    "lost": {
+      "sounds": [
+        "l",
+        "o",
+        "s",
+        "t"
+      ]
+    },
+    "lot": {
+      "sounds": [
+        "l",
+        "o",
+        "t"
+      ]
+    },
+    "love": {
+      "sounds": [
+        "l",
+        "u",
+        "v"
+      ]
+    },
+    "loved": {
+      "sounds": [
+        "l",
+        "u",
+        "v",
+        "d"
+      ]
+    },
+    "ltd": {
+      "sounds": [
+        "l",
+        "i",
+        "m",
+        "i",
+        "t",
+        "i",
+        "d"
+      ]
+    },
+    "lunch": {
+      "sounds": [
+        "l",
+        "u",
+        "n",
+        "ch"
+      ],
+      "chunks": [
+        "lun",
+        "ch"
+      ]
+    },
+    "lying": {
+      "sounds": [
+        "l",
+        "igh",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "lyi",
+        "ng"
+      ]
+    },
+    "made": {
+      "sounds": [
+        "m",
+        "ai",
+        "d"
+      ]
+    },
+    "magical": {
+      "sounds": [
+        "m",
+        "a",
+        "j",
+        "i",
+        "k",
+        "schwa",
+        "l"
+      ]
+    },
+    "mail": {
+      "sounds": [
+        "m",
+        "ai",
+        "l"
+      ],
+      "chunks": [
+        "m",
+        "ai",
+        "l"
+      ]
+    },
+    "mailbox": {
+      "sounds": [
+        "m",
+        "ai",
+        "l",
+        "b",
+        "o",
+        "x"
+      ],
+      "chunks": [
+        "m",
+        "ai",
+        "lbox"
+      ]
+    },
+    "make": {
+      "sounds": [
+        "m",
+        "ai",
+        "k"
+      ]
+    },
+    "makes": {
+      "sounds": [
+        "m",
+        "ai",
+        "k",
+        "s"
+      ]
+    },
+    "making": {
+      "sounds": [
+        "m",
+        "ai",
+        "k",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "maki",
+        "ng"
+      ]
+    },
+    "mama": {
+      "sounds": [
+        "m",
+        "o",
+        "m",
+        "schwa"
+      ]
+    },
+    "many": {
+      "sounds": [
+        "m",
+        "e",
+        "n",
+        "ee"
+      ]
+    },
+    "map": {
+      "sounds": [
+        "m",
+        "a",
+        "p"
+      ]
+    },
+    "march": {
+      "sounds": [
+        "m",
+        "ar",
+        "ch"
+      ],
+      "chunks": [
+        "m",
+        "ar",
+        "ch"
+      ]
+    },
+    "marchers": {
+      "sounds": [
+        "m",
+        "ar",
+        "ch",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "m",
+        "ar",
+        "ch",
+        "er",
+        "s"
+      ]
+    },
+    "marked": {
+      "sounds": [
+        "m",
+        "ar",
+        "k",
+        "t"
+      ],
+      "chunks": [
+        "m",
+        "ar",
+        "ked"
+      ]
+    },
+    "matter": {
+      "sounds": [
+        "m",
+        "a",
+        "t",
+        "ur"
+      ],
+      "chunks": [
+        "matt",
+        "er"
+      ]
+    },
+    "may": {
+      "sounds": [
+        "m",
+        "ai"
+      ],
+      "chunks": [
+        "m",
+        "ay"
+      ]
+    },
+    "maybe": {
+      "sounds": [
+        "m",
+        "ai",
+        "b",
+        "ee"
+      ],
+      "chunks": [
+        "m",
+        "ay",
+        "be"
+      ]
+    },
+    "me": {
+      "sounds": [
+        "m",
+        "ee"
+      ]
+    },
+    "meadow": {
+      "sounds": [
+        "m",
+        "e",
+        "d",
+        "oa"
+      ],
+      "chunks": [
+        "m",
+        "ea",
+        "d",
+        "ow"
+      ]
+    },
+    "meadows": {
+      "sounds": [
+        "m",
+        "e",
+        "d",
+        "oa",
+        "z"
+      ],
+      "chunks": [
+        "m",
+        "ea",
+        "d",
+        "ow",
+        "s"
+      ]
+    },
+    "means": {
+      "sounds": [
+        "m",
+        "ee",
+        "n",
+        "z"
+      ],
+      "chunks": [
+        "m",
+        "ea",
+        "ns"
+      ]
+    },
+    "mechanical": {
+      "sounds": [
+        "m",
+        "schwa",
+        "k",
+        "a",
+        "n",
+        "i",
+        "k",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "me",
+        "ch",
+        "anical"
+      ]
+    },
+    "melting": {
+      "sounds": [
+        "m",
+        "e",
+        "l",
+        "t",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "melti",
+        "ng"
+      ]
+    },
+    "meow": {
+      "sounds": [
+        "m",
+        "ee",
+        "ow"
+      ],
+      "chunks": [
+        "me",
+        "ow"
+      ]
+    },
+    "mia": {
+      "sounds": [
+        "m",
+        "ee",
+        "schwa"
+      ]
+    },
+    "milk": {
+      "sounds": [
+        "m",
+        "i",
+        "l",
+        "k"
+      ],
+      "chunks": [
+        "m",
+        "ilk"
+      ]
+    },
+    "mine": {
+      "sounds": [
+        "m",
+        "igh",
+        "n"
+      ]
+    },
+    "miss": {
+      "sounds": [
+        "m",
+        "i",
+        "s"
+      ]
+    },
+    "moon": {
+      "sounds": [
+        "m",
+        "oo",
+        "n"
+      ],
+      "chunks": [
+        "m",
+        "oo",
+        "n"
+      ]
+    },
+    "more": {
+      "sounds": [
+        "m",
+        "or"
+      ],
+      "chunks": [
+        "m",
+        "or",
+        "e"
+      ]
+    },
+    "morning": {
+      "sounds": [
+        "m",
+        "or",
+        "n",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "m",
+        "or",
+        "ni",
+        "ng"
+      ]
+    },
+    "mother": {
+      "sounds": [
+        "m",
+        "u",
+        "thv",
+        "ur"
+      ],
+      "chunks": [
+        "mo",
+        "th",
+        "er"
+      ]
+    },
+    "mouse": {
+      "sounds": [
+        "m",
+        "ow",
+        "s"
+      ],
+      "chunks": [
+        "m",
+        "ou",
+        "se"
+      ]
+    },
+    "much": {
+      "sounds": [
+        "m",
+        "u",
+        "ch"
+      ],
+      "chunks": [
+        "mu",
+        "ch"
+      ]
+    },
+    "mud": {
+      "sounds": [
+        "m",
+        "u",
+        "d"
+      ]
+    },
+    "must": {
+      "sounds": [
+        "m",
+        "u",
+        "s",
+        "t"
+      ]
+    },
+    "my": {
+      "sounds": [
+        "m",
+        "igh"
+      ]
+    },
+    "nap": {
+      "sounds": [
+        "n",
+        "a",
+        "p"
+      ]
+    },
+    "nearby": {
+      "sounds": [
+        "n",
+        "ear",
+        "b",
+        "igh"
+      ],
+      "chunks": [
+        "n",
+        "ear",
+        "by"
+      ]
+    },
+    "need": {
+      "sounds": [
+        "n",
+        "ee",
+        "d"
+      ],
+      "chunks": [
+        "n",
+        "ee",
+        "d"
+      ]
+    },
+    "never": {
+      "sounds": [
+        "n",
+        "e",
+        "v",
+        "ur"
+      ],
+      "chunks": [
+        "nev",
+        "er"
+      ]
+    },
+    "new": {
+      "sounds": [
+        "n",
+        "oo"
+      ]
+    },
+    "next": {
+      "sounds": [
+        "n",
+        "e",
+        "x",
+        "t"
+      ]
+    },
+    "nice": {
+      "sounds": [
+        "n",
+        "igh",
+        "s"
+      ]
+    },
+    "night": {
+      "sounds": [
+        "n",
+        "igh",
+        "t"
+      ],
+      "chunks": [
+        "n",
+        "igh",
+        "t"
+      ]
+    },
+    "no": {
+      "sounds": [
+        "n",
+        "oa"
+      ]
+    },
+    "non-exclusive": {
+      "sounds": [
+        "n",
+        "o",
+        "n",
+        "i",
+        "x",
+        "k",
+        "l",
+        "oo",
+        "s",
+        "i",
+        "v"
+      ]
+    },
+    "non-transferable": {
+      "sounds": [
+        "n",
+        "o",
+        "n",
+        "t",
+        "r",
+        "a",
+        "n",
+        "s",
+        "f",
+        "ur",
+        "schwa",
+        "b",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "non-transf",
+        "er",
+        "able"
+      ]
+    },
+    "none": {
+      "sounds": [
+        "n",
+        "u",
+        "n"
+      ]
+    },
+    "nose": {
+      "sounds": [
+        "n",
+        "oa",
+        "z"
+      ]
+    },
+    "not": {
+      "sounds": [
+        "n",
+        "o",
+        "t"
+      ]
+    },
+    "note": {
+      "sounds": [
+        "n",
+        "oa",
+        "t"
+      ]
+    },
+    "november": {
+      "sounds": [
+        "n",
+        "oa",
+        "v",
+        "e",
+        "m",
+        "b",
+        "ur"
+      ],
+      "chunks": [
+        "novemb",
+        "er"
+      ]
+    },
+    "now": {
+      "sounds": [
+        "n",
+        "ow"
+      ],
+      "chunks": [
+        "n",
+        "ow"
+      ]
+    },
+    "oak": {
+      "sounds": [
+        "oa",
+        "k"
+      ],
+      "chunks": [
+        "oa",
+        "k"
+      ]
+    },
+    "of": {
+      "sounds": [
+        "u",
+        "v"
+      ]
+    },
+    "off": {
+      "sounds": [
+        "o",
+        "f"
+      ]
+    },
+    "oh": {
+      "sounds": [
+        "oa"
+      ]
+    },
+    "old": {
+      "sounds": [
+        "oa",
+        "l",
+        "d"
+      ]
+    },
+    "on": {
+      "sounds": [
+        "o",
+        "n"
+      ]
+    },
+    "on-screen": {
+      "sounds": [
+        "o",
+        "n",
+        "s",
+        "k",
+        "r",
+        "ee",
+        "n"
+      ],
+      "chunks": [
+        "on-scr",
+        "ee",
+        "n"
+      ]
+    },
+    "once": {
+      "sounds": [
+        "w",
+        "u",
+        "n",
+        "s"
+      ]
+    },
+    "one": {
+      "sounds": [
+        "w",
+        "u",
+        "n"
+      ]
+    },
+    "only": {
+      "sounds": [
+        "oa",
+        "n",
+        "l",
+        "ee"
+      ]
+    },
+    "onto": {
+      "sounds": [
+        "o",
+        "n",
+        "t",
+        "oo"
+      ]
+    },
+    "opened": {
+      "sounds": [
+        "oa",
+        "p",
+        "schwa",
+        "n",
+        "d"
+      ]
+    },
+    "or": {
+      "sounds": [
+        "or"
+      ]
+    },
+    "order": {
+      "sounds": [
+        "or",
+        "d",
+        "ur"
+      ],
+      "chunks": [
+        "or",
+        "d",
+        "er"
+      ]
+    },
+    "other": {
+      "sounds": [
+        "u",
+        "thv",
+        "ur"
+      ],
+      "chunks": [
+        "o",
+        "th",
+        "er"
+      ]
+    },
+    "others": {
+      "sounds": [
+        "u",
+        "thv",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "o",
+        "th",
+        "er",
+        "s"
+      ]
+    },
+    "our": {
+      "sounds": [
+        "ow",
+        "ur"
+      ],
+      "chunks": [
+        "ou",
+        "r"
+      ]
+    },
+    "out": {
+      "sounds": [
+        "ow",
+        "t"
+      ],
+      "chunks": [
+        "ou",
+        "t"
+      ]
+    },
+    "outside": {
+      "sounds": [
+        "ow",
+        "t",
+        "s",
+        "igh",
+        "d"
+      ],
+      "chunks": [
+        "ou",
+        "tside"
+      ]
+    },
+    "over": {
+      "sounds": [
+        "oa",
+        "v",
+        "ur"
+      ],
+      "chunks": [
+        "ov",
+        "er"
+      ]
+    },
+    "own": {
+      "sounds": [
+        "oa",
+        "n"
+      ],
+      "chunks": [
+        "ow",
+        "n"
+      ]
+    },
+    "page": {
+      "sounds": [
+        "p",
+        "ai",
+        "j"
+      ]
+    },
+    "palace": {
+      "sounds": [
+        "p",
+        "a",
+        "l",
+        "schwa",
+        "s"
+      ]
+    },
+    "pants": {
+      "sounds": [
+        "p",
+        "a",
+        "n",
+        "t",
+        "s"
+      ]
+    },
+    "paper": {
+      "sounds": [
+        "p",
+        "ai",
+        "p",
+        "ur"
+      ],
+      "chunks": [
+        "pap",
+        "er"
+      ]
+    },
+    "parade": {
+      "sounds": [
+        "p",
+        "ur",
+        "ai",
+        "d"
+      ],
+      "chunks": [
+        "p",
+        "ar",
+        "ade"
+      ]
+    },
+    "paragraphs": {
+      "sounds": [
+        "p",
+        "a",
+        "r",
+        "schwa",
+        "g",
+        "r",
+        "a",
+        "f",
+        "s"
+      ],
+      "chunks": [
+        "p",
+        "ar",
+        "agra",
+        "ph",
+        "s"
+      ]
+    },
+    "parent": {
+      "sounds": [
+        "p",
+        "air",
+        "schwa",
+        "n",
+        "t"
+      ],
+      "chunks": [
+        "p",
+        "ar",
+        "ent"
+      ]
+    },
+    "part": {
+      "sounds": [
+        "p",
+        "ar",
+        "t"
+      ],
+      "chunks": [
+        "p",
+        "ar",
+        "t"
+      ]
+    },
+    "past": {
+      "sounds": [
+        "p",
+        "a",
+        "s",
+        "t"
+      ]
+    },
+    "pat": {
+      "sounds": [
+        "p",
+        "a",
+        "t"
+      ]
+    },
+    "path": {
+      "sounds": [
+        "p",
+        "a",
+        "th"
+      ],
+      "chunks": [
+        "pa",
+        "th"
+      ]
+    },
+    "paths": {
+      "sounds": [
+        "p",
+        "a",
+        "thv",
+        "z"
+      ],
+      "chunks": [
+        "pa",
+        "th",
+        "s"
+      ]
+    },
+    "paws": {
+      "sounds": [
+        "p",
+        "or",
+        "z"
+      ]
+    },
+    "payment": {
+      "sounds": [
+        "p",
+        "ai",
+        "m",
+        "schwa",
+        "n",
+        "t"
+      ],
+      "chunks": [
+        "p",
+        "ay",
+        "ment"
+      ]
+    },
+    "peas": {
+      "sounds": [
+        "p",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "p",
+        "ea",
+        "s"
+      ]
+    },
+    "peek": {
+      "sounds": [
+        "p",
+        "ee",
+        "k"
+      ],
+      "chunks": [
+        "p",
+        "ee",
+        "k"
+      ]
+    },
+    "peep": {
+      "sounds": [
+        "p",
+        "ee",
+        "p"
+      ],
+      "chunks": [
+        "p",
+        "ee",
+        "p"
+      ]
+    },
+    "pencil": {
+      "sounds": [
+        "p",
+        "e",
+        "n",
+        "s",
+        "schwa",
+        "l"
+      ]
+    },
+    "perfect": {
+      "sounds": [
+        "p",
+        "ur",
+        "f",
+        "e",
+        "k",
+        "t"
+      ],
+      "chunks": [
+        "p",
+        "er",
+        "fect"
+      ]
+    },
+    "perhaps": {
+      "sounds": [
+        "p",
+        "ur",
+        "h",
+        "a",
+        "p",
+        "s"
+      ],
+      "chunks": [
+        "p",
+        "er",
+        "haps"
+      ]
+    },
+    "permission": {
+      "sounds": [
+        "p",
+        "ur",
+        "m",
+        "i",
+        "sh",
+        "schwa",
+        "n"
+      ],
+      "chunks": [
+        "p",
+        "er",
+        "mis",
+        "sion"
+      ]
+    },
+    "picked": {
+      "sounds": [
+        "p",
+        "i",
+        "k",
+        "t"
+      ],
+      "chunks": [
+        "pi",
+        "ck",
+        "ed"
+      ]
+    },
+    "piece": {
+      "sounds": [
+        "p",
+        "ee",
+        "s"
+      ]
+    },
+    "pig": {
+      "sounds": [
+        "p",
+        "i",
+        "g"
+      ]
+    },
+    "pillows": {
+      "sounds": [
+        "p",
+        "i",
+        "l",
+        "oa",
+        "z"
+      ],
+      "chunks": [
+        "pill",
+        "ow",
+        "s"
+      ]
+    },
+    "places": {
+      "sounds": [
+        "p",
+        "l",
+        "ai",
+        "s",
+        "schwa",
+        "z"
+      ]
+    },
+    "planted": {
+      "sounds": [
+        "p",
+        "l",
+        "a",
+        "n",
+        "t",
+        "i",
+        "d"
+      ]
+    },
+    "play": {
+      "sounds": [
+        "p",
+        "l",
+        "ai"
+      ],
+      "chunks": [
+        "pl",
+        "ay"
+      ]
+    },
+    "played": {
+      "sounds": [
+        "p",
+        "l",
+        "ai",
+        "d"
+      ],
+      "chunks": [
+        "pl",
+        "ay",
+        "ed"
+      ]
+    },
+    "please": {
+      "sounds": [
+        "p",
+        "l",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "pl",
+        "ea",
+        "se"
+      ]
+    },
+    "pleased": {
+      "sounds": [
+        "p",
+        "l",
+        "ee",
+        "z",
+        "d"
+      ],
+      "chunks": [
+        "pl",
+        "ea",
+        "sed"
+      ]
+    },
+    "plop": {
+      "sounds": [
+        "p",
+        "l",
+        "o",
+        "p"
+      ]
+    },
+    "plots": {
+      "sounds": [
+        "p",
+        "l",
+        "o",
+        "t",
+        "s"
+      ]
+    },
+    "po": {
+      "sounds": [
+        "p",
+        "oa"
+      ]
+    },
+    "pocket": {
+      "sounds": [
+        "p",
+        "o",
+        "k",
+        "schwa",
+        "t"
+      ],
+      "chunks": [
+        "po",
+        "ck",
+        "et"
+      ]
+    },
+    "pond": {
+      "sounds": [
+        "p",
+        "o",
+        "n",
+        "d"
+      ],
+      "chunks": [
+        "p",
+        "ond"
+      ]
+    },
+    "porch": {
+      "sounds": [
+        "p",
+        "or",
+        "ch"
+      ],
+      "chunks": [
+        "p",
+        "or",
+        "ch"
+      ]
+    },
+    "pot": {
+      "sounds": [
+        "p",
+        "o",
+        "t"
+      ]
+    },
+    "potatoes": {
+      "sounds": [
+        "p",
+        "schwa",
+        "t",
+        "ai",
+        "t",
+        "oa",
+        "z"
+      ]
+    },
+    "pour": {
+      "sounds": [
+        "p",
+        "or"
+      ],
+      "chunks": [
+        "p",
+        "ou",
+        "r"
+      ]
+    },
+    "poured": {
+      "sounds": [
+        "p",
+        "or",
+        "d"
+      ],
+      "chunks": [
+        "p",
+        "ou",
+        "red"
+      ]
+    },
+    "pouring": {
+      "sounds": [
+        "p",
+        "or",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "p",
+        "ou",
+        "ri",
+        "ng"
+      ]
+    },
+    "princess": {
+      "sounds": [
+        "p",
+        "r",
+        "i",
+        "n",
+        "s",
+        "e",
+        "s"
+      ]
+    },
+    "proud": {
+      "sounds": [
+        "p",
+        "r",
+        "ow",
+        "d"
+      ],
+      "chunks": [
+        "pr",
+        "ou",
+        "d"
+      ]
+    },
+    "pty": {
+      "sounds": [
+        "t",
+        "igh"
+      ]
+    },
+    "publisher": {
+      "sounds": [
+        "p",
+        "u",
+        "b",
+        "l",
+        "i",
+        "sh",
+        "ur"
+      ],
+      "chunks": [
+        "publi",
+        "sh",
+        "er"
+      ]
+    },
+    "publishers": {
+      "sounds": [
+        "p",
+        "u",
+        "b",
+        "l",
+        "i",
+        "sh",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "publi",
+        "sh",
+        "er",
+        "s"
+      ]
+    },
+    "puddle": {
+      "sounds": [
+        "p",
+        "u",
+        "d",
+        "schwa",
+        "l"
+      ]
+    },
+    "pulled": {
+      "sounds": [
+        "p",
+        "oo_short",
+        "l",
+        "d"
+      ]
+    },
+    "pure": {
+      "sounds": [
+        "p",
+        "y",
+        "ure"
+      ],
+      "chunks": [
+        "p",
+        "ure"
+      ]
+    },
+    "pushed": {
+      "sounds": [
+        "p",
+        "oo_short",
+        "sh",
+        "t"
+      ],
+      "chunks": [
+        "pu",
+        "sh",
+        "ed"
+      ]
+    },
+    "put": {
+      "sounds": [
+        "p",
+        "oo_short",
+        "t"
+      ]
+    },
+    "quack": {
+      "sounds": [
+        "qu",
+        "a",
+        "k"
+      ],
+      "chunks": [
+        "qu",
+        "a",
+        "ck"
+      ]
+    },
+    "quacked": {
+      "sounds": [
+        "qu",
+        "a",
+        "k",
+        "t"
+      ],
+      "chunks": [
+        "qu",
+        "a",
+        "ck",
+        "ed"
+      ]
+    },
+    "queen": {
+      "sounds": [
+        "qu",
+        "ee",
+        "n"
+      ],
+      "chunks": [
+        "qu",
+        "ee",
+        "n"
+      ]
+    },
+    "quite": {
+      "sounds": [
+        "qu",
+        "igh",
+        "t"
+      ],
+      "chunks": [
+        "qu",
+        "ite"
+      ]
+    },
+    "raccoon": {
+      "sounds": [
+        "r",
+        "a",
+        "k",
+        "oo",
+        "n"
+      ],
+      "chunks": [
+        "racc",
+        "oo",
+        "n"
+      ]
+    },
+    "rain": {
+      "sounds": [
+        "r",
+        "ai",
+        "n"
+      ],
+      "chunks": [
+        "r",
+        "ai",
+        "n"
+      ]
+    },
+    "ran": {
+      "sounds": [
+        "r",
+        "a",
+        "n"
+      ]
+    },
+    "read": {
+      "sounds": [
+        "r",
+        "ee",
+        "d"
+      ],
+      "chunks": [
+        "r",
+        "ea",
+        "d"
+      ]
+    },
+    "reader": {
+      "sounds": [
+        "r",
+        "ee",
+        "d",
+        "ur"
+      ],
+      "chunks": [
+        "r",
+        "ea",
+        "d",
+        "er"
+      ]
+    },
+    "readers": {
+      "sounds": [
+        "r",
+        "ee",
+        "d",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "r",
+        "ea",
+        "d",
+        "er",
+        "s"
+      ]
+    },
+    "reading": {
+      "sounds": [
+        "r",
+        "ee",
+        "d",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "r",
+        "ea",
+        "di",
+        "ng"
+      ]
+    },
+    "reads": {
+      "sounds": [
+        "r",
+        "ee",
+        "d",
+        "z"
+      ],
+      "chunks": [
+        "r",
+        "ea",
+        "ds"
+      ]
+    },
+    "really": {
+      "sounds": [
+        "r",
+        "i",
+        "l",
+        "ee"
+      ],
+      "chunks": [
+        "r",
+        "ea",
+        "lly"
+      ]
+    },
+    "red": {
+      "sounds": [
+        "r",
+        "e",
+        "d"
+      ]
+    },
+    "repetition": {
+      "sounds": [
+        "r",
+        "e",
+        "p",
+        "schwa",
+        "t",
+        "i",
+        "sh",
+        "schwa",
+        "n"
+      ],
+      "chunks": [
+        "repeti",
+        "tion"
+      ]
+    },
+    "reproduced": {
+      "sounds": [
+        "r",
+        "ee",
+        "p",
+        "r",
+        "schwa",
+        "d",
+        "oo",
+        "s",
+        "t"
+      ]
+    },
+    "required": {
+      "sounds": [
+        "r",
+        "ee",
+        "qu",
+        "igh",
+        "ur",
+        "d"
+      ],
+      "chunks": [
+        "re",
+        "qu",
+        "ir",
+        "ed"
+      ]
+    },
+    "reserved": {
+      "sounds": [
+        "r",
+        "i",
+        "z",
+        "ur",
+        "v",
+        "d"
+      ],
+      "chunks": [
+        "res",
+        "er",
+        "ved"
+      ]
+    },
+    "rest": {
+      "sounds": [
+        "r",
+        "e",
+        "s",
+        "t"
+      ]
+    },
+    "resting": {
+      "sounds": [
+        "r",
+        "e",
+        "s",
+        "t",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "resti",
+        "ng"
+      ]
+    },
+    "retrieval": {
+      "sounds": [
+        "r",
+        "i",
+        "t",
+        "r",
+        "ee",
+        "v",
+        "schwa",
+        "l"
+      ]
+    },
+    "reverse": {
+      "sounds": [
+        "r",
+        "i",
+        "v",
+        "ur",
+        "s"
+      ],
+      "chunks": [
+        "rev",
+        "er",
+        "se"
+      ]
+    },
+    "right": {
+      "sounds": [
+        "r",
+        "igh",
+        "t"
+      ],
+      "chunks": [
+        "r",
+        "igh",
+        "t"
+      ]
+    },
+    "rights": {
+      "sounds": [
+        "r",
+        "igh",
+        "t",
+        "s"
+      ],
+      "chunks": [
+        "r",
+        "igh",
+        "ts"
+      ]
+    },
+    "river": {
+      "sounds": [
+        "r",
+        "i",
+        "v",
+        "ur"
+      ],
+      "chunks": [
+        "riv",
+        "er"
+      ]
+    },
+    "riverbank": {
+      "sounds": [
+        "r",
+        "i",
+        "v",
+        "ur",
+        "b",
+        "a",
+        "ng",
+        "k"
+      ],
+      "chunks": [
+        "riv",
+        "er",
+        "bank"
+      ]
+    },
+    "road": {
+      "sounds": [
+        "r",
+        "oa",
+        "d"
+      ],
+      "chunks": [
+        "r",
+        "oa",
+        "d"
+      ]
+    },
+    "rocks": {
+      "sounds": [
+        "r",
+        "o",
+        "k",
+        "s"
+      ],
+      "chunks": [
+        "ro",
+        "ck",
+        "s"
+      ]
+    },
+    "rolled": {
+      "sounds": [
+        "r",
+        "oa",
+        "l",
+        "d"
+      ]
+    },
+    "roof": {
+      "sounds": [
+        "r",
+        "oo",
+        "f"
+      ],
+      "chunks": [
+        "r",
+        "oo",
+        "f"
+      ]
+    },
+    "room": {
+      "sounds": [
+        "r",
+        "oo",
+        "m"
+      ],
+      "chunks": [
+        "r",
+        "oo",
+        "m"
+      ]
+    },
+    "round": {
+      "sounds": [
+        "r",
+        "ow",
+        "n",
+        "d"
+      ],
+      "chunks": [
+        "r",
+        "ou",
+        "nd"
+      ]
+    },
+    "run": {
+      "sounds": [
+        "r",
+        "u",
+        "n"
+      ]
+    },
+    "rushed": {
+      "sounds": [
+        "r",
+        "u",
+        "sh",
+        "t"
+      ],
+      "chunks": [
+        "ru",
+        "sh",
+        "ed"
+      ]
+    },
+    "s": {
+      "sounds": [
+        "e",
+        "s"
+      ]
+    },
+    "sad": {
+      "sounds": [
+        "s",
+        "a",
+        "d"
+      ]
+    },
+    "said": {
+      "sounds": [
+        "s",
+        "e",
+        "d"
+      ],
+      "chunks": [
+        "s",
+        "ai",
+        "d"
+      ]
+    },
+    "same": {
+      "sounds": [
+        "s",
+        "ai",
+        "m"
+      ]
+    },
+    "sat": {
+      "sounds": [
+        "s",
+        "a",
+        "t"
+      ]
+    },
+    "saw": {
+      "sounds": [
+        "s",
+        "or"
+      ]
+    },
+    "say": {
+      "sounds": [
+        "s",
+        "ai"
+      ],
+      "chunks": [
+        "s",
+        "ay"
+      ]
+    },
+    "says": {
+      "sounds": [
+        "s",
+        "e",
+        "z"
+      ],
+      "chunks": [
+        "s",
+        "ay",
+        "s"
+      ]
+    },
+    "screamed": {
+      "sounds": [
+        "s",
+        "k",
+        "r",
+        "ee",
+        "m",
+        "d"
+      ],
+      "chunks": [
+        "scr",
+        "ea",
+        "med"
+      ]
+    },
+    "see": {
+      "sounds": [
+        "s",
+        "ee"
+      ],
+      "chunks": [
+        "s",
+        "ee"
+      ]
+    },
+    "seed": {
+      "sounds": [
+        "s",
+        "ee",
+        "d"
+      ],
+      "chunks": [
+        "s",
+        "ee",
+        "d"
+      ]
+    },
+    "seen": {
+      "sounds": [
+        "s",
+        "ee",
+        "n"
+      ],
+      "chunks": [
+        "s",
+        "ee",
+        "n"
+      ]
+    },
+    "sees": {
+      "sounds": [
+        "s",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "s",
+        "ee",
+        "s"
+      ]
+    },
+    "sell": {
+      "sounds": [
+        "s",
+        "e",
+        "l"
+      ]
+    },
+    "send": {
+      "sounds": [
+        "s",
+        "e",
+        "n",
+        "d"
+      ]
+    },
+    "sent": {
+      "sounds": [
+        "s",
+        "e",
+        "n",
+        "t"
+      ]
+    },
+    "sentences": {
+      "sounds": [
+        "s",
+        "e",
+        "n",
+        "t",
+        "schwa",
+        "n",
+        "s",
+        "schwa",
+        "z"
+      ]
+    },
+    "set": {
+      "sounds": [
+        "s",
+        "e",
+        "t"
+      ]
+    },
+    "sewed": {
+      "sounds": [
+        "s",
+        "oa",
+        "d"
+      ]
+    },
+    "sewing": {
+      "sounds": [
+        "s",
+        "oa",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "sewi",
+        "ng"
+      ]
+    },
+    "shady": {
+      "sounds": [
+        "sh",
+        "ai",
+        "d",
+        "ee"
+      ],
+      "chunks": [
+        "sh",
+        "ady"
+      ]
+    },
+    "shared": {
+      "sounds": [
+        "sh",
+        "air",
+        "d"
+      ],
+      "chunks": [
+        "sh",
+        "ar",
+        "ed"
+      ]
+    },
+    "sharing": {
+      "sounds": [
+        "sh",
+        "air",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "sh",
+        "ar",
+        "i",
+        "ng"
+      ]
+    },
+    "she": {
+      "sounds": [
+        "sh",
+        "ee"
+      ],
+      "chunks": [
+        "sh",
+        "e"
+      ]
+    },
+    "shelf": {
+      "sounds": [
+        "sh",
+        "e",
+        "l",
+        "f"
+      ],
+      "chunks": [
+        "sh",
+        "elf"
+      ]
+    },
+    "shining": {
+      "sounds": [
+        "sh",
+        "igh",
+        "n",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "sh",
+        "ini",
+        "ng"
+      ]
+    },
+    "shiver": {
+      "sounds": [
+        "sh",
+        "i",
+        "v",
+        "ur"
+      ],
+      "chunks": [
+        "sh",
+        "iv",
+        "er"
+      ]
+    },
+    "shook": {
+      "sounds": [
+        "sh",
+        "oo_short",
+        "k"
+      ],
+      "chunks": [
+        "sh",
+        "oo",
+        "k"
+      ]
+    },
+    "short": {
+      "sounds": [
+        "sh",
+        "or",
+        "t"
+      ],
+      "chunks": [
+        "sh",
+        "or",
+        "t"
+      ]
+    },
+    "should": {
+      "sounds": [
+        "sh",
+        "oo_short",
+        "d"
+      ],
+      "chunks": [
+        "sh",
+        "ou",
+        "ld"
+      ]
+    },
+    "shouted": {
+      "sounds": [
+        "sh",
+        "ow",
+        "t",
+        "i",
+        "d"
+      ],
+      "chunks": [
+        "sh",
+        "ou",
+        "ted"
+      ]
+    },
+    "shut": {
+      "sounds": [
+        "sh",
+        "u",
+        "t"
+      ],
+      "chunks": [
+        "sh",
+        "ut"
+      ]
+    },
+    "shuts": {
+      "sounds": [
+        "sh",
+        "u",
+        "t",
+        "s"
+      ],
+      "chunks": [
+        "sh",
+        "uts"
+      ]
+    },
+    "shutters": {
+      "sounds": [
+        "sh",
+        "u",
+        "t",
+        "ur",
+        "z"
+      ],
+      "chunks": [
+        "sh",
+        "utt",
+        "er",
+        "s"
+      ]
+    },
+    "sighed": {
+      "sounds": [
+        "s",
+        "igh",
+        "d"
+      ],
+      "chunks": [
+        "s",
+        "igh",
+        "ed"
+      ]
+    },
+    "silly": {
+      "sounds": [
+        "s",
+        "i",
+        "l",
+        "ee"
+      ]
+    },
+    "simple": {
+      "sounds": [
+        "s",
+        "i",
+        "m",
+        "p",
+        "schwa",
+        "l"
+      ]
+    },
+    "since": {
+      "sounds": [
+        "s",
+        "i",
+        "n",
+        "s"
+      ]
+    },
+    "single": {
+      "sounds": [
+        "s",
+        "i",
+        "ng",
+        "g",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "si",
+        "ng",
+        "le"
+      ]
+    },
+    "sit": {
+      "sounds": [
+        "s",
+        "i",
+        "t"
+      ]
+    },
+    "sits": {
+      "sounds": [
+        "s",
+        "i",
+        "t",
+        "s"
+      ]
+    },
+    "sitting": {
+      "sounds": [
+        "s",
+        "i",
+        "t",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "sitti",
+        "ng"
+      ]
+    },
+    "six": {
+      "sounds": [
+        "s",
+        "i",
+        "x"
+      ]
+    },
+    "skip": {
+      "sounds": [
+        "s",
+        "k",
+        "i",
+        "p"
+      ]
+    },
+    "sky": {
+      "sounds": [
+        "s",
+        "k",
+        "igh"
+      ]
+    },
+    "slammed": {
+      "sounds": [
+        "s",
+        "l",
+        "a",
+        "m",
+        "d"
+      ]
+    },
+    "sleep": {
+      "sounds": [
+        "s",
+        "l",
+        "ee",
+        "p"
+      ],
+      "chunks": [
+        "sl",
+        "ee",
+        "p"
+      ]
+    },
+    "sleepy": {
+      "sounds": [
+        "s",
+        "l",
+        "ee",
+        "p",
+        "ee"
+      ],
+      "chunks": [
+        "sl",
+        "ee",
+        "py"
+      ]
+    },
+    "slowly": {
+      "sounds": [
+        "s",
+        "l",
+        "oa",
+        "l",
+        "ee"
+      ],
+      "chunks": [
+        "sl",
+        "ow",
+        "ly"
+      ]
+    },
+    "small": {
+      "sounds": [
+        "s",
+        "m",
+        "or",
+        "l"
+      ]
+    },
+    "smaller": {
+      "sounds": [
+        "s",
+        "m",
+        "or",
+        "l",
+        "ur"
+      ],
+      "chunks": [
+        "small",
+        "er"
+      ]
+    },
+    "smelled": {
+      "sounds": [
+        "s",
+        "m",
+        "e",
+        "l",
+        "d"
+      ]
+    },
+    "smells": {
+      "sounds": [
+        "s",
+        "m",
+        "e",
+        "l",
+        "z"
+      ]
+    },
+    "smiled": {
+      "sounds": [
+        "s",
+        "m",
+        "igh",
+        "l",
+        "d"
+      ]
+    },
+    "snail": {
+      "sounds": [
+        "s",
+        "n",
+        "ai",
+        "l"
+      ],
+      "chunks": [
+        "sn",
+        "ai",
+        "l"
+      ]
+    },
+    "snake": {
+      "sounds": [
+        "s",
+        "n",
+        "ai",
+        "k"
+      ]
+    },
+    "sneeze": {
+      "sounds": [
+        "s",
+        "n",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "sn",
+        "ee",
+        "ze"
+      ]
+    },
+    "snored": {
+      "sounds": [
+        "s",
+        "n",
+        "or",
+        "d"
+      ],
+      "chunks": [
+        "sn",
+        "or",
+        "ed"
+      ]
+    },
+    "snoring": {
+      "sounds": [
+        "s",
+        "n",
+        "or",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "sn",
+        "or",
+        "i",
+        "ng"
+      ]
+    },
+    "snow": {
+      "sounds": [
+        "s",
+        "n",
+        "oa"
+      ],
+      "chunks": [
+        "sn",
+        "ow"
+      ]
+    },
+    "so": {
+      "sounds": [
+        "s",
+        "oa"
+      ]
+    },
+    "sock": {
+      "sounds": [
+        "s",
+        "o",
+        "k"
+      ],
+      "chunks": [
+        "s",
+        "ock"
+      ]
+    },
+    "some": {
+      "sounds": [
+        "s",
+        "u",
+        "m"
+      ]
+    },
+    "someone": {
+      "sounds": [
+        "s",
+        "u",
+        "m",
+        "w",
+        "u",
+        "n"
+      ]
+    },
+    "something": {
+      "sounds": [
+        "s",
+        "u",
+        "m",
+        "th",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "some",
+        "th",
+        "i",
+        "ng"
+      ]
+    },
+    "soon": {
+      "sounds": [
+        "s",
+        "oo",
+        "n"
+      ],
+      "chunks": [
+        "s",
+        "oo",
+        "n"
+      ]
+    },
+    "sorry": {
+      "sounds": [
+        "s",
+        "ar",
+        "ee"
+      ],
+      "chunks": [
+        "s",
+        "or",
+        "ry"
+      ]
+    },
+    "sound": {
+      "sounds": [
+        "s",
+        "ow",
+        "n",
+        "d"
+      ],
+      "chunks": [
+        "s",
+        "ou",
+        "nd"
+      ]
+    },
+    "soup": {
+      "sounds": [
+        "s",
+        "oo",
+        "p"
+      ],
+      "chunks": [
+        "s",
+        "ou",
+        "p"
+      ]
+    },
+    "space": {
+      "sounds": [
+        "s",
+        "p",
+        "ai",
+        "s"
+      ]
+    },
+    "sparrow": {
+      "sounds": [
+        "s",
+        "p",
+        "air",
+        "oa"
+      ],
+      "chunks": [
+        "sp",
+        "ar",
+        "r",
+        "ow"
+      ]
+    },
+    "speed": {
+      "sounds": [
+        "s",
+        "p",
+        "ee",
+        "d"
+      ],
+      "chunks": [
+        "sp",
+        "ee",
+        "d"
+      ]
+    },
+    "splash": {
+      "sounds": [
+        "s",
+        "p",
+        "l",
+        "a",
+        "sh"
+      ],
+      "chunks": [
+        "spla",
+        "sh"
+      ]
+    },
+    "splashes": {
+      "sounds": [
+        "s",
+        "p",
+        "l",
+        "a",
+        "sh",
+        "i",
+        "z"
+      ],
+      "chunks": [
+        "spla",
+        "sh",
+        "es"
+      ]
+    },
+    "splat": {
+      "sounds": [
+        "s",
+        "p",
+        "l",
+        "a",
+        "t"
+      ]
+    },
+    "spot": {
+      "sounds": [
+        "s",
+        "p",
+        "o",
+        "t"
+      ]
+    },
+    "spots": {
+      "sounds": [
+        "s",
+        "p",
+        "o",
+        "t",
+        "s"
+      ]
+    },
+    "spring": {
+      "sounds": [
+        "s",
+        "p",
+        "r",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "spri",
+        "ng"
+      ]
+    },
+    "spun": {
+      "sounds": [
+        "s",
+        "p",
+        "u",
+        "n"
+      ]
+    },
+    "square": {
+      "sounds": [
+        "s",
+        "qu",
+        "air"
+      ],
+      "chunks": [
+        "s",
+        "qu",
+        "ar",
+        "e"
+      ]
+    },
+    "squeezed": {
+      "sounds": [
+        "s",
+        "qu",
+        "ee",
+        "z",
+        "d"
+      ],
+      "chunks": [
+        "s",
+        "qu",
+        "ee",
+        "zed"
+      ]
+    },
+    "stage": {
+      "sounds": [
+        "s",
+        "t",
+        "ai",
+        "j"
+      ]
+    },
+    "stand": {
+      "sounds": [
+        "s",
+        "t",
+        "a",
+        "n",
+        "d"
+      ]
+    },
+    "standard": {
+      "sounds": [
+        "s",
+        "t",
+        "a",
+        "n",
+        "d",
+        "ur",
+        "d"
+      ],
+      "chunks": [
+        "stand",
+        "ar",
+        "d"
+      ]
+    },
+    "standing": {
+      "sounds": [
+        "s",
+        "t",
+        "a",
+        "n",
+        "d",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "standi",
+        "ng"
+      ]
+    },
+    "stars": {
+      "sounds": [
+        "s",
+        "t",
+        "ar",
+        "z"
+      ],
+      "chunks": [
+        "st",
+        "ar",
+        "s"
+      ]
+    },
+    "starts": {
+      "sounds": [
+        "s",
+        "t",
+        "ar",
+        "t",
+        "s"
+      ],
+      "chunks": [
+        "st",
+        "ar",
+        "ts"
+      ]
+    },
+    "states": {
+      "sounds": [
+        "s",
+        "t",
+        "ai",
+        "t",
+        "s"
+      ]
+    },
+    "stay": {
+      "sounds": [
+        "s",
+        "t",
+        "ai"
+      ],
+      "chunks": [
+        "st",
+        "ay"
+      ]
+    },
+    "still": {
+      "sounds": [
+        "s",
+        "t",
+        "i",
+        "l"
+      ]
+    },
+    "stones": {
+      "sounds": [
+        "s",
+        "t",
+        "oa",
+        "n",
+        "z"
+      ]
+    },
+    "stood": {
+      "sounds": [
+        "s",
+        "t",
+        "oo_short",
+        "d"
+      ],
+      "chunks": [
+        "st",
+        "oo",
+        "d"
+      ]
+    },
+    "stop": {
+      "sounds": [
+        "s",
+        "t",
+        "o",
+        "p"
+      ]
+    },
+    "stopped": {
+      "sounds": [
+        "s",
+        "t",
+        "o",
+        "p",
+        "t"
+      ]
+    },
+    "storage": {
+      "sounds": [
+        "s",
+        "t",
+        "or",
+        "schwa",
+        "j"
+      ],
+      "chunks": [
+        "st",
+        "or",
+        "age"
+      ]
+    },
+    "stored": {
+      "sounds": [
+        "s",
+        "t",
+        "or",
+        "d"
+      ],
+      "chunks": [
+        "st",
+        "or",
+        "ed"
+      ]
+    },
+    "stories": {
+      "sounds": [
+        "s",
+        "t",
+        "or",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "st",
+        "or",
+        "ies"
+      ]
+    },
+    "story": {
+      "sounds": [
+        "s",
+        "t",
+        "or",
+        "ee"
+      ],
+      "chunks": [
+        "st",
+        "or",
+        "y"
+      ]
+    },
+    "strawberries": {
+      "sounds": [
+        "s",
+        "t",
+        "r",
+        "or",
+        "b",
+        "air",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "strawb",
+        "er",
+        "ries"
+      ]
+    },
+    "street": {
+      "sounds": [
+        "s",
+        "t",
+        "r",
+        "ee",
+        "t"
+      ],
+      "chunks": [
+        "str",
+        "ee",
+        "t"
+      ]
+    },
+    "stretched": {
+      "sounds": [
+        "s",
+        "t",
+        "r",
+        "e",
+        "ch",
+        "t"
+      ],
+      "chunks": [
+        "stre",
+        "tch",
+        "ed"
+      ]
+    },
+    "strong": {
+      "sounds": [
+        "s",
+        "t",
+        "r",
+        "o",
+        "ng"
+      ],
+      "chunks": [
+        "stro",
+        "ng"
+      ]
+    },
+    "suit": {
+      "sounds": [
+        "s",
+        "oo",
+        "t"
+      ]
+    },
+    "suite": {
+      "sounds": [
+        "s",
+        "w",
+        "ee",
+        "t"
+      ]
+    },
+    "summer": {
+      "sounds": [
+        "s",
+        "u",
+        "m",
+        "ur"
+      ],
+      "chunks": [
+        "summ",
+        "er"
+      ]
+    },
+    "sun": {
+      "sounds": [
+        "s",
+        "u",
+        "n"
+      ]
+    },
+    "sunflower": {
+      "sounds": [
+        "s",
+        "u",
+        "n",
+        "f",
+        "l",
+        "ow",
+        "ur"
+      ],
+      "chunks": [
+        "sunfl",
+        "ow",
+        "er"
+      ]
+    },
+    "sure": {
+      "sounds": [
+        "sh",
+        "ure"
+      ],
+      "chunks": [
+        "s",
+        "ure"
+      ]
+    },
+    "surprise": {
+      "sounds": [
+        "s",
+        "ur",
+        "p",
+        "r",
+        "igh",
+        "z"
+      ],
+      "chunks": [
+        "s",
+        "ur",
+        "prise"
+      ]
+    },
+    "swam": {
+      "sounds": [
+        "s",
+        "w",
+        "a",
+        "m"
+      ]
+    },
+    "swim": {
+      "sounds": [
+        "s",
+        "w",
+        "i",
+        "m"
+      ]
+    },
+    "swung": {
+      "sounds": [
+        "s",
+        "w",
+        "u",
+        "ng"
+      ],
+      "chunks": [
+        "swu",
+        "ng"
+      ]
+    },
+    "system": {
+      "sounds": [
+        "s",
+        "i",
+        "s",
+        "t",
+        "schwa",
+        "m"
+      ]
+    },
+    "table": {
+      "sounds": [
+        "t",
+        "ai",
+        "b",
+        "schwa",
+        "l"
+      ]
+    },
+    "tail": {
+      "sounds": [
+        "t",
+        "ai",
+        "l"
+      ],
+      "chunks": [
+        "t",
+        "ai",
+        "l"
+      ]
+    },
+    "take": {
+      "sounds": [
+        "t",
+        "ai",
+        "k"
+      ]
+    },
+    "taking": {
+      "sounds": [
+        "t",
+        "ai",
+        "k",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "taki",
+        "ng"
+      ]
+    },
+    "tall": {
+      "sounds": [
+        "t",
+        "or",
+        "l"
+      ]
+    },
+    "tallest": {
+      "sounds": [
+        "t",
+        "or",
+        "l",
+        "i",
+        "s",
+        "t"
+      ]
+    },
+    "tap": {
+      "sounds": [
+        "t",
+        "a",
+        "p"
+      ]
+    },
+    "tastes": {
+      "sounds": [
+        "t",
+        "ai",
+        "s",
+        "t",
+        "s"
+      ]
+    },
+    "tea": {
+      "sounds": [
+        "t",
+        "ee"
+      ],
+      "chunks": [
+        "t",
+        "ea"
+      ]
+    },
+    "tell": {
+      "sounds": [
+        "t",
+        "e",
+        "l"
+      ]
+    },
+    "ten": {
+      "sounds": [
+        "t",
+        "e",
+        "n"
+      ]
+    },
+    "terrible": {
+      "sounds": [
+        "t",
+        "air",
+        "schwa",
+        "b",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "t",
+        "er",
+        "rible"
+      ]
+    },
+    "text": {
+      "sounds": [
+        "t",
+        "e",
+        "x",
+        "t"
+      ]
+    },
+    "thank": {
+      "sounds": [
+        "th",
+        "a",
+        "ng",
+        "k"
+      ],
+      "chunks": [
+        "th",
+        "ank"
+      ]
+    },
+    "that": {
+      "sounds": [
+        "thv",
+        "a",
+        "t"
+      ],
+      "chunks": [
+        "th",
+        "at"
+      ]
+    },
+    "the": {
+      "sounds": [
+        "thv",
+        "schwa"
+      ],
+      "chunks": [
+        "th",
+        "e"
+      ]
+    },
+    "their": {
+      "sounds": [
+        "thv",
+        "air"
+      ],
+      "chunks": [
+        "th",
+        "e",
+        "ir"
+      ]
+    },
+    "them": {
+      "sounds": [
+        "thv",
+        "e",
+        "m"
+      ],
+      "chunks": [
+        "th",
+        "em"
+      ]
+    },
+    "themes": {
+      "sounds": [
+        "th",
+        "ee",
+        "m",
+        "z"
+      ],
+      "chunks": [
+        "th",
+        "emes"
+      ]
+    },
+    "then": {
+      "sounds": [
+        "thv",
+        "e",
+        "n"
+      ],
+      "chunks": [
+        "th",
+        "en"
+      ]
+    },
+    "there": {
+      "sounds": [
+        "thv",
+        "air"
+      ],
+      "chunks": [
+        "th",
+        "er",
+        "e"
+      ]
+    },
+    "these": {
+      "sounds": [
+        "thv",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "th",
+        "ese"
+      ]
+    },
+    "they": {
+      "sounds": [
+        "thv",
+        "ai"
+      ],
+      "chunks": [
+        "th",
+        "ey"
+      ]
+    },
+    "thick": {
+      "sounds": [
+        "th",
+        "i",
+        "k"
+      ],
+      "chunks": [
+        "th",
+        "i",
+        "ck"
+      ]
+    },
+    "thin": {
+      "sounds": [
+        "th",
+        "i",
+        "n"
+      ],
+      "chunks": [
+        "th",
+        "in"
+      ]
+    },
+    "thing": {
+      "sounds": [
+        "th",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "th",
+        "i",
+        "ng"
+      ]
+    },
+    "things": {
+      "sounds": [
+        "th",
+        "i",
+        "ng",
+        "z"
+      ],
+      "chunks": [
+        "th",
+        "i",
+        "ng",
+        "s"
+      ]
+    },
+    "think": {
+      "sounds": [
+        "th",
+        "i",
+        "ng",
+        "k"
+      ],
+      "chunks": [
+        "th",
+        "ink"
+      ]
+    },
+    "thinks": {
+      "sounds": [
+        "th",
+        "i",
+        "ng",
+        "k",
+        "s"
+      ],
+      "chunks": [
+        "th",
+        "inks"
+      ]
+    },
+    "this": {
+      "sounds": [
+        "thv",
+        "i",
+        "s"
+      ],
+      "chunks": [
+        "th",
+        "is"
+      ]
+    },
+    "thought": {
+      "sounds": [
+        "th",
+        "or",
+        "t"
+      ],
+      "chunks": [
+        "th",
+        "ough",
+        "t"
+      ]
+    },
+    "three": {
+      "sounds": [
+        "th",
+        "r",
+        "ee"
+      ],
+      "chunks": [
+        "th",
+        "r",
+        "ee"
+      ]
+    },
+    "through": {
+      "sounds": [
+        "th",
+        "r",
+        "oo"
+      ],
+      "chunks": [
+        "th",
+        "r",
+        "ough"
+      ]
+    },
+    "tied": {
+      "sounds": [
+        "t",
+        "igh",
+        "d"
+      ]
+    },
+    "time": {
+      "sounds": [
+        "t",
+        "igh",
+        "m"
+      ]
+    },
+    "tiny": {
+      "sounds": [
+        "t",
+        "igh",
+        "n",
+        "ee"
+      ]
+    },
+    "tired": {
+      "sounds": [
+        "t",
+        "igh",
+        "ur",
+        "d"
+      ],
+      "chunks": [
+        "t",
+        "ir",
+        "ed"
+      ]
+    },
+    "to": {
+      "sounds": [
+        "t",
+        "oo"
+      ]
+    },
+    "toad": {
+      "sounds": [
+        "t",
+        "oa",
+        "d"
+      ],
+      "chunks": [
+        "t",
+        "oa",
+        "d"
+      ]
+    },
+    "toad's": {
+      "sounds": [
+        "t",
+        "oa",
+        "d",
+        "z"
+      ],
+      "chunks": [
+        "t",
+        "oa",
+        "ds"
+      ]
+    },
+    "today": {
+      "sounds": [
+        "t",
+        "schwa",
+        "d",
+        "ai"
+      ],
+      "chunks": [
+        "tod",
+        "ay"
+      ]
+    },
+    "together": {
+      "sounds": [
+        "t",
+        "schwa",
+        "g",
+        "e",
+        "thv",
+        "ur"
+      ],
+      "chunks": [
+        "toge",
+        "th",
+        "er"
+      ]
+    },
+    "told": {
+      "sounds": [
+        "t",
+        "oa",
+        "l",
+        "d"
+      ]
+    },
+    "tomatoes": {
+      "sounds": [
+        "t",
+        "schwa",
+        "m",
+        "ai",
+        "t",
+        "oa",
+        "z"
+      ]
+    },
+    "too": {
+      "sounds": [
+        "t",
+        "oo"
+      ],
+      "chunks": [
+        "t",
+        "oo"
+      ]
+    },
+    "took": {
+      "sounds": [
+        "t",
+        "oo_short",
+        "k"
+      ],
+      "chunks": [
+        "t",
+        "oo",
+        "k"
+      ]
+    },
+    "top": {
+      "sounds": [
+        "t",
+        "o",
+        "p"
+      ]
+    },
+    "topics": {
+      "sounds": [
+        "t",
+        "o",
+        "p",
+        "i",
+        "k",
+        "s"
+      ]
+    },
+    "tore": {
+      "sounds": [
+        "t",
+        "or"
+      ],
+      "chunks": [
+        "t",
+        "or",
+        "e"
+      ]
+    },
+    "toronto": {
+      "sounds": [
+        "t",
+        "ur",
+        "o",
+        "n",
+        "t",
+        "oa"
+      ],
+      "chunks": [
+        "t",
+        "or",
+        "onto"
+      ]
+    },
+    "transmitted": {
+      "sounds": [
+        "t",
+        "r",
+        "a",
+        "n",
+        "s",
+        "m",
+        "i",
+        "t",
+        "i",
+        "d"
+      ]
+    },
+    "treasure": {
+      "sounds": [
+        "t",
+        "r",
+        "e",
+        "zh",
+        "ur"
+      ],
+      "chunks": [
+        "tr",
+        "ea",
+        "s",
+        "ure"
+      ]
+    },
+    "tree": {
+      "sounds": [
+        "t",
+        "r",
+        "ee"
+      ],
+      "chunks": [
+        "tr",
+        "ee"
+      ]
+    },
+    "trees": {
+      "sounds": [
+        "t",
+        "r",
+        "ee",
+        "z"
+      ],
+      "chunks": [
+        "tr",
+        "ee",
+        "s"
+      ]
+    },
+    "tried": {
+      "sounds": [
+        "t",
+        "r",
+        "igh",
+        "d"
+      ]
+    },
+    "trouble": {
+      "sounds": [
+        "t",
+        "r",
+        "u",
+        "b",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "tr",
+        "ou",
+        "ble"
+      ]
+    },
+    "tub": {
+      "sounds": [
+        "t",
+        "u",
+        "b"
+      ]
+    },
+    "tucked": {
+      "sounds": [
+        "t",
+        "u",
+        "k",
+        "t"
+      ],
+      "chunks": [
+        "tu",
+        "ck",
+        "ed"
+      ]
+    },
+    "tumbled": {
+      "sounds": [
+        "t",
+        "u",
+        "m",
+        "b",
+        "schwa",
+        "l",
+        "d"
+      ]
+    },
+    "tunnel": {
+      "sounds": [
+        "t",
+        "u",
+        "n",
+        "schwa",
+        "l"
+      ]
+    },
+    "turtle": {
+      "sounds": [
+        "t",
+        "ur",
+        "t",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "t",
+        "ur",
+        "tle"
+      ]
+    },
+    "twitched": {
+      "sounds": [
+        "t",
+        "w",
+        "i",
+        "ch",
+        "t"
+      ],
+      "chunks": [
+        "twi",
+        "tch",
+        "ed"
+      ]
+    },
+    "two": {
+      "sounds": [
+        "t",
+        "oo"
+      ]
+    },
+    "uk": {
+      "sounds": [
+        "yoo",
+        "k",
+        "ai"
+      ]
+    },
+    "under": {
+      "sounds": [
+        "u",
+        "n",
+        "d",
+        "ur"
+      ],
+      "chunks": [
+        "und",
+        "er"
+      ]
+    },
+    "unhappy": {
+      "sounds": [
+        "schwa",
+        "n",
+        "h",
+        "a",
+        "p",
+        "ee"
+      ]
+    },
+    "united": {
+      "sounds": [
+        "yoo",
+        "n",
+        "igh",
+        "t",
+        "i",
+        "d"
+      ]
+    },
+    "until": {
+      "sounds": [
+        "schwa",
+        "n",
+        "t",
+        "i",
+        "l"
+      ]
+    },
+    "up": {
+      "sounds": [
+        "u",
+        "p"
+      ]
+    },
+    "upon": {
+      "sounds": [
+        "schwa",
+        "p",
+        "o",
+        "n"
+      ]
+    },
+    "us": {
+      "sounds": [
+        "u",
+        "s"
+      ]
+    },
+    "van": {
+      "sounds": [
+        "v",
+        "a",
+        "n"
+      ]
+    },
+    "very": {
+      "sounds": [
+        "v",
+        "air",
+        "ee"
+      ],
+      "chunks": [
+        "v",
+        "er",
+        "y"
+      ]
+    },
+    "viking": {
+      "sounds": [
+        "v",
+        "igh",
+        "k",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "viki",
+        "ng"
+      ]
+    },
+    "vikings": {
+      "sounds": [
+        "v",
+        "igh",
+        "k",
+        "i",
+        "ng",
+        "z"
+      ],
+      "chunks": [
+        "viki",
+        "ng",
+        "s"
+      ]
+    },
+    "visit": {
+      "sounds": [
+        "v",
+        "i",
+        "z",
+        "i",
+        "t"
+      ]
+    },
+    "vocabulary": {
+      "sounds": [
+        "v",
+        "oa",
+        "k",
+        "a",
+        "b",
+        "y",
+        "schwa",
+        "l",
+        "air",
+        "ee"
+      ],
+      "chunks": [
+        "vocabul",
+        "ar",
+        "y"
+      ]
+    },
+    "voice": {
+      "sounds": [
+        "v",
+        "oi",
+        "s"
+      ],
+      "chunks": [
+        "v",
+        "oi",
+        "ce"
+      ]
+    },
+    "w": {
+      "sounds": [
+        "d",
+        "u",
+        "b",
+        "schwa",
+        "l",
+        "yoo"
+      ]
+    },
+    "wagging": {
+      "sounds": [
+        "w",
+        "a",
+        "g",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "waggi",
+        "ng"
+      ]
+    },
+    "wailed": {
+      "sounds": [
+        "w",
+        "ai",
+        "l",
+        "d"
+      ],
+      "chunks": [
+        "w",
+        "ai",
+        "led"
+      ]
+    },
+    "wait": {
+      "sounds": [
+        "w",
+        "ai",
+        "t"
+      ],
+      "chunks": [
+        "w",
+        "ai",
+        "t"
+      ]
+    },
+    "waited": {
+      "sounds": [
+        "w",
+        "ai",
+        "t",
+        "i",
+        "d"
+      ],
+      "chunks": [
+        "w",
+        "ai",
+        "ted"
+      ]
+    },
+    "waiting": {
+      "sounds": [
+        "w",
+        "ai",
+        "t",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "w",
+        "ai",
+        "ti",
+        "ng"
+      ]
+    },
+    "wake": {
+      "sounds": [
+        "w",
+        "ai",
+        "k"
+      ]
+    },
+    "walk": {
+      "sounds": [
+        "w",
+        "or",
+        "k"
+      ]
+    },
+    "walked": {
+      "sounds": [
+        "w",
+        "or",
+        "k",
+        "t"
+      ]
+    },
+    "wall": {
+      "sounds": [
+        "w",
+        "or",
+        "l"
+      ]
+    },
+    "want": {
+      "sounds": [
+        "w",
+        "o",
+        "n",
+        "t"
+      ]
+    },
+    "wanted": {
+      "sounds": [
+        "w",
+        "o",
+        "n",
+        "t",
+        "i",
+        "d"
+      ]
+    },
+    "wants": {
+      "sounds": [
+        "w",
+        "o",
+        "n",
+        "t",
+        "s"
+      ]
+    },
+    "warm": {
+      "sounds": [
+        "w",
+        "or",
+        "m"
+      ],
+      "chunks": [
+        "w",
+        "ar",
+        "m"
+      ]
+    },
+    "was": {
+      "sounds": [
+        "w",
+        "o",
+        "z"
+      ]
+    },
+    "water": {
+      "sounds": [
+        "w",
+        "o",
+        "t",
+        "ur"
+      ],
+      "chunks": [
+        "wat",
+        "er"
+      ]
+    },
+    "waving": {
+      "sounds": [
+        "w",
+        "ai",
+        "v",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "wavi",
+        "ng"
+      ]
+    },
+    "way": {
+      "sounds": [
+        "w",
+        "ai"
+      ],
+      "chunks": [
+        "w",
+        "ay"
+      ]
+    },
+    "we": {
+      "sounds": [
+        "w",
+        "ee"
+      ]
+    },
+    "wear": {
+      "sounds": [
+        "w",
+        "air"
+      ],
+      "chunks": [
+        "w",
+        "ear"
+      ]
+    },
+    "wearing": {
+      "sounds": [
+        "w",
+        "air",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "w",
+        "ear",
+        "i",
+        "ng"
+      ]
+    },
+    "web": {
+      "sounds": [
+        "w",
+        "e",
+        "b"
+      ]
+    },
+    "well": {
+      "sounds": [
+        "w",
+        "e",
+        "l"
+      ]
+    },
+    "went": {
+      "sounds": [
+        "w",
+        "e",
+        "n",
+        "t"
+      ]
+    },
+    "were": {
+      "sounds": [
+        "w",
+        "ur"
+      ],
+      "chunks": [
+        "w",
+        "er",
+        "e"
+      ]
+    },
+    "what": {
+      "sounds": [
+        "w",
+        "u",
+        "t"
+      ],
+      "chunks": [
+        "wh",
+        "at"
+      ]
+    },
+    "when": {
+      "sounds": [
+        "w",
+        "e",
+        "n"
+      ],
+      "chunks": [
+        "wh",
+        "en"
+      ]
+    },
+    "where": {
+      "sounds": [
+        "w",
+        "air"
+      ],
+      "chunks": [
+        "wh",
+        "er",
+        "e"
+      ]
+    },
+    "whether": {
+      "sounds": [
+        "w",
+        "e",
+        "thv",
+        "ur"
+      ],
+      "chunks": [
+        "wh",
+        "e",
+        "th",
+        "er"
+      ]
+    },
+    "while": {
+      "sounds": [
+        "w",
+        "igh",
+        "l"
+      ],
+      "chunks": [
+        "wh",
+        "ile"
+      ]
+    },
+    "whimsical": {
+      "sounds": [
+        "w",
+        "i",
+        "m",
+        "z",
+        "i",
+        "k",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "wh",
+        "imsical"
+      ]
+    },
+    "whispered": {
+      "sounds": [
+        "w",
+        "i",
+        "s",
+        "p",
+        "ur",
+        "d"
+      ],
+      "chunks": [
+        "wh",
+        "isp",
+        "er",
+        "ed"
+      ]
+    },
+    "white": {
+      "sounds": [
+        "w",
+        "igh",
+        "t"
+      ],
+      "chunks": [
+        "wh",
+        "ite"
+      ]
+    },
+    "who": {
+      "sounds": [
+        "h",
+        "oo"
+      ],
+      "chunks": [
+        "wh",
+        "o"
+      ]
+    },
+    "whole": {
+      "sounds": [
+        "h",
+        "oa",
+        "l"
+      ],
+      "chunks": [
+        "wh",
+        "ole"
+      ]
+    },
+    "whoosh": {
+      "sounds": [
+        "w",
+        "oo",
+        "sh"
+      ],
+      "chunks": [
+        "wh",
+        "oo",
+        "sh"
+      ]
+    },
+    "why": {
+      "sounds": [
+        "w",
+        "igh"
+      ],
+      "chunks": [
+        "wh",
+        "y"
+      ]
+    },
+    "will": {
+      "sounds": [
+        "w",
+        "i",
+        "l"
+      ]
+    },
+    "win": {
+      "sounds": [
+        "w",
+        "i",
+        "n"
+      ]
+    },
+    "window": {
+      "sounds": [
+        "w",
+        "i",
+        "n",
+        "d",
+        "oa"
+      ],
+      "chunks": [
+        "wind",
+        "ow"
+      ]
+    },
+    "wing": {
+      "sounds": [
+        "w",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "wi",
+        "ng"
+      ]
+    },
+    "wings": {
+      "sounds": [
+        "w",
+        "i",
+        "ng",
+        "z"
+      ],
+      "chunks": [
+        "wi",
+        "ng",
+        "s"
+      ]
+    },
+    "wish": {
+      "sounds": [
+        "w",
+        "i",
+        "sh"
+      ],
+      "chunks": [
+        "wi",
+        "sh"
+      ]
+    },
+    "wishing": {
+      "sounds": [
+        "w",
+        "i",
+        "sh",
+        "i",
+        "ng"
+      ],
+      "chunks": [
+        "wi",
+        "sh",
+        "i",
+        "ng"
+      ]
+    },
+    "with": {
+      "sounds": [
+        "w",
+        "i",
+        "thv"
+      ],
+      "chunks": [
+        "wi",
+        "th"
+      ]
+    },
+    "without": {
+      "sounds": [
+        "w",
+        "i",
+        "th",
+        "ow",
+        "t"
+      ],
+      "chunks": [
+        "wi",
+        "th",
+        "ou",
+        "t"
+      ]
+    },
+    "wonderful": {
+      "sounds": [
+        "w",
+        "u",
+        "n",
+        "d",
+        "ur",
+        "f",
+        "schwa",
+        "l"
+      ],
+      "chunks": [
+        "wond",
+        "er",
+        "ful"
+      ]
+    },
+    "woods": {
+      "sounds": [
+        "w",
+        "oo_short",
+        "d",
+        "z"
+      ],
+      "chunks": [
+        "w",
+        "oo",
+        "ds"
+      ]
+    },
+    "word": {
+      "sounds": [
+        "w",
+        "ur",
+        "d"
+      ],
+      "chunks": [
+        "w",
+        "or",
+        "d"
+      ]
+    },
+    "words": {
+      "sounds": [
+        "w",
+        "ur",
+        "d",
+        "z"
+      ],
+      "chunks": [
+        "w",
+        "or",
+        "ds"
+      ]
+    },
+    "wore": {
+      "sounds": [
+        "w",
+        "or"
+      ],
+      "chunks": [
+        "w",
+        "or",
+        "e"
+      ]
+    },
+    "world": {
+      "sounds": [
+        "w",
+        "ur",
+        "l",
+        "d"
+      ],
+      "chunks": [
+        "w",
+        "or",
+        "ld"
+      ]
+    },
+    "worry": {
+      "sounds": [
+        "w",
+        "ur",
+        "ee"
+      ],
+      "chunks": [
+        "w",
+        "or",
+        "ry"
+      ]
+    },
+    "would": {
+      "sounds": [
+        "w",
+        "oo_short",
+        "d"
+      ],
+      "chunks": [
+        "w",
+        "ou",
+        "ld"
+      ]
+    },
+    "write": {
+      "sounds": [
+        "r",
+        "igh",
+        "t"
+      ]
+    },
+    "written": {
+      "sounds": [
+        "r",
+        "i",
+        "t",
+        "schwa",
+        "n"
+      ]
+    },
+    "wrote": {
+      "sounds": [
+        "r",
+        "oa",
+        "t"
+      ]
+    },
+    "x": {
+      "sounds": [
+        "e",
+        "x"
+      ]
+    },
+    "yawned": {
+      "sounds": [
+        "y",
+        "or",
+        "n",
+        "d"
+      ]
+    },
+    "year": {
+      "sounds": [
+        "y",
+        "ear"
+      ],
+      "chunks": [
+        "y",
+        "ear"
+      ]
+    },
+    "yes": {
+      "sounds": [
+        "y",
+        "e",
+        "s"
+      ]
+    },
+    "yet": {
+      "sounds": [
+        "y",
+        "e",
+        "t"
+      ]
+    },
+    "york": {
+      "sounds": [
+        "y",
+        "or",
+        "k"
+      ],
+      "chunks": [
+        "y",
+        "or",
+        "k"
+      ]
+    },
+    "you": {
+      "sounds": [
+        "yoo"
+      ],
+      "chunks": [
+        "y",
+        "ou"
+      ]
+    },
+    "young": {
+      "sounds": [
+        "y",
+        "u",
+        "ng"
+      ],
+      "chunks": [
+        "y",
+        "ou",
+        "ng"
+      ]
+    },
+    "your": {
+      "sounds": [
+        "y",
+        "or"
+      ],
+      "chunks": [
+        "y",
+        "ou",
+        "r"
+      ]
+    },
+    "zealand": {
+      "sounds": [
+        "z",
+        "ee",
+        "l",
+        "schwa",
+        "n",
+        "d"
+      ],
+      "chunks": [
+        "z",
+        "ea",
+        "land"
+      ]
+    },
+    "zip": {
+      "sounds": [
+        "z",
+        "i",
+        "p"
+      ]
+    }
+  }
+}

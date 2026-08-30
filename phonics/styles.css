@@ -120,6 +120,25 @@ h2 { font-size: clamp(30px, 5vw, 45px); }
 .petal:nth-child(6) { transform: translate(-108px, -24px) rotate(-46deg); background: #cce8a9; }
 
 .activity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding-bottom: 48px; }
+.word-lookup-panel {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(300px, 1.1fr);
+  align-items: center;
+  gap: 22px 34px;
+  margin: 0 0 28px;
+  padding: clamp(22px, 4vw, 34px);
+  border: 2px solid #d8e5dd;
+  border-radius: 29px;
+  background: #e8f6f0;
+  box-shadow: var(--shadow);
+}
+.word-lookup-copy h2 { margin-bottom: 8px; font-size: clamp(28px, 4vw, 39px); }
+.word-lookup-copy > p:last-child { max-width: 470px; margin-bottom: 0; color: var(--muted); font: 650 16px/1.42 system-ui, sans-serif; }
+.word-lookup-form label { display: block; margin: 0 0 8px 4px; color: var(--muted); font: 850 12px/1.1 system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+.word-lookup-form > div { display: flex; gap: 10px; }
+.word-lookup-form input { min-width: 0; flex: 1; min-height: 55px; padding: 10px 16px; border: 2px solid #afc9bd; border-radius: 16px; color: var(--ink); background: white; font: 850 22px/1.1 ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif; }
+.word-lookup-form input:focus { border-color: var(--ink); outline: 3px solid rgb(24 57 75 / 14%); outline-offset: 2px; }
+.lookup-coach { grid-column: 1 / -1; width: 100%; }
 .activity-card {
   min-height: 265px;
   position: relative;
@@ -153,7 +172,8 @@ h2 { font-size: clamp(30px, 5vw, 45px); }
 
 .explore-layout { display: grid; grid-template-columns: .93fr 1.07fr; gap: 21px; }
 .sound-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 11px; align-content: start; padding: 20px; border-radius: 27px; background: white; box-shadow: var(--shadow); }
-.sound-tile { aspect-ratio: 1; min-height: 83px; border: 3px solid transparent; border-radius: 21px; background: #e5f3ed; cursor: pointer; font-size: clamp(34px, 5vw, 51px); font-weight: 900; }
+.sound-tile { aspect-ratio: 1; min-height: 83px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border: 3px solid transparent; border-radius: 21px; background: #e5f3ed; cursor: pointer; font-size: clamp(29px, 4vw, 48px); font-weight: 900; }
+.sound-tile small { font-size: 11px; font-weight: 850; letter-spacing: .04em; text-transform: uppercase; opacity: .7; }
 .sound-tile:nth-child(3n+2) { background: #fff0be; }
 .sound-tile:nth-child(3n) { background: #dcedf7; }
 .sound-tile.selected { border-color: var(--coral-dark); background: #ffd0bd; transform: translateY(-2px); box-shadow: 0 6px 0 #e8a98f; }
@@ -215,6 +235,7 @@ footer a { color: var(--ink); font-weight: 800; }
   .hero-copy { margin-left: auto; margin-right: auto; }
   .sound-flower { order: -1; min-height: 270px; transform: scale(.88); margin-bottom: -25px; }
   .activity-grid { grid-template-columns: 1fr; }
+  .word-lookup-panel { grid-template-columns: 1fr; }
   .activity-card { min-height: 180px; padding-right: 85px; }
   .activity-icon { margin-bottom: 15px; }
   .screen-heading { display: block; }
@@ -235,6 +256,8 @@ footer a { color: var(--ink); font-weight: 800; }
   .home-hero { padding-top: 16px; }
   .sound-flower { transform: scale(.72); min-height: 225px; margin: -20px 0 -36px; }
   .activity-card { min-height: 164px; padding: 19px 72px 19px 19px; }
+  .word-lookup-panel { gap: 18px; padding: 20px 15px; }
+  .word-lookup-form > div { align-items: stretch; flex-direction: column; }
   .activity-icon { width: 61px; height: 61px; border-radius: 18px; font-size: 32px; }
   .activity-card h2 { font-size: 23px; }
   .sound-grid { grid-template-columns: repeat(3, 1fr); padding: 13px; gap: 8px; }

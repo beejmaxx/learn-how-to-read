@@ -24,21 +24,6 @@ const [BOOKS, AUDIO_LIBRARY, WORD_TIMINGS] = await Promise.all([
   fetch(`assets/audio/timings.json?v=${CONTENT_VERSION}`, { cache: 'no-store' }).then(response => response.ok ? response.json() : { timings: {} }).catch(() => ({ timings: {} }))
 ]);
 
-const PHONICS = {
-  a: ['a'], an: ['a', 'n'], and: ['a', 'n', 'd'],
-  cat: ['c', 'at'], dog: ['d', 'og'], sun: ['s', 'un'], hat: ['h', 'at'],
-  red: ['r', 'ed'], map: ['m', 'ap'], pig: ['p', 'ig'], dig: ['d', 'ig'],
-  bed: ['b', 'ed'], fox: ['f', 'ox'], bug: ['b', 'ug'], dad: ['d', 'ad'],
-  nap: ['n', 'ap'], can: ['c', 'an'], big: ['b', 'ig'], hot: ['h', 'ot'],
-  run: ['r', 'un'], fit: ['f', 'it'], sit: ['s', 'it'], pat: ['p', 'at'],
-  log: ['l', 'og'], fun: ['f', 'un'], cap: ['c', 'ap'], rug: ['r', 'ug'],
-  sad: ['s', 'ad'], box: ['b', 'ox'], hop: ['h', 'op'], bench: ['ben', 'ch'],
-  duck: ['d', 'uck'], pond: ['p', 'ond'], tree: ['tr', 'ee'],
-  much: ['mu', 'ch'], six: ['s', 'ix'], last: ['l', 'ast'],
-  moon: ['m', 'oo', 'n'], net: ['n', 'et'], boot: ['b', 'oot'],
-  cup: ['c', 'up'], sock: ['s', 'ock'], milk: ['m', 'ilk'], peep: ['p', 'eep']
-};
-
 const LIBRARY_BOOKS = BOOKS.slice(0, 2);
 const FIND_SETS = {
   cat: ['cat', 'can', 'cap', 'hat'], dog: ['dog', 'dig', 'log', 'dot'],
@@ -79,6 +64,7 @@ const dialog = document.querySelector('#grownup-dialog');
 const wordList = document.querySelector('#word-list');
 let playingAudio = null;
 let highlightFrame = null;
+let phonicsCoach = null;
 
 function load(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key)) || fallback; }
@@ -118,6 +104,11 @@ function pronounceWord(text) {
   speak(word, true);
 }
 
+phonicsCoach = window.PhonicsCoach?.create({
+  root: './',
+  speakWord: pronounceWord
+});
+
 function clearWordHighlight() {
   cancelAnimationFrame(highlightFrame);
   highlightFrame = null;
@@ -129,6 +120,7 @@ function clearWordHighlight() {
 
 function stopPlayback() {
   window.speechSynthesis?.cancel();
+  phonicsCoach?.stop();
   clearWordHighlight();
   if (playingAudio) {
     playingAudio.pause();
@@ -264,9 +256,14 @@ function readerWords() {
 
 function selectReaderWord(button, pronounce = false) {
   document.querySelectorAll('.read-word.is-selected').forEach(word => word.classList.remove('is-selected'));
-  if (!button) return;
+  if (!button) {
+    const coach = document.querySelector('#word-coach');
+    if (coach) phonicsCoach?.hide(coach);
+    return;
+  }
   button.classList.add('is-selected');
   button.focus({ preventScroll: true });
+  showWordCoach(button.dataset.speak);
   if (pronounce) pronounceWord(button.dataset.speak);
 }
 
@@ -290,19 +287,7 @@ function moveReaderWord(direction) {
 function showWordCoach(word) {
   const coach = document.querySelector('#word-coach');
   if (!coach) return;
-  const clean = word.toLowerCase().replace(/’/g, "'").replace(/[^a-z']/g, '');
-  const chunks = PHONICS[clean];
-  const wholeWord = `<button class="coach-whole" data-coach-speak="${word}">🔊 ${word}</button>`;
-  if (!chunks) {
-    coach.innerHTML = `<span class="coach-label">Look at the whole word</span>${wholeWord}`;
-  } else {
-    coach.innerHTML = `
-      <span class="coach-label">Sound it out</span>
-      <span class="sound-chunks" aria-label="${chunks.join(', ')}">${chunks.map(chunk => `<span>${chunk}</span>`).join('<b aria-hidden="true">+</b>')}</span>
-      <span class="coach-arrow" aria-hidden="true">→</span>
-      ${wholeWord}`;
-  }
-  coach.hidden = false;
+  phonicsCoach?.show(coach, word);
 }
 
 function preloadNextPictures(book, page) {
@@ -339,7 +324,7 @@ function renderReader() {
             </div>` : `
             <p class="reader-sentence">${wordButtons(book.pages[state.page])}</p>
             <p class="reader-help">Tap a word, or use ← →. Press Space to hear it.</p>
-            <div class="word-coach" id="word-coach" hidden></div>
+            <div class="word-coach phonics-coach-host" id="word-coach" hidden></div>
             <div class="reader-controls">
               <button class="page-button" data-action="prev-page" ${state.page === 0 ? 'disabled' : ''}>← Back</button>
               ${hasNarration ? '<button class="read-aloud" data-action="read-page">🔊 Read it</button>' : ''}
@@ -564,7 +549,6 @@ document.addEventListener('click', event => {
   if (target.dataset.book) openBook(target.dataset.book);
   if (target.dataset.speak) {
     selectReaderWord(target);
-    showWordCoach(target.dataset.speak);
     pronounceWord(target.dataset.speak);
   }
   if (target.dataset.coachSpeak) pronounceWord(target.dataset.coachSpeak);
@@ -592,7 +576,7 @@ document.addEventListener('change', event => {
 
 document.addEventListener('keydown', event => {
   if (state.screen !== 'reader' || state.page >= (state.book?.pages.length || 0)) return;
-  if (event.target.matches('textarea, input[type="range"]')) return;
+  if (event.target.matches('textarea, select, input[type="range"]')) return;
   if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
     event.preventDefault();
     moveReaderWord(1);
@@ -600,6 +584,7 @@ document.addEventListener('keydown', event => {
     event.preventDefault();
     moveReaderWord(-1);
   } else if (event.key === ' ') {
+    if (event.target.closest('.phonics-coach-host')) return;
     if (event.target.matches('[data-reader-auto-speak]')) return;
     const selected = document.querySelector('.read-word.is-selected');
     if (!selected) return;
