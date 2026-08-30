@@ -62,7 +62,11 @@ const GROUPS = {
 
 const app = document.querySelector('#app');
 const homeButton = document.querySelector('[data-action="home"]');
+const audioSourceControl = document.querySelector('[data-audio-source-control]');
+const audioSourceSelect = document.querySelector('[data-audio-source]');
 let audioManifest = { sounds: {}, words: {} };
+let publicSounds = {};
+let localSoundSources = {};
 let currentAudio = null;
 let playToken = 0;
 let state = {
@@ -73,13 +77,61 @@ let state = {
   questionIndex: Number(localStorage.getItem('phonics-question-index')) || 0,
   stars: Number(localStorage.getItem('phonics-stars')) || 0,
   answered: false,
-  feedback: ''
+  feedback: '',
+  audioSource: localStorage.getItem('phonics-audio-source') || ''
 };
 
 try {
   const response = await fetch('audio/manifest.json?v=20260830-1', { cache: 'no-store' });
   if (response.ok) audioManifest = await response.json();
 } catch {}
+publicSounds = { ...audioManifest.sounds };
+
+// A private, git-ignored manifest can replace generated phoneme clips on localhost.
+// GitHub Pages keeps using the public manifest when this file is absent.
+try {
+  const response = await fetch('audio/local-manifest.json', { cache: 'no-store' });
+  if (response.ok) {
+    const localManifest = await response.json();
+    if (localManifest.sources) {
+      localSoundSources = localManifest.sources;
+      const availableSources = Object.keys(localSoundSources);
+      const preferredSource = availableSources.includes(state.audioSource)
+        ? state.audioSource
+        : localManifest.defaultSource;
+      applySoundSource(preferredSource || availableSources[0]);
+      populateSoundSourcePicker();
+    } else {
+      audioManifest = {
+        ...audioManifest,
+        ...localManifest,
+        sounds: { ...audioManifest.sounds, ...localManifest.sounds },
+        words: { ...audioManifest.words, ...localManifest.words }
+      };
+    }
+  }
+} catch {}
+
+function applySoundSource(sourceId) {
+  const source = localSoundSources[sourceId];
+  if (!source) return;
+  state.audioSource = sourceId;
+  audioManifest.sounds = { ...publicSounds, ...source.sounds };
+  localStorage.setItem('phonics-audio-source', sourceId);
+  if (audioSourceSelect) audioSourceSelect.value = sourceId;
+}
+
+function populateSoundSourcePicker() {
+  if (!audioSourceControl || !audioSourceSelect) return;
+  audioSourceSelect.replaceChildren(...Object.entries(localSoundSources).map(([id, source]) => {
+    const option = document.createElement('option');
+    option.value = id;
+    option.textContent = source.label;
+    option.selected = id === state.audioSource;
+    return option;
+  }));
+  audioSourceControl.hidden = false;
+}
 
 function soundById(id) { return SOUNDS.find(sound => sound.id === id); }
 function soundsForGroup(group) { return SOUNDS.filter(sound => sound.group === group); }
@@ -333,6 +385,11 @@ document.addEventListener('click', event => {
     localStorage.setItem('phonics-question-index', state.questionIndex);
     renderFirstSound();
   }
+});
+
+audioSourceSelect?.addEventListener('change', event => {
+  stopAudio();
+  applySoundSource(event.target.value);
 });
 
 document.addEventListener('keydown', event => {

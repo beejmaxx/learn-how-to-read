@@ -17,7 +17,13 @@
         <span class="brand-mark" aria-hidden="true">s</span>
         <span><strong>Sound Garden</strong><small>Little Word Club</small></span>
       </a>
-      <button class="home-button" data-action="home" hidden>⌂ Home</button>
+      <div class="topbar-actions">
+        <label class="source-picker" data-audio-source-control hidden>
+          <span>Sound set</span>
+          <select data-audio-source aria-label="Choose a phonics sound set"></select>
+        </label>
+        <button class="home-button" data-action="home" hidden>⌂ Home</button>
+      </div>
     </header>
 
     <main id="app" class="app-shell" aria-live="polite"></main>
@@ -27,6 +33,6 @@
       <a href="../">Back to the story shelf</a>
     </footer>
 
-    <script type="module" src="app.js?v=20260830-1"></script>
+    <script type="module" src="app.js?v=20260830-3"></script>
   </body>
 </html>

@@ -39,3 +39,9 @@ next-env.d.ts
 /outputs/
 /work/
 /tmp/
+
+# Personal-use audio imported from third-party sites; never publish this folder.
+/phonics/audio/read-naturally-local/
+/phonics/audio/oxford-owl-local/
+/phonics/audio/letterland-local/
+/phonics/audio/local-manifest.json

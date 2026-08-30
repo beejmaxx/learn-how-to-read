@@ -80,6 +80,11 @@ button { color: inherit; }
   font-weight: 800;
 }
 
+.topbar-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+.source-picker { display: flex; align-items: center; gap: 8px; color: var(--muted); font: 800 12px/1.1 system-ui, sans-serif; }
+.source-picker[hidden] { display: none; }
+.source-picker select { min-height: 42px; max-width: 210px; padding: 7px 34px 7px 12px; border: 2px solid var(--line); border-radius: 999px; color: var(--ink); background: white; font: 800 13px/1.1 system-ui, sans-serif; }
+
 .app-shell { width: min(1060px, calc(100% - 32px)); min-height: calc(100vh - 170px); margin: 0 auto; }
 
 .eyebrow {
@@ -225,6 +230,8 @@ footer a { color: var(--ink); font-weight: 800; }
   .brand strong { font-size: 17px; }
   .brand small { font-size: 9px; }
   .home-button { padding: 8px 12px; font-size: 14px; }
+  .source-picker > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .source-picker select { max-width: 125px; }
   .home-hero { padding-top: 16px; }
   .sound-flower { transform: scale(.72); min-height: 225px; margin: -20px 0 -36px; }
   .activity-card { min-height: 164px; padding: 19px 72px 19px 19px; }
