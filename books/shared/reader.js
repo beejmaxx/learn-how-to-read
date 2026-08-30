@@ -1,15 +1,12 @@
-const TOTAL_PAGES = 67;
-const SOURCE_WIDTH = 584;
-const SOURCE_HEIGHT = 754;
-const chapters = [
-  { title: 'Cover', page: 1 },
-  { title: 'Contents', page: 9 },
-  { title: 'What Will Little Bear Wear?', page: 13 },
-  { title: 'Birthday Soup', page: 24 },
-  { title: 'Little Bear Goes to the Moon', page: 38 },
-  { title: "Little Bear’s Wish", page: 52 },
-  { title: 'The End', page: 65 },
-];
+const CONFIG = window.BOOK_CONFIG;
+if (!CONFIG) throw new Error('Missing BOOK_CONFIG');
+const TOTAL_PAGES = CONFIG.totalPages;
+const SOURCE_WIDTH = CONFIG.width;
+const SOURCE_HEIGHT = CONFIG.height;
+const chapters = CONFIG.chapters;
+const storageKey = (suffix) => `${CONFIG.id}-${suffix}`;
+document.documentElement.style.setProperty('--page-ratio', `${SOURCE_WIDTH} / ${SOURCE_HEIGHT}`);
+document.documentElement.style.setProperty('--page-width-factor', String(SOURCE_WIDTH / SOURCE_HEIGHT));
 
 const previous = document.querySelector('#previousButton');
 const next = document.querySelector('#nextButton');
@@ -25,18 +22,20 @@ const stage = document.querySelector('#pageStage');
 const leftPage = document.querySelector('#leftPage');
 const rightPage = document.querySelector('#rightPage');
 const readButton = document.querySelector('#readButton');
+const autoSpeakToggle = document.querySelector('#autoSpeakToggle');
 const phoneLayout = matchMedia('(max-width: 650px)');
 
 const pagePath = (page) => `pages/page-${String(page).padStart(3, '0')}.jpg`;
 const requestedPage = Number(new URLSearchParams(location.search).get('page'));
 let currentPage = Number.isInteger(requestedPage) && requestedPage >= 1 && requestedPage <= TOTAL_PAGES
   ? requestedPage
-  : Number(localStorage.getItem('little-bear-page')) || 1;
+  : Number(localStorage.getItem(storageKey('page'))) || 1;
 let wordData = { pages: {} };
 let reading = false;
 let readingRun = 0;
+autoSpeakToggle.checked = localStorage.getItem(storageKey('auto-speak')) === 'true';
 
-fetch('words.json?v=20260830-6', { cache: 'no-store' })
+fetch(`words.json?v=${CONFIG.version}`, { cache: 'no-store' })
   .then((response) => response.ok ? response.json() : Promise.reject(new Error('OCR data unavailable')))
   .then((data) => {
     wordData = data;
@@ -78,7 +77,8 @@ function speakWord(text) {
   clearHighlights();
   const word = cleanWord(text);
   if (!word) return;
-  const utterance = new SpeechSynthesisUtterance(word);
+  const spokenWord = CONFIG.pronunciations?.[word] || (word === 'I' ? 'eye' : word);
+  const utterance = new SpeechSynthesisUtterance(spokenWord);
   utterance.rate = .72;
   utterance.pitch = 1.08;
   utterance.voice = bestVoice();
@@ -109,7 +109,7 @@ function renderFrame(frame, page) {
   const image = frame.querySelector('img');
   const layer = frame.querySelector('.word-layer');
   image.src = pagePath(page);
-  image.alt = `Little Bear, scanned page ${page} of ${TOTAL_PAGES}`;
+  image.alt = `${CONFIG.title}, page ${page} of ${TOTAL_PAGES}`;
   layer.replaceChildren(...(wordData.pages[String(page)] || []).map((word) => wordButton(word, page)));
 }
 
@@ -138,11 +138,12 @@ function visibleWordButtons() {
     .filter((button) => cleanWord(button.dataset.word));
 }
 
-function selectWord(button) {
+function selectWord(button, pronounce = false) {
   document.querySelectorAll('.word-hit.selected').forEach((word) => word.classList.remove('selected'));
   if (!button) return;
   button.classList.add('selected');
   button.focus({ preventScroll: true });
+  if (pronounce) speakWord(button.dataset.word);
 }
 
 function moveWord(direction) {
@@ -152,7 +153,7 @@ function moveWord(direction) {
   const targetIndex = selectedIndex < 0 ? (direction > 0 ? 0 : words.length - 1) : selectedIndex + direction;
 
   if (words[targetIndex]) {
-    selectWord(words[targetIndex]);
+    selectWord(words[targetIndex], autoSpeakToggle.checked);
     return;
   }
 
@@ -161,7 +162,7 @@ function moveWord(direction) {
     turn(direction);
     words = visibleWordButtons();
     if (words.length) {
-      selectWord(direction > 0 ? words[0] : words[words.length - 1]);
+      selectWord(direction > 0 ? words[0] : words[words.length - 1], autoSpeakToggle.checked);
       return;
     }
   }
@@ -179,7 +180,7 @@ function stopReading() {
 function showPage(page, updateHistory = true) {
   stopReading();
   currentPage = Math.max(1, Math.min(TOTAL_PAGES, page));
-  localStorage.setItem('little-bear-page', String(currentPage));
+  localStorage.setItem(storageKey('page'), String(currentPage));
   renderPages();
   if (updateHistory) {
     const url = new URL(location.href);
@@ -255,6 +256,9 @@ previous.addEventListener('click', () => turn(-1));
 next.addEventListener('click', () => turn(1));
 slider.addEventListener('input', () => showPage(Number(slider.value)));
 readButton.addEventListener('click', toggleReading);
+autoSpeakToggle.addEventListener('change', () => {
+  localStorage.setItem(storageKey('auto-speak'), String(autoSpeakToggle.checked));
+});
 
 function setChaptersOpen(isOpen) {
   chapterPanel.hidden = !isOpen;
@@ -291,7 +295,7 @@ document.addEventListener('fullscreenchange', () => {
 });
 
 document.addEventListener('keydown', (event) => {
-  if (event.target.matches('input')) return;
+  if (event.target.matches('input[type="range"]')) return;
   if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
     event.preventDefault();
     moveWord(1);
@@ -299,6 +303,7 @@ document.addEventListener('keydown', (event) => {
     event.preventDefault();
     moveWord(-1);
   } else if (event.key === ' ') {
+    if (event.target === autoSpeakToggle) return;
     const selected = document.querySelector('.word-hit.selected');
     if (!selected) return;
     event.preventDefault();

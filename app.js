@@ -1,5 +1,5 @@
 const DEFAULT_WORDS = ['cat', 'dog', 'sun', 'hat', 'red', 'map'];
-const CONTENT_VERSION = '20260830-3';
+const CONTENT_VERSION = '20260830-4';
 const WORD_INFO = {
   cat: { emoji: '🐈', first: 'c', rhyme: 'hat' },
   dog: { emoji: '🐕', first: 'd', rhyme: 'log' },
@@ -181,7 +181,7 @@ function library() {
     <section class="library-hero">
       <div>
         <p class="eyebrow">Our first read-along</p>
-        <h1>Three little books.<br>Lots to explore.</h1>
+        <h1>Four little books.<br>Lots to explore.</h1>
         <p class="hero-copy">Read together, tap words to sound them out, then play with words from the story.</p>
         <span class="tiny-note"><span aria-hidden="true">☝️</span> Tap a book to begin</span>
       </div>
@@ -194,7 +194,7 @@ function library() {
     <section aria-labelledby="shelf-title">
       <div class="shelf-heading">
         <div><p class="eyebrow">Our little shelf</p><h2 id="shelf-title">Choose a story</h2></div>
-        <p>${state.completed.filter(id => LIBRARY_BOOKS.some(book => book.id === id)).length} of ${LIBRARY_BOOKS.length + 1} explored</p>
+        <p>${state.completed.filter(id => LIBRARY_BOOKS.some(book => book.id === id)).length} of ${LIBRARY_BOOKS.length + 2} explored</p>
       </div>
       <div class="book-grid">
         ${LIBRARY_BOOKS.map(book => `
@@ -219,6 +219,17 @@ function library() {
             <h3>Little Bear</h3>
             <p>Two-page book · tap every word</p>
             <span class="word-chips"><span class="word-chip">bear</span><span class="word-chip">moon</span><span class="word-chip">wish</span></span>
+          </span>
+        </a>
+        <a class="book-card" href="books/frog-and-toad/">
+          <span class="book-cover-wrap">
+            <img class="book-cover" src="books/frog-and-toad/pages/page-001.jpg" alt="Cover of Frog and Toad Are Friends">
+            <span class="book-level">Classic read-along</span>
+          </span>
+          <span class="book-info">
+            <h3>Frog and Toad Are Friends</h3>
+            <p>Five stories · tap every word</p>
+            <span class="word-chips"><span class="word-chip">frog</span><span class="word-chip">toad</span><span class="word-chip">friend</span></span>
           </span>
         </a>
       </div>
