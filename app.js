@@ -1,5 +1,5 @@
 const DEFAULT_WORDS = ['cat', 'dog', 'sun', 'hat', 'red', 'map'];
-const CONTENT_VERSION = '20260830-4';
+const CONTENT_VERSION = '20260830-6';
 const WORD_INFO = {
   cat: { emoji: '🐈', first: 'c', rhyme: 'hat' },
   dog: { emoji: '🐕', first: 'd', rhyme: 'log' },
@@ -94,8 +94,8 @@ function playableWords() {
   return known.length >= 3 ? known : DEFAULT_WORDS;
 }
 
-function speak(text) {
-  if (state.book?.narrated === false) return;
+function speak(text, force = false) {
+  if (!force && state.book?.narrated === false) return;
   const recorded = AUDIO_LIBRARY.audio[text.trim().toLowerCase()];
   if (recorded) {
     playRecorded(recorded);
@@ -111,6 +111,11 @@ function speak(text) {
   utterance.rate = 0.92;
   utterance.pitch = 1;
   speechSynthesis.speak(utterance);
+}
+
+function pronounceWord(text) {
+  const word = text.toLowerCase() === 'i' ? 'eye' : text;
+  speak(word, true);
 }
 
 function clearWordHighlight() {
@@ -186,8 +191,8 @@ function library() {
         <span class="tiny-note"><span aria-hidden="true">☝️</span> Tap a book to begin</span>
       </div>
       <div class="hero-stack" aria-hidden="true">
-        <img class="stack-cover" src="assets/pages/duck-cup/page-9.webp" alt="">
-        <img class="stack-cover" src="assets/covers/duck-cup.webp" alt="">
+        <img class="stack-cover" src="assets/optimized/duck-cup/page-9.webp" alt="">
+        <img class="stack-cover" src="assets/optimized/duck-cup/cover.webp" alt="">
         <img class="stack-cover" src="assets/covers/red-hat.webp" alt="">
       </div>
     </section>
@@ -253,14 +258,41 @@ function wordButtons(sentence) {
   });
 }
 
+function readerWords() {
+  return [...document.querySelectorAll('.reader-sentence .read-word')];
+}
+
+function selectReaderWord(button, pronounce = false) {
+  document.querySelectorAll('.read-word.is-selected').forEach(word => word.classList.remove('is-selected'));
+  if (!button) return;
+  button.classList.add('is-selected');
+  button.focus({ preventScroll: true });
+  if (pronounce) pronounceWord(button.dataset.speak);
+}
+
+function moveReaderWord(direction) {
+  let words = readerWords();
+  const selected = document.querySelector('.read-word.is-selected');
+  const index = words.indexOf(selected);
+  const targetIndex = index < 0 ? (direction > 0 ? 0 : words.length - 1) : index + direction;
+  const autoSpeak = load('little-reader-auto-speak', false);
+  if (words[targetIndex]) {
+    selectReaderWord(words[targetIndex], autoSpeak);
+    return;
+  }
+  if (direction > 0 && state.page < state.book.pages.length - 1) changePage(1);
+  else if (direction < 0 && state.page > 0) changePage(-1);
+  else return;
+  words = readerWords();
+  selectReaderWord(direction > 0 ? words[0] : words[words.length - 1], autoSpeak);
+}
+
 function showWordCoach(word) {
   const coach = document.querySelector('#word-coach');
   if (!coach) return;
   const clean = word.toLowerCase().replace(/’/g, "'").replace(/[^a-z']/g, '');
   const chunks = PHONICS[clean];
-  const wholeWord = state.book?.narrated === false
-    ? `<span class="coach-whole coach-whole-muted">${word}</span>`
-    : `<button class="coach-whole" data-coach-speak="${word}">🔊 ${word}</button>`;
+  const wholeWord = `<button class="coach-whole" data-coach-speak="${word}">🔊 ${word}</button>`;
   if (!chunks) {
     coach.innerHTML = `<span class="coach-label">Look at the whole word</span>${wholeWord}`;
   } else {
@@ -271,6 +303,15 @@ function showWordCoach(word) {
       ${wholeWord}`;
   }
   coach.hidden = false;
+}
+
+function preloadNextPictures(book, page) {
+  [page + 1, page + 2].forEach(index => {
+    const source = book.pictures?.[index];
+    if (!source) return;
+    const picture = new Image();
+    picture.src = source;
+  });
 }
 
 function renderReader() {
@@ -286,7 +327,7 @@ function renderReader() {
         ${isFinish || !hasNarration ? '<span></span>' : '<button class="sound-button" data-action="read-page" aria-label="Read this page aloud">🔊</button>'}
       </div>
       <div class="reader-card">
-        <div class="reader-picture"><img src="${book.pictures?.[state.page] || book.cover}" alt="Illustration for page ${Math.min(state.page + 1, book.pages.length)} of ${book.title}"></div>
+        <div class="reader-picture"><img src="${book.pictures?.[state.page] || book.cover}" alt="Illustration for page ${Math.min(state.page + 1, book.pages.length)} of ${book.title}" decoding="async" fetchpriority="high"></div>
         <div class="reader-page ${isFinish ? 'reader-finish' : ''} ${!isFinish && book.pages[state.page].length > 115 ? 'reader-page-dense' : ''}">
           ${isFinish ? `
             <div class="finish-star" aria-hidden="true">⭐</div>
@@ -297,16 +338,21 @@ function renderReader() {
               <button class="button primary" data-action="book-games">Play with these words</button>
             </div>` : `
             <p class="reader-sentence">${wordButtons(book.pages[state.page])}</p>
-            <p class="reader-help">${hasNarration ? 'Tap any word to hear it and sound it out' : 'Tap any word to break it into sounds'}</p>
+            <p class="reader-help">Tap a word, or use ← →. Press Space to hear it.</p>
             <div class="word-coach" id="word-coach" hidden></div>
             <div class="reader-controls">
               <button class="page-button" data-action="prev-page" ${state.page === 0 ? 'disabled' : ''}>← Back</button>
               ${hasNarration ? '<button class="read-aloud" data-action="read-page">🔊 Read it</button>' : ''}
+              <label class="reader-auto-speak" title="Pronounce each word selected with the arrows">
+                <input type="checkbox" data-reader-auto-speak ${load('little-reader-auto-speak', false) ? 'checked' : ''}>
+                <span>Speak as I move</span>
+              </label>
               <button class="page-button next" data-action="next-page">${state.page === book.pages.length - 1 ? 'Finish' : 'Next →'}</button>
             </div>`}
         </div>
       </div>
     </section>`;
+  if (!isFinish) preloadNextPictures(book, state.page);
 }
 
 function changePage(direction) {
@@ -517,10 +563,11 @@ document.addEventListener('click', event => {
   if (target.dataset.game) startGame(target.dataset.game);
   if (target.dataset.book) openBook(target.dataset.book);
   if (target.dataset.speak) {
+    selectReaderWord(target);
     showWordCoach(target.dataset.speak);
-    if (state.book?.narrated !== false) speak(target.dataset.speak);
+    pronounceWord(target.dataset.speak);
   }
-  if (target.dataset.coachSpeak) speak(target.dataset.coachSpeak);
+  if (target.dataset.coachSpeak) pronounceWord(target.dataset.coachSpeak);
   if (target.dataset.action === 'library') library();
   if (target.dataset.action === 'games') { state.bookWords = null; gamesHome(); }
   if (target.dataset.action === 'repeat') speak(state.prompt.spoken);
@@ -535,6 +582,36 @@ document.addEventListener('click', event => {
   if (target.dataset.action === 'keep') toggleKeep(target);
   if (target.dataset.answer) answer(target, target.dataset.answer);
   if (target.dataset.letter) addLetter(target, target.dataset.letter);
+});
+
+document.addEventListener('change', event => {
+  if (event.target.matches('[data-reader-auto-speak]')) {
+    save('little-reader-auto-speak', event.target.checked);
+  }
+});
+
+document.addEventListener('keydown', event => {
+  if (state.screen !== 'reader' || state.page >= (state.book?.pages.length || 0)) return;
+  if (event.target.matches('textarea, input[type="range"]')) return;
+  if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+    event.preventDefault();
+    moveReaderWord(1);
+  } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+    event.preventDefault();
+    moveReaderWord(-1);
+  } else if (event.key === ' ') {
+    if (event.target.matches('[data-reader-auto-speak]')) return;
+    const selected = document.querySelector('.read-word.is-selected');
+    if (!selected) return;
+    event.preventDefault();
+    pronounceWord(selected.dataset.speak);
+  } else if (event.key === 'PageDown' && state.page < state.book.pages.length - 1) {
+    event.preventDefault();
+    changePage(1);
+  } else if (event.key === 'PageUp' && state.page > 0) {
+    event.preventDefault();
+    changePage(-1);
+  }
 });
 
 document.querySelector('#save-words').addEventListener('click', event => {
