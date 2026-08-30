@@ -1,5 +1,5 @@
 const DEFAULT_WORDS = ['cat', 'dog', 'sun', 'hat', 'red', 'map'];
-const CONTENT_VERSION = '20260830-6';
+const CONTENT_VERSION = '20260830-7';
 const WORD_INFO = {
   cat: { emoji: '🐈', first: 'c', rhyme: 'hat' },
   dog: { emoji: '🐕', first: 'd', rhyme: 'log' },
