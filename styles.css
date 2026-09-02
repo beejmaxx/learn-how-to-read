@@ -74,16 +74,21 @@ button { color: inherit; }
 .word-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
 .word-chip { background: #f2ede2; border-radius: 999px; padding: 5px 9px; font-size: 14px; }
 
-.reader-wrap { max-width: 1000px; margin: 15px auto 0; }
+.reader-wrap {
+  width: min(1440px, calc(100vw - 32px));
+  max-width: none;
+  margin: 15px 0 0 50%;
+  transform: translateX(-50%);
+}
 .reader-top { display: grid; grid-template-columns: 48px 1fr 48px; align-items: center; gap: 13px; margin-bottom: 16px; }
 .reader-title { text-align: center; }
 .reader-title strong { display: block; font-family: Fredoka, sans-serif; font-size: 20px; }
 .reader-title span { color: var(--muted); font-size: 14px; }
-.reader-card { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); min-width: 0; min-height: 585px; overflow: hidden; background: white; border-radius: 32px; box-shadow: var(--shadow); }
-.reader-picture { min-width: 0; min-height: 400px; background: #f1e7d0; position: relative; overflow: hidden; }
+.reader-card { display: flex; width: 100%; min-width: 0; min-height: 585px; overflow: hidden; background: white; border-radius: 32px; box-shadow: var(--shadow); }
+.reader-picture { flex: 0 0 50%; width: 50%; min-width: 0; max-width: 50%; min-height: 400px; background: #f1e7d0; position: relative; overflow: hidden; }
 .reader-picture img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; transform: scale(1.01); }
 .reader-picture::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,35,42,.12), transparent 28%); pointer-events: none; }
-.reader-page { min-width: 0; padding: clamp(30px, 5vw, 58px); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.reader-page { flex: 0 0 50%; width: 50%; min-width: 0; max-width: 50%; overflow: hidden; contain: inline-size layout; padding: clamp(30px, 4vw, 58px); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .reader-sentence { font-family: Fredoka, sans-serif; font-size: clamp(36px, 5vw, 58px); line-height: 1.32; margin-bottom: 30px; }
 .reader-page-dense .reader-sentence { font-size: clamp(28px, 3.6vw, 43px); }
 .read-word { appearance: none; border: 0; background: transparent; padding: 0 3px; font: inherit; cursor: pointer; border-radius: 8px; transition: background .12s ease, color .12s ease, box-shadow .12s ease, transform .12s ease; }
@@ -185,7 +190,9 @@ textarea { width: 100%; resize: vertical; border: 2px solid #ddd2bb; border-radi
   .library-hero .hero-copy { margin: 0 auto; }
   .hero-stack { min-height: 245px; }
   .book-grid { grid-template-columns: repeat(2, 1fr); }
-  .reader-card { grid-template-columns: 1fr; }
+  .reader-wrap { width: min(100%, calc(100vw - 20px)); }
+  .reader-card { flex-direction: column; }
+  .reader-picture, .reader-page { flex-basis: auto; width: 100%; max-width: 100%; }
   .reader-picture { min-height: 330px; }
   .reader-page { min-height: 430px; }
 }

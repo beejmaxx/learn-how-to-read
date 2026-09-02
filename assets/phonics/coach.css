@@ -4,6 +4,9 @@
   width: 100%;
   min-width: 0;
   max-width: 100%;
+  box-sizing: border-box;
+  contain: inline-size layout paint;
+  overflow: hidden;
   padding: .72rem .8rem;
   border: 2px solid #e5d29a;
   border-radius: 18px;
@@ -34,7 +37,7 @@
 .phonics-source-picker { display: flex; justify-content: flex-end; align-items: center; gap: .4rem; margin-top: .4rem; color: #746d62; font-size: .67rem; font-weight: 800; }
 .phonics-source-picker select { max-width: 12rem; min-height: 1.8rem; border: 1px solid #d9ccb0; border-radius: 999px; padding: .2rem .55rem; background: white; color: #28323b; font: 750 .68rem/1 system-ui, sans-serif; }
 
-.word-coach.phonics-coach-host { display: block; flex: 0 0 178px; width: 100%; min-width: 0; max-width: 100%; height: 178px; min-height: 178px; max-height: 178px; margin: -10px 0 20px; padding: 0; overflow: hidden; border: 0; background: transparent; }
+.word-coach.phonics-coach-host { display: block; flex: 0 0 178px; width: 100%; min-width: 0; max-width: 100%; height: 178px; min-height: 178px; max-height: 178px; margin: -10px 0 20px; padding: 0; contain: strict; overflow: hidden; border: 0; background: transparent; }
 .word-coach.phonics-coach-host[hidden] { display: block !important; visibility: hidden; pointer-events: none; }
 .word-coach.phonics-coach-host .phonics-coach-card { height: 100%; overflow: hidden; }
 .reader-phonics-coach { width: min(100% - 2rem, 980px); height: 126px; margin: 0 auto; padding: .35rem 0; }
