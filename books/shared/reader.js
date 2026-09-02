@@ -28,6 +28,8 @@ const phoneLayout = matchMedia('(max-width: 650px)');
 const phonicsCoach = window.PhonicsCoach?.create({
   root: '../../',
   speakWord,
+  stopWord: stopReading,
+  returnFocus: () => document.querySelector('.word-hit.selected')?.focus({ preventScroll: true }),
   onVisibility: (isVisible) => document.body.classList.toggle('coach-open', isVisible)
 });
 
@@ -307,12 +309,15 @@ document.addEventListener('fullscreenchange', () => {
 
 document.addEventListener('keydown', (event) => {
   if (event.target.matches('select, input[type="range"]')) return;
-  if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+  if (event.key === 'ArrowRight') {
     event.preventDefault();
     moveWord(1);
-  } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+  } else if (event.key === 'ArrowLeft') {
     event.preventDefault();
     moveWord(-1);
+  } else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+    if (!wordCoach || wordCoach.hidden || !phonicsCoach?.focusSound(wordCoach, event.key === 'ArrowDown' ? 1 : -1)) return;
+    event.preventDefault();
   } else if (event.key === ' ') {
     if (event.target.closest('.phonics-coach-host')) return;
     if (event.target === autoSpeakToggle) return;

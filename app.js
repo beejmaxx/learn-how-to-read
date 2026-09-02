@@ -82,13 +82,13 @@ function playableWords() {
 
 function speak(text, force = false) {
   if (!force && state.book?.narrated === false) return;
+  stopWordPlayback();
   const recorded = AUDIO_LIBRARY.audio[text.trim().toLowerCase()];
   if (recorded) {
     playRecorded(recorded);
     return;
   }
   if (!('speechSynthesis' in window)) return;
-  speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   const voices = speechSynthesis.getVoices();
   utterance.voice = voices.find(voice => /Samantha|Ava|Serena|Karen|Daniel|Moira|Tessa/i.test(voice.name))
@@ -106,7 +106,9 @@ function pronounceWord(text) {
 
 phonicsCoach = window.PhonicsCoach?.create({
   root: './',
-  speakWord: pronounceWord
+  speakWord: pronounceWord,
+  stopWord: stopWordPlayback,
+  returnFocus: () => document.querySelector('.read-word.is-selected')?.focus({ preventScroll: true })
 });
 
 function clearWordHighlight() {
@@ -118,15 +120,19 @@ function clearWordHighlight() {
   });
 }
 
-function stopPlayback() {
+function stopWordPlayback() {
   window.speechSynthesis?.cancel();
-  phonicsCoach?.stop();
   clearWordHighlight();
   if (playingAudio) {
     playingAudio.pause();
     playingAudio.currentTime = 0;
     playingAudio = null;
   }
+}
+
+function stopPlayback() {
+  phonicsCoach?.stop();
+  stopWordPlayback();
 }
 
 function playRecorded(source, onFrame = null) {
@@ -323,7 +329,7 @@ function renderReader() {
               <button class="button primary" data-action="book-games">Play with these words</button>
             </div>` : `
             <p class="reader-sentence">${wordButtons(book.pages[state.page])}</p>
-            <p class="reader-help">Tap a word, or use ← →. Press Space to hear it.</p>
+            <p class="reader-help">← → words · ↓ sounds · Space plays · Esc returns</p>
             <div class="word-coach phonics-coach-host" id="word-coach" hidden></div>
             <div class="reader-controls">
               <button class="page-button" data-action="prev-page" ${state.page === 0 ? 'disabled' : ''}>← Back</button>
@@ -577,12 +583,16 @@ document.addEventListener('change', event => {
 document.addEventListener('keydown', event => {
   if (state.screen !== 'reader' || state.page >= (state.book?.pages.length || 0)) return;
   if (event.target.matches('textarea, select, input[type="range"]')) return;
-  if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+  if (event.key === 'ArrowRight') {
     event.preventDefault();
     moveReaderWord(1);
-  } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+  } else if (event.key === 'ArrowLeft') {
     event.preventDefault();
     moveReaderWord(-1);
+  } else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+    const coach = document.querySelector('#word-coach');
+    if (!coach || coach.hidden || !phonicsCoach?.focusSound(coach, event.key === 'ArrowDown' ? 1 : -1)) return;
+    event.preventDefault();
   } else if (event.key === ' ') {
     if (event.target.closest('.phonics-coach-host')) return;
     if (event.target.matches('[data-reader-auto-speak]')) return;

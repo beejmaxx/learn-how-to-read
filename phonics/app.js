@@ -166,14 +166,18 @@ function soundById(id) { return SOUNDS.find(sound => sound.id === id); }
 function soundsForGroup(group) { return SOUNDS.filter(sound => sound.group === group); }
 function wait(milliseconds) { return new Promise(resolve => setTimeout(resolve, milliseconds)); }
 
-function stopAudio() {
+function stopAppAudio() {
   playToken += 1;
   window.speechSynthesis?.cancel();
-  phonicsCoach?.stop();
   if (!currentAudio) return;
   currentAudio.pause();
   currentAudio.currentTime = 0;
   currentAudio = null;
+}
+
+function stopAudio() {
+  phonicsCoach?.stop();
+  stopAppAudio();
 }
 
 function playFile(source, token = playToken) {
@@ -220,7 +224,12 @@ function playWord(word) {
   return Promise.resolve(false);
 }
 
-phonicsCoach = window.PhonicsCoach?.create({ root: '../', speakWord: playWord });
+phonicsCoach = window.PhonicsCoach?.create({
+  root: '../',
+  speakWord: playWord,
+  stopWord: stopAppAudio,
+  returnFocus: () => document.querySelector('[data-word-lookup-form] input')?.focus({ preventScroll: true })
+});
 
 async function playBlend() {
   stopAudio();

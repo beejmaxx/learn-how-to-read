@@ -14,10 +14,12 @@
   }
 
   class Coach {
-    constructor({ root = './', speakWord = () => {}, onVisibility = () => {} } = {}) {
+    constructor({ root = './', speakWord = () => {}, stopWord = () => {}, onVisibility = () => {}, returnFocus = () => {} } = {}) {
       this.root = new URL(root, document.baseURI);
       this.speakWord = speakWord;
+      this.stopWord = stopWord;
       this.onVisibility = onVisibility;
+      this.returnFocus = returnFocus;
       this.wordData = { sounds: {}, words: {} };
       this.wordShards = {};
       this.publicSounds = {};
@@ -109,6 +111,7 @@
 
     async playSequence(soundIds, buttons) {
       this.stop();
+      this.stopWord();
       const runId = this.playRun;
       for (let index = 0; index < soundIds.length; index += 1) {
         if (runId !== this.playRun) return;
@@ -126,7 +129,19 @@
       this.onVisibility(false);
     }
 
+    focusSound(host, direction = 1) {
+      const buttons = [...host.querySelectorAll('.phonics-sound-chip:not(:disabled)')];
+      if (!buttons.length) return false;
+      const currentIndex = buttons.indexOf(document.activeElement);
+      const nextIndex = currentIndex < 0
+        ? (direction > 0 ? 0 : buttons.length - 1)
+        : (currentIndex + direction + buttons.length) % buttons.length;
+      buttons[nextIndex].focus({ preventScroll: true });
+      return true;
+    }
+
     async show(host, rawWord) {
+      this.stop();
       const showRun = ++this.showRun;
       host.hidden = false;
       host.replaceChildren(makeElement('div', 'phonics-coach-loading', 'Finding the sounds…'));
@@ -145,7 +160,13 @@
       whole.type = 'button';
       whole.setAttribute('aria-label', `Hear the word ${word}`);
       whole.textContent = `🔊 ${word || rawWord}`;
-      whole.addEventListener('click', () => this.speakWord(rawWord));
+      whole.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        this.stop();
+        this.stopWord();
+        this.speakWord(rawWord);
+      });
       head.append(whole);
 
       const close = makeElement('button', 'phonics-coach-close', '×');
@@ -163,10 +184,14 @@
           const button = makeElement('button', 'phonics-sound-chip');
           button.type = 'button';
           button.disabled = !this.audioUrl(soundId);
-          button.setAttribute('aria-label', `Hear ${meta.label}, ${meta.ipa}`);
+          button.setAttribute('aria-label', `Hear the sound ${meta.ipa || meta.label}`);
+          button.title = `Hear only the ${meta.ipa || meta.label} sound`;
           button.append(makeElement('strong', '', meta.label), makeElement('small', '', meta.ipa));
-          button.addEventListener('click', () => {
+          button.addEventListener('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
             this.stop();
+            this.stopWord();
             this.playSound(soundId, button, this.playRun);
           });
           return button;
@@ -178,7 +203,7 @@
         blend.disabled = soundButtons.every((button) => button.disabled);
         blend.addEventListener('click', () => this.playSequence(entry.sounds, soundButtons));
         sounds.append(blend);
-        lesson.append(makeElement('span', 'phonics-coach-instruction', 'Tap each sound'), sounds);
+        lesson.append(makeElement('span', 'phonics-coach-instruction', 'Tap a sound · ↑ ↓ choose · Space plays'), sounds);
 
         if (entry.chunks?.length) {
           const chunks = makeElement('div', 'phonics-spelling-chunks');
@@ -212,6 +237,19 @@
         sourceLabel.append(select);
         card.append(sourceLabel);
       }
+
+      card.addEventListener('keydown', (event) => {
+        if (event.target.matches('select')) return;
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+          event.preventDefault();
+          event.stopPropagation();
+          this.focusSound(host, event.key === 'ArrowDown' ? 1 : -1);
+        } else if (event.key === 'Escape') {
+          event.preventDefault();
+          event.stopPropagation();
+          this.returnFocus();
+        }
+      });
 
       host.replaceChildren(card);
     }

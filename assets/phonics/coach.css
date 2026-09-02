@@ -28,6 +28,7 @@
 .phonics-sound-chip strong { font-size: 1.35rem; line-height: 1; }
 .phonics-sound-chip small { color: #6c6a65; font-size: .62rem; }
 .phonics-sound-chip.playing { color: white; border-color: #b4432d; background: #cf6048; box-shadow-color: #923622; transform: translateY(2px); }
+.phonics-sound-chip:focus-visible { outline: 4px solid #28323b; outline-offset: 3px; }
 .phonics-sound-chip:disabled { opacity: .34; cursor: default; }
 .phonics-play-all { flex: 0 0 auto; min-height: 2.8rem; padding: .55rem .7rem; border-radius: 999px; color: white; background: #354f60; font-size: .75rem; font-weight: 900; white-space: nowrap; }
 .phonics-play-all:disabled { opacity: .35; cursor: default; }
