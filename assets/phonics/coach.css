@@ -2,6 +2,8 @@
 .phonics-coach-loading { padding: 1rem; color: #6c6a65; text-align: center; font-weight: 750; }
 .phonics-coach-card {
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   padding: .72rem .8rem;
   border: 2px solid #e5d29a;
   border-radius: 18px;
@@ -15,7 +17,7 @@
 .phonics-whole-word, .phonics-coach-close, .phonics-sound-chip, .phonics-play-all { border: 0; cursor: pointer; }
 .phonics-whole-word { padding: .48rem .8rem; border-radius: 999px; color: white; background: #b4432d; font-weight: 900; }
 .phonics-coach-close { width: 2rem; height: 2rem; border-radius: 50%; background: white; font-size: 1.3rem; line-height: 1; }
-.phonics-coach-lesson { display: flex; align-items: center; gap: .65rem; margin-top: .58rem; min-width: 0; }
+.phonics-coach-lesson { display: flex; align-items: center; gap: .65rem; width: 100%; min-width: 0; margin-top: .58rem; overflow: hidden; }
 .phonics-coach-instruction { flex: 0 0 auto; color: #746d62; font-size: .74rem; font-weight: 850; }
 .phonics-sound-list { display: flex; align-items: center; gap: .38rem; min-width: 0; overflow-x: auto; padding: .12rem .15rem .32rem; scrollbar-width: thin; }
 .phonics-sound-chip { flex: 0 0 auto; min-width: 3.1rem; min-height: 3.25rem; display: grid; place-items: center; padding: .3rem .55rem; border: 2px solid #dfc86f; border-radius: 12px; background: white; box-shadow: 0 3px 0 #e3d193; }
@@ -26,14 +28,17 @@
 .phonics-sound-chip:disabled { opacity: .34; cursor: default; }
 .phonics-play-all { flex: 0 0 auto; min-height: 2.8rem; padding: .55rem .7rem; border-radius: 999px; color: white; background: #354f60; font-size: .75rem; font-weight: 900; white-space: nowrap; }
 .phonics-play-all:disabled { opacity: .35; cursor: default; }
-.phonics-spelling-chunks { flex: 0 0 auto; display: flex; align-items: center; gap: .3rem; color: #746d62; font-size: .7rem; }
+.phonics-spelling-chunks { flex: 0 1 auto; min-width: 0; max-width: 42%; display: flex; align-items: center; gap: .3rem; overflow-x: auto; color: #746d62; font-size: .7rem; white-space: nowrap; scrollbar-width: thin; }
 .phonics-spelling-chunks b { padding: .32rem .44rem; border-radius: 7px; color: #28323b; background: #f0e1ac; font-size: .9rem; }
 .phonics-tricky-word { margin: .7rem 0 .15rem; color: #746d62; text-align: center; font-size: .86rem; font-weight: 750; }
 .phonics-source-picker { display: flex; justify-content: flex-end; align-items: center; gap: .4rem; margin-top: .4rem; color: #746d62; font-size: .67rem; font-weight: 800; }
 .phonics-source-picker select { max-width: 12rem; min-height: 1.8rem; border: 1px solid #d9ccb0; border-radius: 999px; padding: .2rem .55rem; background: white; color: #28323b; font: 750 .68rem/1 system-ui, sans-serif; }
 
-.word-coach.phonics-coach-host { display: block; width: 100%; min-height: 0; margin: -10px 0 20px; padding: 0; border: 0; background: transparent; }
+.word-coach.phonics-coach-host { display: block; flex: 0 0 178px; width: 100%; min-width: 0; max-width: 100%; height: 178px; min-height: 178px; max-height: 178px; margin: -10px 0 20px; padding: 0; overflow: hidden; border: 0; background: transparent; }
+.word-coach.phonics-coach-host[hidden] { display: block !important; visibility: hidden; pointer-events: none; }
+.word-coach.phonics-coach-host .phonics-coach-card { height: 100%; overflow: hidden; }
 .reader-phonics-coach { width: min(100% - 2rem, 980px); height: 126px; margin: 0 auto; padding: .35rem 0; }
+.reader-phonics-coach .phonics-coach-card { height: 100%; overflow: hidden; }
 body.coach-open .reader { height: calc(100vh - 268px); }
 
 @media (max-width: 720px) {
@@ -42,6 +47,7 @@ body.coach-open .reader { height: calc(100vh - 268px); }
   .phonics-coach-lesson { gap: .3rem; }
   .phonics-spelling-chunks { display: none; }
   .phonics-source-picker { margin-top: .28rem; }
+  .word-coach.phonics-coach-host { flex-basis: 154px; height: 154px; min-height: 154px; max-height: 154px; }
   .reader-phonics-coach { width: min(100% - 1rem, 980px); height: 138px; padding: .3rem 0; }
   body.coach-open .reader { height: calc(100svh - 262px); }
 }
